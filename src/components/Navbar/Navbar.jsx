@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../../assets/logo.jpeg';
 import { IoIosSearch } from "react-icons/io";
 import { FaCaretDown, FaTimes } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,9 +25,11 @@ const Navbar = () => {
                     <a href='#' className='font-bold text-[#800080] text-[17px] group'>HOME
                     <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[50px] transition-all duration-500"></div>
                     </a>
-                    <a href='#' className='font-bold text-[#800080] text-[17px] group'>ABOUT US
-                    <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[80px] transition-all duration-500"></div>
-                    </a>
+                    <Link to="/hastle/about" className="font-bold text-[#800080] text-[17px] group">
+                     ABOUT US
+                   <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[80px] transition-all duration-500"></div>
+                    </Link>
+
                     <a href='#' className='font-bold text-[#800080] text-[17px] group'>OUR SERVICES
                     <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[115px] transition-all duration-500"></div>
                     </a>

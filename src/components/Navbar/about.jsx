@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react';
-import image1 from '../../assets/product1.jpg';
-import image2 from '../../assets/product2.jpg';
-import image3 from '../../assets/product3.jpg';
-import image4 from '../../assets/product4.jpg';
-import image5 from '../../assets/product5.jpg';
+
+
 import about from '../../assets/aboutimg.jpeg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FaStar, FaUpLong } from "react-icons/fa6";
+
 
 function Product() {
   useEffect(() => {
@@ -23,11 +20,7 @@ function Product() {
   const productData = [
     {
       id: 1,
-      title: "Woman Ethnic",
-      src: image1,
-      rating: 4.5,
-      color: 'red',
-      aosdelay: "200"
+     aosdelay: "200"
     },
   ];
 
