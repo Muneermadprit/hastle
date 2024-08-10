@@ -38,19 +38,21 @@ function Product() {
     <div >
       <div className='container '>
         {/* header section */}
-        <div className='text-center max-w-[400px] mx-auto '>
-          <p className='text-sm text-primary sm:text-[70px] text-[50px] mt-10 sm:mt-5  '>About Us</p>
-          
-       
-        </div>
+        <div className='text-center max-w-[400px] mx-auto'>
+  <p className='text-sm text-primary text-[55px] sm:text-[70px] lg:text-[70px] mt-20 sm:mt-5'>
+    About Us
+  </p>
+</div>
+
         
         <p className=' text-gray-400 sm:mt-10 text-[25px] w-full p-10'>At Holistic Care Services, we are dedicated to providing high-quality, personalized home care for the elderly in Liverpool. Our team of experienced caregivers is committed to ensuring the well-being and comfort of your loved ones.  
-  
+     
         
 </p>
-<button class="text-red px-30  ml-[100px] sm:ml-[520px] sm:rounded-xl rounded-2xl hover:before:bg-redborder-red-500 relative h-[30px]  overflow-hidden border border-[#800080] bg-white px-3 text-[#800080] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#800080] before:transition-all before:duration-500 hover:text-white hover:shadow-[#800080] hover:before:left-0 hover:before:w-full"><span class="relative z-10  text-[20px]  ">Lern more</span></button>
+
         {/* body section */}
         <div className='w-full'>
+        <button class="text-red px-30  ml-[120px] sm:ml-[520px] sm:rounded-xl rounded-2xl hover:before:bg-redborder-red-500 relative h-[30px]  overflow-hidden border border-[#800080] bg-white px-3 text-[#800080] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#800080] before:transition-all before:duration-500 hover:text-white hover:shadow-[#800080] hover:before:left-0 hover:before:w-full"><span class="relative z-10  text-[20px]  ">Lern more</span></button>
           <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-1 place-items-center gap-5 '>
             {/* card section */}
             {productData.map((data) => (
