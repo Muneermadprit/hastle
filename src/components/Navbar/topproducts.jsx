@@ -48,7 +48,7 @@ function Topproducts() {
 
   return (
     <div>
-      <div className='container bg-red-500'>
+      <div className='container '>
         {/* Header section */}
         <div className='text-center mb-10 max-w-[600px] mx-auto'>
           <p data-aos='fade-up' data-aos-delay="200" className='sm:text-[60px] text-[30px] text-primary '>
