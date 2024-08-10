@@ -48,10 +48,10 @@ function Topproducts() {
 
   return (
     <div>
-      <div className='container'>
+      <div className='container bg-red-500'>
         {/* Header section */}
         <div className='text-center mb-10 max-w-[600px] mx-auto'>
-          <p data-aos='fade-up' data-aos-delay="200" className='sm:text-[60px] text-[50px] text-primary '>
+          <p data-aos='fade-up' data-aos-delay="200" className='sm:text-[60px] text-[30px] text-primary '>
             Our Services
           </p>
           <h1 data-aos='fade-up' data-aos-delay="200" className='text-3xl font-bold '>
@@ -71,7 +71,7 @@ function Topproducts() {
    
     <img 
       src={data.src} 
-      className='w-[500px] h-auto mb-4 object-cover rounded-xl block mx-auto transform transition-transform duration-300 group-hover:scale-105' 
+      className='w-[500px] h-auto sm:mb-4 object-cover rounded-xl block mx-auto transform transition-transform duration-300 group-hover:scale-105' 
       alt={`Product ${data.id}`} 
     />
     <p className='bg-gray-400 p-2 rounded-xl mb-2 hover:text-black'>{data.tittle}</p>

@@ -4,7 +4,7 @@ import image2 from '../../assets/product2.jpg';
 import image3 from '../../assets/product3.jpg';
 import image4 from '../../assets/product4.jpg';
 import image5 from '../../assets/product5.jpg';
-import about from '../../assets/aboutimg.jpeg'
+import about from '../../assets/aboutimg.jpeg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -46,8 +46,8 @@ function Product() {
         </p>
 
         {/* body section */}
-        <div className='w-full'>
-          <button className="text-red px-30 ml-[120px] sm:ml-[520px] sm:rounded-xl rounded-2xl hover:before:bg-red border-red-500 relative h-[30px] overflow-hidden border border-[#800080] bg-white px-3 text-[#800080] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#800080] before:transition-all before:duration-500 hover:text-white hover:shadow-[#800080] hover:before:left-0 hover:before:w-full">
+        <div className='w-full text-center mb-10'>
+          <button className="text-red px-30 mx-auto sm:rounded-xl rounded-2xl hover:before:bg-red border-red-500 relative h-[30px] overflow-hidden border border-[#800080] bg-white px-3 text-[#800080] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#800080] before:transition-all before:duration-500 hover:text-white hover:shadow-[#800080] hover:before:left-0 hover:before:w-full">
             <span className="relative z-10 text-[20px]">Learn More</span>
           </button>
           <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-1 place-items-center gap-5'>
