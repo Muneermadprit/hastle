@@ -71,7 +71,7 @@ function Topproducts() {
    
     <img 
       src={data.src} 
-      className='w-[500px] h-auto sm:h-[400px] sm:mb-4 object-cover rounded-xl block mx-auto transform transition-transform duration-300 group-hover:scale-105' 
+      className='w-[500px] h-auto sm:h-[200px] sm:mb-4 object-cover rounded-xl block mx-auto transform transition-transform duration-300 group-hover:scale-105' 
       alt={`Product ${data.id}`} 
     />
     <p className='bg-gray-400 p-2 rounded-xl mb-2 hover:text-black mt-10'>{data.tittle}</p>
