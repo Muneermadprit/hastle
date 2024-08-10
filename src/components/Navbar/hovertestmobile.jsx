@@ -74,17 +74,17 @@ const AnimatedContainermob = () => {
         >
           <source src={demo} type="video/mp4" />
         </video>
-        <div className='absolute mt-60'>
+        <div className='absolute mt-[400px]'>
 
         <div
-          className={` text-white ml-5 text-[35px] sm:text-[26px] md:text-[20px] lg:text-[24px] font-bold transition-opacity duration-[0.9s] ease-out ${textClass}`}
+          className={` text-white ml-1 text-[35px] sm:text-[26px] md:text-[20px] lg:text-[24px] font-bold transition-opacity duration-[0.9s] ease-out ${textClass}`}
         >
           Quality Home Care Services<span className='ml-4'>in Liverpool</span> <br />
          
           
           
         </div>
-        <button className={`${textClass} group  ml-[110px] relative  px-[80px] py-5 min-h-[30px] sm:min-h-[40px] w-[100px] sm:w-[200px] md:w-[200px] lg:w-[300px] overflow-hidden border border-white bg-purple-500 text-white shadow-2xl transition-all hover:text-purple-500 hover:bg-white rounded-md  sm:ml-[10px] md:ml-[20px] lg:ml-[30px]`}>
+        <button className={`${textClass} group  ml-[10px] relative  px-[80px] py-5 min-h-[30px] sm:min-h-[40px] w-[100px] sm:w-[200px] md:w-[200px] lg:w-[300px] overflow-hidden border border-white bg-purple-500 text-white shadow-2xl transition-all hover:text-purple-500 hover:bg-white rounded-md  sm:ml-[10px] md:ml-[20px] lg:ml-[30px]`}>
             <span className=" font-semibold absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-purple-500 text-[12px] sm:text-[12px] md:text-[16px] lg:text-[20px]">
               Schedule <br/> Free Consultation
             </span>
