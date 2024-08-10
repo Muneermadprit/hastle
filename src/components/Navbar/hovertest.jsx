@@ -66,7 +66,7 @@ const AnimatedContainer = () => {
         >
           <source src={demo} type="video/mp4" />
         </video>
-<div className=' absolute z-30 mt-[300px] sm:ml-[50px] '>
+<div className=' absolute z-30 mt-[300px] sm:ml-[20px] '>
 
 <div className={`   text-white text-[36px] md:text-[48px] lg:text-[52px] ml-[50px] sm:ml-[100px] md:ml-[30px] lg:ml-[60px] mt-[100px] sm:mt-[100px] md:mt-[100px] lg:mt-[120px] font-bold transition-opacity duration-500 ${textClass}`}>
   Quality Home Care Services in Liverpool<br />
@@ -75,7 +75,7 @@ const AnimatedContainer = () => {
 </div>
 
 <span className={`  ${textClass}  ml-[80px] text-[14px] sm:text-[18px] md:text-[22px] lg:text-[26px] leading-tight text-white`}>Personalized, Compassionate Care for Your Loved Ones</span><br />
-<button className={` ${textClass} group relative min-h-[30px] sm:min-h-[40px] w-[100px] sm:w-[150px] md:w-[200px] lg:w-[300px] overflow-hidden border border-white bg-[#800080] text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-white before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-white after:duration-500 hover:text-purple-500 hover:bg-white hover:before:h-full hover:after:h-full rounded-full ml-[5px] sm:ml-[10px] md:ml-[20px] lg:ml-[340px] px-20`}>
+<button className={` ${textClass} group relative min-h-[30px] sm:min-h-[40px] w-[100px] sm:w-[150px] md:w-[200px] lg:w-[300px] overflow-hidden border border-white bg-[#800080] text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-white before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-white after:duration-500 hover:text-purple-500 hover:bg-white hover:before:h-full hover:after:h-full rounded-full ml-[5px] sm:ml-[10px] md:ml-[20px] lg:ml-[80px] px-20`}>
     <span className=" absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-purple-500 text-[10px] sm:text-[12px] md:text-[16px] lg:text-[20px]">Schedule a Free Consultation</span>
   </button>
 </div>
