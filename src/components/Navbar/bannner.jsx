@@ -11,7 +11,7 @@ function Banner() {
   }, []);
   
   return (
-    <div className='min-h-[550px]   flex justify-center items-center py-12 sm:py-0 sm:mt-[100px] sm:px-30' >
+    <div className='min-h-[550px]  pr-40 flex justify-center items-center py-12 sm:py-0 sm:mt-[100px] sm:px-30' >
       <div className='container mx-auto px-4'>
         <div className=' grid  sm:grid-cols-2 gap-6 items-center'>
           {/* Image section */}

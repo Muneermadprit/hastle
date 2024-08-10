@@ -36,12 +36,12 @@ function Product() {
       <div className='container'>
         {/* header section */}
         <div className='text-center max-w-[400px] mx-auto'>
-          <p className='text-primary text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] mt-20 sm:mt-5'>
+          <p className='text-primary text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] mt-20 '>
             About Us
           </p>
         </div>
 
-        <p className='text-gray-400 sm:mt-10 text-[16px] sm:text-[20px] w-full p-10'>
+        <p className='text-gray-400  text-[16px] sm:text-[20px] w-full p-2 '>
           At Holistic Care Services, we are dedicated to providing high-quality, personalized home care for the elderly in Liverpool. Our team of experienced caregivers is committed to ensuring the well-being and comfort of your loved ones.
         </p>
 
