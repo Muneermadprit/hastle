@@ -22,9 +22,9 @@ const Navbar = () => {
 
                 {/* Navigation Links */}
                 <div className="hidden sm:flex flex-wrap gap-4">
-                    <a href='#' className='font-bold text-[#800080] text-[17px] group'>HOME
+                    <Link to='/hastle/' className='font-bold text-[#800080] text-[17px] group'>HOME
                     <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[50px] transition-all duration-500"></div>
-                    </a>
+                    </Link>
                     <Link to="/hastle/about" className="font-bold text-[#800080] text-[17px] group">
                      ABOUT US
                    <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[80px] transition-all duration-500"></div>
@@ -64,8 +64,8 @@ const Navbar = () => {
             {/* Dropdown Menu */}
             {isMenuOpen && (
                 <div className="sm:hidden bg-white shadow-md rounded-xl p-4 mt-2 absolute w-full z-30">
-                    <a href='#' className='block py-2 text-[#800080] text-[17px] font-bold'>HOME</a>
-                    <a href='#' className='block py-2 text-[#800080] text-[17px] font-bold'>ABOUT US</a>
+                    <Link to='/hastle/' className='block py-2 text-[#800080] text-[17px] font-bold'>HOME</Link>
+                    <Link to='/hastle/about' className='block py-2 text-[#800080] text-[17px] font-bold'>ABOUT US</Link>
                     <a href='#' className='block py-2 text-[#800080] text-[17px] font-bold'>OUR SERVICES</a>
                     <a href='#' className='block py-2 text-[#800080] text-[17px] font-bold'>CAREERS</a>
                     <a href='#' className='block py-2 text-[#800080] text-[17px] font-bold'>BLOGS</a>
