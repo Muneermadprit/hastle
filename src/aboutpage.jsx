@@ -45,7 +45,7 @@ function About() {
                   () => setShowContainer(true), // Trigger the display of the containers
                 ]}
                 wrapper="span"
-                speed={70}
+                speed={100}
                 style={{ fontSize: 'inherit', color: 'inherit' }}
                 repeat={0}
               />
