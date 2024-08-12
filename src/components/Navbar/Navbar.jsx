@@ -30,9 +30,9 @@ const Navbar = () => {
                    <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[80px] transition-all duration-500"></div>
                     </Link>
 
-                    <a href='#' className='font-bold text-[#800080] text-[17px] group'>OUR SERVICES
+                    <Link to='/hastle/services' className='font-bold text-[#800080] text-[17px] group'>OUR SERVICES
                     <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[115px] transition-all duration-500"></div>
-                    </a>
+                    </Link>
                     <a href='#' className='font-bold text-[#800080] text-[17px] group' >CAREERS
                     <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[70px] transition-all duration-500"></div>
                     </a>
