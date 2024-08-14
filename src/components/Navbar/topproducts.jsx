@@ -3,8 +3,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import image1 from '../../assets/image1.jpeg'
 import image2 from '../../assets/image2.jpeg'
-import image3 from '../../assets/images3.jpeg'
-import image4 from '../../assets/images4.jpeg'
+import image3 from '../../assets/image3.jpeg'
+import image4 from '../../assets/image4.jpeg'
 
 
 
@@ -59,7 +59,7 @@ function Topproducts() {
           </h1>
         </div>
         {/* Body section */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  md:gap-10 place-items-center  '>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 hover:text-white  md:gap-10 place-items-center  '>
         {topprodect.map((data, index) => (
   <div
     key={data.id}
@@ -71,11 +71,11 @@ function Topproducts() {
    
     <img 
       src={data.src} 
-      className='w-[500px] h-auto sm:h-[200px] sm:mb-4 object-cover rounded-xl block mx-auto transform transition-transform duration-300 group-hover:scale-105' 
+      className='w-[500px] h-auto sm:h-[400px]  object-cover rounded-xl block mx-auto transform transition-transform duration-300 group-hover:scale-105' 
       alt={`Product ${data.id}`} 
     />
-    <p className='bg-gray-400 p-2 rounded-xl mb-2 hover:text-black mt-10'>{data.tittle}</p>
-    <p className=' p-2 rounded-xl'>{data.Description}</p>
+    <p className=' font-bold text-[20px] group-hover:text-[white]  text-[#800080] rounded-xl mb-2 mt-2  '>{data.tittle}</p>
+    <p className=' p-2 rounded-xl text-center hover:text-white' >{data.Description}</p>
    
   </div>
 ))}

@@ -20,17 +20,17 @@ function Banner() {
           
            
           </div>
-          <div className='sm:hidden  sm:h-[500px] h-[300px] '>
+          <div className='sm:hidden  sm:h-[500px] md:h-[200px] h-[300px] '>
 
           <img
               src={banner1}
               alt='Banner'
-              className='bg-white sm:w-[300px] w-[200px] sm:h-[300px] drop-shadow-md object-cover absolute sm:mt-[200px] mt-[150px]    'data-aos='flip-right'
+              className='bg-white sm:w-[300px] w-[200px] md:w-[50px]  md:h-[50px] sm:h-[300px] drop-shadow-md object-cover absolute sm:mt-[200px] mt-[150px] md:mt-0    'data-aos='flip-right'
             />
           <img
               src={banner2}
               alt='Banner'
-              className='bg-white sm:w-[300px] w-[200px] sm:h-[300px] drop-shadow-md object-cover absolute sm:ml-[200px] z-20  ml-[120px] border-solid border-[#800080] border-[10px]' data-aos="zoom-in-up"
+              className='bg-white sm:w-[300px] w-[200px] md:w-[200px] sm:h-[300px] drop-shadow-md object-cover absolute sm:ml-[200px] z-20  ml-[120px] border-solid border-[#800080] border-[10px]' data-aos="zoom-in-up"
             />
          
             
@@ -38,7 +38,7 @@ function Banner() {
           <img
               src={banner1}
               alt='Banner'
-              className='bg-white sm:w-[300px] w-[100px] sm:h-[300px] drop-shadow-md object-cover absolute sm:mt-[200px]   sm:block hidden 'data-aos='flip-left'
+              className='bg-white sm:w-[300px] md:w-[200px] w-[100px] sm:h-[300px] drop-shadow-md object-cover absolute sm:mt-[200px]   sm:block hidden 'data-aos='flip-left'
             />
           <img
               src={banner2}

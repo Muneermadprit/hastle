@@ -43,12 +43,12 @@ function Product() {
           <button className="text-red px-30 mx-auto sm:rounded-xl rounded-2xl mb-10 hover:before:bg-red border-red-500 relative h-[30px] overflow-hidden border border-[#800080] bg-white px-3 text-[#800080] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#800080] before:transition-all before:duration-500 hover:text-white hover:shadow-[#800080] hover:before:left-0 hover:before:w-full">
             <span className="relative z-10 text-[20px] ">Learn More</span>
           </button>
-          <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-1 place-items-center gap-5'>
+          <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 place-items-center gap-5'>
             {/* card section */}
             {productData.map((data) => (
               <div data-aos='fade-up' data-aos-delay={data.aosdelay} key={data.id}>
                 <div className='p-2'>
-                  <img src={about} className='shadow-bulge sm:h-[600px] sm:w-[1200px] sm:object-cover object-contain rounded-md' alt={data.title} />
+                  <img src={about} className='shadow-bulge  sm:h-[600px] sm:w-[1200px] sm:object-cover object-contain rounded-md' alt={data.title} />
                   <div>
                     <h1 className='font-bold text-[18px] mt-4'></h1>
                     <p className='text-sm text-grey-600'></p>

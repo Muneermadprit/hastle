@@ -8,7 +8,7 @@ function Subscription() {
   }, []);
 
   return (
-    <div className='w-full h-[230px] bg-[#800080] backdrop-blur-sm py-10 mb-20' data-aos="fade-right">
+    <div className='w-full h-[230px] bg-primary backdrop-blur-sm py-10 mb-20' data-aos="fade-right">
       <div className='container mx-auto px-4 flex flex-col sm:flex-row items-center sm:justify-between'>
         <div className='space-y-6 max-w-xl mx-auto'>
           <h1 className='text-2xl text-center sm:text-left sm:ml-20 sm:text-4xl font-semibold mb-4 sm:mb-0 text-white'>

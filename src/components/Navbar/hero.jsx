@@ -7,7 +7,7 @@ function Hero() {
 
 
   return (
-    <div className='relative overflow-hidden sm:min-h-[650px] bg-grey-100 flex justify-center items-center'>
+    <div className='relative md:hidden lg:flex overflow-hidden sm:min-h-[650px] bg-grey-100 flex justify-center items-center'>
       <div className=''></div>
       {/* hero section */}
      

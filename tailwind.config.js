@@ -9,6 +9,10 @@ export default {
 
   theme: {
     extend: {
+      fontFamily:{
+        about:["Edu VIC WA NT Beginner","cursive"]
+
+      },
       keyframes: {
         typing: {
           '0%': { width: '0%',opacity:0 },

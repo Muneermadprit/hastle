@@ -12,6 +12,8 @@ import ScrollableContainer from './components/Navbar/hovertestmobile';
 import AnimatedContainermob from './components/Navbar/hovertestmobile';
 import Blog from './components/Navbar/blog';
 import ContactSection from './components/Navbar/contact';
+import Training from './components/Navbar/trainingcourosal';
+
 
 function Homepage() {
   return (
@@ -23,6 +25,7 @@ function Homepage() {
       <Prodect />
       <Topproducts />
       <Banner />
+      <Training/>
       <Blog />
       <Subscription />
       <Testimonial />
