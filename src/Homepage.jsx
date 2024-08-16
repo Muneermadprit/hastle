@@ -17,7 +17,7 @@ import Training from './components/Navbar/trainingcourosal';
 
 function Homepage() {
   return (
-    <>
+    < div className='overflow-hidden' >
       <Navbar />
       <Hero />
       <AnimatedContainer />
@@ -31,7 +31,7 @@ function Homepage() {
       <Testimonial />
       <ContactSection />
       <Footer />
-    </>
+    </div>
   );
 }
 

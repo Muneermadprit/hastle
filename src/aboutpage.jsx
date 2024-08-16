@@ -183,7 +183,7 @@ function About() {
 
       
         {/* Additional Content */}
-        <div className='sm:mt-[300px]'>
+        <div className='sm:mt-[300px] xl:mt-10'>
           <h1 className='text-center text-sm sm:text-[40px] font-bold text-[#800080] sm:mb-10 mb-5'>
             Why choose Holistics?
           </h1>

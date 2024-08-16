@@ -1,17 +1,15 @@
 const express = require('express');
 const cors = require('cors');
-const path = require('path'); 
 const bodyParser = require('body-parser');
 const multer = require('multer');
-const { getStorage, ref, uploadBytes, getDownloadURL, listAll } = require('firebase/storage');
+const { getStorage, ref, uploadBytes, getDownloadURL } = require('firebase/storage');
 const admin = require('firebase-admin');
-
+const { getFirestore, doc, getDoc, updateDoc, collection, query, where, getDocs } = require('firebase/firestore'); // Add missing imports
 
 const userRoutes = require('./routes/studentsroutes');
-const { addContacts, getContacts, addCareers, getCareers } = require('./controllers');
+const { addContacts, getContacts, addCareers, getCareers, addSubscribers, getSubscribers, addquery, getquery } = require('./controllers');
 
 const app = express();
-
 
 const serviceAccount = {
   type: process.env.FIREBASE_TYPE,
@@ -32,6 +30,7 @@ admin.initializeApp({
 });
 
 const storage = getStorage();
+const db = getFirestore(); // Initialize Firestore
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -39,108 +38,76 @@ app.use(bodyParser.json());
 // Set up multer to store files in memory
 const upload = multer({ storage: multer.memoryStorage() });
 
-// Endpoint to handle image uploads for food items
-app.post('/students/upload-file', upload.single("file"), (req, res) => {
-  const { foodid, resturentid } = req.body;
+// Resume file upload code
+app.post('/careers/upload-file', upload.single("file"), async (req, res) => {
+  const { email } = req.body;
 
-  if (!foodid || !resturentid || !req.file) {
-    return res.status(400).send('Food ID, restaurant ID, and file are required');
+  if (!email || !req.file) {
+    return res.status(400).send('Email and file are required');
   }
 
-  const fileExtension = req.file.originalname.split('.').pop(); // Get file extension
-  const newFileName = `${resturentid}${foodid}.${fileExtension}`; // Create new file name with foodid and extension
-  const storageRef = ref(storage, `restaurants/${newFileName}`); // Reference to the new file name
-
-  uploadBytes(storageRef, req.file.buffer)
-    .then((snapshot) => {
-      console.log('File uploaded');
-      return getDownloadURL(storageRef);
-    })
-    .then((url) => {
-      console.log('File available at', url);
-      res.send({ message: 'File uploaded successfully', url });
-    })
-    .catch((error) => {
-      console.error('Error uploading file:', error);
-      res.status(500).send('Error uploading file');
-    });
-});
-
-
-
-
-// Authentication middleware setup
-const auth = admin.auth();
-app.post('/signin', async (req, res) => {
-  const { email, password } = req.body;
-
   try {
-    // Authenticate user with email and password using Firebase Admin SDK
-    const userRecord = await admin.auth().getUserByEmail(email);
-        console.log(userRecord)
-    // Check if the password matches (dummy check for demo purposes)
-    // In a real application, you should use Firebase Authentication's built-in functionality to authenticate users properly.
-    if (userRecord.email === email ) {
-      // User authenticated successfully
-      res.status(200).json({ message: 'User signed in successfully', uid: userRecord.uid });
+    // Get file extension
+    const fileExtension = req.file.originalname.split('.').pop(); 
+    
+    // Create new file name using the email
+    const newFileName = `${email}.${fileExtension}`; 
+    
+    // Reference to the new file in the 'resume' folder
+    const storageRef = ref(storage, `resume/${newFileName}`); 
+    
+    // Upload the file to Firebase Storage
+    await uploadBytes(storageRef, req.file.buffer);
+    console.log('File uploaded');
+
+    // Get the download URL of the uploaded file
+    const url = await getDownloadURL(storageRef);
+    console.log('File available at', url);
+
+    // Query the collection to find the document with the matching email field
+    const careersRef = collection(db, 'careers');
+    const q = query(careersRef, where('email', '==', email));
+    const querySnapshot = await getDocs(q);
+
+    if (!querySnapshot.empty) {
+      // Assuming there's only one document matching the email
+      const docRef = querySnapshot.docs[0].ref;
+
+      // Update the resume field with the URL
+      await updateDoc(docRef, {
+        resume: url,
+      });
+
+      res.send({ message: 'File uploaded and resume updated successfully', url });
     } else {
-      // Invalid credentials
-      res.status(401).json({ error: 'Unauthorized', message: 'Invalid credentials' });
+      res.status(404).send('Document not found.');
     }
   } catch (error) {
-    // Handle errors
-    console.error('Error signing in:', error);
-    res.status(500).json({ error: 'Internal Server Error', message: error.message });
+    console.error('Error uploading file:', error);
+    res.status(500).send('Error uploading file');
   }
 });
 
-
-
-// Sign-up endpoint
-app.post('/signup', async (req, res) => {
-  const { email, password } = req.body;
-
-  try {
-    // Create user with email and password
-    const userRecord = await auth.createUser({
-      email: email,
-      password: password
-    });
-
-    res.status(201).json({ message: 'User signed up successfully', uid: userRecord.uid });
-  } catch (error) {
-    console.error('Error creating new user:', error);
-    res.status(500).json({ error: 'Failed to create user', message: error.message });
-  }
-});
-
-// Protected resource endpoint
-app.get('/protected-resource', async (req, res) => {
-  const idToken = req.headers.authorization;
-
-  try {
-    // Verify the ID token
-    const decodedToken = await auth.verifyIdToken(idToken);
-    const uid = decodedToken.uid;
-
-    res.status(200).json({ message: 'Access granted for user', uid });
-  } catch (error) {
-    console.error('Error verifying token:', error);
-    res.status(401).json({ error: 'Unauthorized', message: error.message });
-  }
-});
-
-// Routes for managing students
+// Routes for operations on Holistic Services
+// Routes for managing Careers
 app.post('/Careers', addCareers);
 app.get('/Careers', getCareers);
 
-// Routes for managing countries
+
+// Routes for managing Contacts
 app.post('/Contacts', addContacts);
 app.get('/Contacts', getContacts);
 
+// Routes for managing subscribers
+app.post('/Subscribers', addSubscribers);
+app.get('/Subscribers', getSubscribers);
 
+// Routes for managing queries
+app.post('/Queries', addquery);
+app.get('/Queries',  getquery);
 
-// Start server
+// Additional routes and server setup...
+
 const PORT = process.env.PORT || 8082;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

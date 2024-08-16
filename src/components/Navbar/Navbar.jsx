@@ -49,7 +49,7 @@ const Navbar = () => {
                         <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[115px] transition-all duration-500"></div>
                         {isServicesOpen && (
                             <div className="absolute left-0 mt-2 w-48 bg-[#800080] shadow-md rounded-md py-2 z-50">
-                                <Link to='/hastle/service1' className='block px-4 py-2 text-white text-[15px] hover:bg-white hover:text-primary'>Daily Support/Visiting Care Services</Link>
+                                <Link to='/hastle/service1' className='block px-4 py-2 text-white text-[15px] hover:bg-white hover:text-[#800080]'>Daily Support/Visiting Care Services</Link>
                                 <Link to='/hastle/service2' className='block px-4 py-2 text-white text-[15px] hover:bg-white hover:text-[#800080]'>Staying Active & Engaged</Link>
                                 <Link to='/hastle/service3' className='block px-4 py-2 text-white text-[15px] hover:bg-gray-200 hover:text-[#800080]'>Live-in Care</Link>
                                 <Link to='/hastle/service4' className='block px-4 py-2 text-white text-[15px] hover:bg-gray-200 hover:text-[#800080]'>Specialised Care</Link>

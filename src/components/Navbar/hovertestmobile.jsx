@@ -3,7 +3,7 @@ import demo from '../../assets/heromob.mp4';
 
 const AnimatedContainermob = () => {
   const [style, setStyle] = useState({
-    width: '100%',
+    width: '90%',
     height: '600px',
     borderRadius: '0%',
     transform: 'translateY(0px)', // Initial position
