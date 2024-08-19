@@ -160,7 +160,7 @@ function Servicespage() {
        
        
       </div>
-      <div className='w-full xl:h-[300px] grid grid-cols-2 lg:grid-cols-4 '>
+      <div className='w-full xl:h-[300px] grid grid-cols-2 xl:grid-cols-4 xl:px'>
   <div className='xl:w-[300px] xl:h-[250px] bg-white xl:ml-5 xl:mt-5 shadow-bulge'>
     <img src={pngimage} className='w-40 h-40 mx-auto' />
     <h1 className='text-[20px] text-[#800080] font-bold text-center'>Caring</h1>
