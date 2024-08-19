@@ -8,6 +8,7 @@ import axios from 'axios';
 function Dashbord() {
   const [queries, setQueries] = useState([]);
   const [careers, setCareers] = useState([]);
+  const [subscribers, setSubscribers] = useState([]);
   const [notificationVisible, setNotificationVisible] = useState(true);
 
   useEffect(() => {
@@ -27,6 +28,16 @@ function Dashbord() {
         console.error("There was an error fetching the careers!", error);
       });
 
+      
+    axios.get('http://localhost:8082/subscribers/')
+    .then((response) => {
+      setSubscribers(response.data);
+    })
+    .catch((error) => {
+      console.error("There was an error fetching the careers!", error);
+    });
+
+
   }, []);
 
   return (
@@ -39,12 +50,12 @@ function Dashbord() {
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col overflow-y-auto">
         <Contentheader />
-       <div></div>
-        {/* Notification Modal */}
-        { queries.length > 0 && (
-          <div className=" inset-0 flex items-center justify-center bg-opacity-50 relative mr-[500px] mb-10 mt-10">
-            <div className="bg-white text-black p-6 rounded-lg shadow-lg max-w-2xl w-full h-[40vh] overflow-y-auto">
-              <div className="flex justify-between items-center mb-4">
+       <div className='grid xl:grid-cols-2 w-[full] '>
+         {/* Notification Modal */}
+         { queries.length > 0 && (
+          <div className=" inset-0 flex items-center  justify-center bg-opacity-50 relative mb-10 mt-10">
+            <div className="bg-white text-black p-6 rounded-lg shadow-lg max-w-2xl w-[80%] h-[40vh] overflow-y-auto">
+              <div className="flex justify-between items-center mb-4  ">
                 <h2 className="text-xl font-semibold">Customer Queries</h2>
                 <button 
                   onClick={() => setNotificationVisible(false)} 
@@ -68,6 +79,39 @@ function Dashbord() {
           </div>
         )}
 
+
+        {/* subscriberslst */}
+          {/* Notification Modal */}
+          { subscribers.length > 0 && (
+          <div className=" inset-0 flex items-center justify-center bg-opacity-50 relative  mb-10 mt-10">
+            <div className="bg-white text-black p-6 rounded-lg shadow-lg max-w-2xl w-[80%] h-[40vh] overflow-y-auto">
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-xl font-semibold">Customer Queries</h2>
+                <button 
+                  onClick={() => setNotificationVisible(false)} 
+                  className="text-gray-600 hover:text-gray-900 "
+                >
+                </button>
+              </div>
+              
+              <div className='space-y-4'>
+                {subscribers.map((query, index) => (
+                  <div 
+                    key={index} 
+                    className='bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-sm  max-w-2xlw-full h-[40vh]'
+                  >
+                    <p className='font-semibold'>{query.name}</p>
+                    
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+
+       </div>
+       
         {/* Careers Section */}
         <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 p-4'>
           {careers.length > 0 ? (

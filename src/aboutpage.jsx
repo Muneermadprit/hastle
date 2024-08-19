@@ -212,7 +212,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className='sm:relative  absolute w-full max-w-[800px] mx-auto lg:absolute lg:ml-[340px] mt-10 bg-white shadow-bulge text-center font-thin-bold text-[#800080] p-4'>
+      <div className='sm:relative  absolute w-full max-w-[800px] mx-auto lg:absolute lg:ml-[340px] xl:ml-[100px]mt-10 bg-white shadow-bulge text-center font-thin-bold text-[#800080] p-4'>
   <p className='mt-4 text-lg sm:text-[21px]'>Stay Up to Date with Holistic Care Services</p>
   <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
     <input
