@@ -199,7 +199,7 @@ function Servicespage() {
 </div>
 
       <div className='w-full xl:h-[400px] grid lg:grid-cols-3 mt-10'>
-      <div className='xl:w-[445px] xl:h-[250px] bg-white xl:ml-1 xl:mt-5  border-solid border-black rounded-xl border-[0px] '>
+      <div className='xl:w-[400px] xl:h-[250px] bg-white xl:ml-1 xl:mt-5  border-solid border-black rounded-xl border-[0px] '>
       <h1 className='text-[20px] text-[#800080] font-bold text-center mr-10
           '>Nutrition and Hydration
           
@@ -207,7 +207,7 @@ function Servicespage() {
           </h1>
           <div className='grid grid-cols-2 w-full  '>
   <img src={servicelist4} className='xl:h-[150px] h-[120px] object-cover w-full  mt-5 shadow-sm *:' />
-  <p className='font-thin text-balance text-[12px] xl:text-[14px] w-full mt-5 xl:px-4 pl-5 pb-2 '>
+  <p className='font-thin text-balance text-[12px] xl:text-[12px] w-full mt-5 xl:px-6 pl-5 pb-2 '>
   Led by Dr. Kunbi Taiwo, our team understands the importance of good nutrition and hydration. We assist with meal planning and preparation to ensure our clients receive balanced and healthy meals
   </p>
 </div>
@@ -215,7 +215,7 @@ function Servicespage() {
 
 
       </div>
-      <div className='xl:w-[440px] xl:h-[250px] bg-white xl:ml-2 mt-5   border-solid border-black rounded-xl border-[0px] '>
+      <div className='xl:w-[400px] xl:h-[250px] bg-white xl:ml-2 mt-5   border-solid border-black rounded-xl border-[0px] '>
       <h1 className='text-[20px] text-[#800080] font-bold text-center
           '>Overnight Care
           
@@ -229,7 +229,7 @@ function Servicespage() {
 </div>
       </div>
 
-      <div className='xl:w-[440px] xl:h-[250px] bg-white xl:ml-2 mt-5   border-solid border-black rounded-xl border-[0px] '>
+      <div className='xl:w-[400px] xl:h-[250px] bg-white xl:ml-2 mt-5   border-solid border-black rounded-xl border-[0px] '>
       <h1 className='text-[20px] text-[#800080] font-bold text-center mb-4
           '>Respite Care
           
