@@ -117,7 +117,7 @@ function About() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="w-full sm:w-[80%] mx-auto lg:p-10 mt-10 lg:mr-[170px] xl:ml-[400px] bg-primary grid grid-cols-1 sm:grid-cols-1 gap-6">
+        <div className="w-full sm:w-[80%] xl:w-[85%] mx-auto lg:p-10 mt-10 lg:mr-[170px] xl:mr-[150px] bg-primary grid grid-cols-1 sm:grid-cols-1 gap-6">
   <div className="p-4 sm:p-6">
     <p className="text-[4vw] sm:text-[45px] text-center text-[#800080]" data-aos="fade-up">
       Experience the Holistic Difference
