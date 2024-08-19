@@ -117,7 +117,7 @@ function About() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="w-full sm:w-[80%] mx-auto lg:p-10 mt-10 lg:mr-[170px] bg-primary grid grid-cols-1 sm:grid-cols-1 gap-6">
+        <div className="w-full sm:w-[80%] mx-auto lg:p-10 mt-10 lg:mr-[170px] xl:ml-[100px] bg-primary grid grid-cols-1 sm:grid-cols-1 gap-6">
   <div className="p-4 sm:p-6">
     <p className="text-[4vw] sm:text-[45px] text-center text-[#800080]" data-aos="fade-up">
       Experience the Holistic Difference
@@ -212,7 +212,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className='sm:relative  absolute w-full max-w-[800px] mx-auto lg:absolute lg:ml-[340px] xl:ml-[100px]mt-10 bg-white shadow-bulge text-center font-thin-bold text-[#800080] p-4'>
+      <div className='sm:relative  absolute w-full max-w-[800px] mx-auto lg:absolute lg:ml-[340px] xl:ml-[80px]mt-10 bg-white shadow-bulge text-center font-thin-bold text-[#800080] p-4'>
   <p className='mt-4 text-lg sm:text-[21px]'>Stay Up to Date with Holistic Care Services</p>
   <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
     <input
