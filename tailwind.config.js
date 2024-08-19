@@ -14,6 +14,10 @@ export default {
 
       },
       keyframes: {
+        rotate: {
+          "0%": { transform: "rotate(0deg) scale(10)" },
+          "100%": { transform: "rotate(-360deg) scale(10)" },
+        },
         typing: {
           '0%': { width: '0%',opacity:0 },
           '50%': { width: '100%', opacity:1},
@@ -39,6 +43,7 @@ export default {
         typing: 'typing 4s steps(20) infinite, blink .75s step-end infinite',
         fade: 'fadeIn 3000 ease-in-out infinite',
         drawBorder: 'drawBorder 3s ease forwards',
+         rotate: "rotate 10s linear infinite",
       },
       boxShadow: {
         'bulge': '0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 10px rgba(0, 0, 0, 0.3)',

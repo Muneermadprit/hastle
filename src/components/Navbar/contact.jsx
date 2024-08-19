@@ -3,6 +3,7 @@ import { MdOutlinePhoneForwarded } from "react-icons/md";
 import { MdOutgoingMail } from "react-icons/md";
 import { BsFillSendFill } from "react-icons/bs";
 import contactimage from '../../assets/contact.png'
+import axios from 'axios';
 
 const ContactSection = () => {
   const [fullname ,setFullname] = useState();
@@ -11,9 +12,64 @@ const ContactSection = () => {
   const [city ,setCity] = useState();  
   const [postalcode ,setPostalcode] = useState();
   const [phonenumber ,setPhonenumber] = useState();
-  const [message ,setMessages] = useState();  
+  const [message ,setMessages] = useState();
+  const [errors, setErrors] = useState({});  
 
- 
+
+  const handleValidation = () => {
+    const newErrors = {};
+
+    if (!fullname) newErrors.fullname = true;
+    if (!street) newErrors.street = true;
+    if (!city) newErrors.city = true;
+    if (!postalcode) newErrors.postcode = true;
+    if (!phonenumber) newErrors.phoneNumber = true;
+    if (!email) newErrors.email = true;
+    if (!message) newErrors.message = true;
+
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const submits = async ()=>{
+    
+    if (handleValidation()) {
+      // Handle the form submission
+      const contact = {
+        fullname:fullname,
+        street:street,
+        city:city,
+        postalcode:postalcode,
+        phonenumber:phonenumber,
+        email:email,
+        message:message
+      }
+     
+  
+      try {
+        await axios.post("http://localhost:8082/contacts/", contact);
+        console.log("Success");
+  
+        setFullname("");
+        setStreet("");
+        setCity("");
+        setPostalcode("");
+        setPhonenumber("");
+        setEmail("");
+        setMessages("");
+  
+        alert("contact submitted successfully")
+      } catch (error) {
+        console.error("Error contact submission try  later:", error);
+      }
+  
+    } else {
+      alert('Please fill in all the fields.');
+    }
+   
+   
+  }
 
   return (
     <div className='relative '>
@@ -36,55 +92,81 @@ const ContactSection = () => {
         <div className="rounded-3xl hidden   lg:flex overflow-hidden  w-full h-[400px] relative max-md:h-[200px]"></div>
         <div className='text-center md:text-left max-md:w-full ] lg:absolute lg:ml-[590px]'>
           <h2 className="text-gray-800 text-2xl font-bold  lg:ml-[180px]  max-md:ml-0">CONTACT US</h2>
-          <form className=' '>
+          <form className=' ml-1 '>
             <div className="space-y-4 ">
               <input
                 type="text"
                 placeholder="Full Name"
                 className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-[#800080] outline-none"
-              onChange={(e)=>setFullname(e.target)}/>
-              <input
-                type="text"
-                placeholder="Street"
-                className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-[#800080] outline-none"
-              />
+                onChange={(e) => {
+                  setFullname(e.target.value);
+                  setErrors((prev) => ({ ...prev, fullname: false }));
+                }}/>
+            <input
+  type="text"
+  placeholder="Street"
+  className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-[#800080] outline-none"
+  onChange={(e) => {
+    setStreet(e.target.value);
+    setErrors((prev) => ({ ...prev, street: false }));
+  }}
+/>
+
               <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
                 <input
                   type="text"
                   placeholder="City"
                   className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-[#800080] outline-none"
-                />
+                  onChange={(e) => {
+                    setCity(e.target.value);
+                    setErrors((prev) => ({ ...prev, city: false }));
+                  }}/>
                 <input
                   type="text"
                   placeholder="Postcode"
                   className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-[#800080] outline-none"
-                />
+                  onChange={(e) => {
+                    setPostalcode(e.target.value);
+                    setErrors((prev) => ({ ...prev, postcode: false }));
+                  }} />
               </div>
               <input
                 type="number"
                 placeholder="Phone No."
                 className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-[#800080] outline-none"
-              />
+                onChange={(e) => {
+                  setPhonenumber(e.target.value);
+                  setErrors((prev) => ({ ...prev, phoneNumber: false }));
+                }}/>
               <input
                 type="email"
                 placeholder="Email"
                 className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-[#800080] outline-none"
-              />
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  setErrors((prev) => ({ ...prev, email: false }));
+                }}/>
               <div>
               <textarea
                 placeholder="Write Message"
                 className="px-2 pt-3  z-20 lg:absolute mb-10  w-full text-gray-800 text-sm border-b border-gray-300 focus:border-[#800080] outline-none"
-              />              </div>
+                onChange={(e) => {
+                  setMessages(e.target.value);
+                  setErrors((prev) => ({ ...prev, message: false }));
+                }}/>              </div>
              
             </div>
 
             <button
               type="button"
               className="mt-8 lg:mt-20 lg:absolute lg:z-10 hover:text-[#800080] hover:border-[#800080] border-solid border-[2px] flex items-center justify-center text-sm w-full rounded-md px-6 py-3 bg-[#800080] hover:bg-white text-white"
-            ><BsFillSendFill className='mr-5 hover:text-[#800080] '  />
+            onClick={()=>{
+              submits()
+            }} ><BsFillSendFill className='mr-5 hover:text-[#800080] '  />
               Send Message
             </button>
           </form>
+
 
           <ul className="lg:mt-[150px] lg:ml-10 flex flex-wrap justify-center md:justify-start gap-6 ">
             <li className="flex items-center text-black">

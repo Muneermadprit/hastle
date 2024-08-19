@@ -7,7 +7,7 @@ const admin = require('firebase-admin');
 const { getFirestore, doc, getDoc, updateDoc, collection, query, where, getDocs } = require('firebase/firestore'); // Add missing imports
 
 const userRoutes = require('./routes/studentsroutes');
-const { addContacts, getContacts, addCareers, getCareers, addSubscribers, getSubscribers, addquery, getquery } = require('./controllers');
+const { addContacts, getContacts, addCareers, getCareers, addSubscribers, getSubscribers, addquery, getquery,updateAdmin,getAdmin} = require('./controllers');
 
 const app = express();
 
@@ -105,6 +105,9 @@ app.get('/Subscribers', getSubscribers);
 // Routes for managing queries
 app.post('/Queries', addquery);
 app.get('/Queries',  getquery);
+
+app.put('/admin',  updateAdmin);
+app.get('/admin',  getAdmin);
 
 // Additional routes and server setup...
 
