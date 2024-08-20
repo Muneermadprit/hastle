@@ -86,17 +86,17 @@ const ContactSection = () => {
       <img 
         src={contactimage} 
         className='
-  w-[700px] 
-  xl:ml-[95px] 
-  lg:ml-[95px] 
-  ml-4 
-  xl:h-[730px] 
-  lg:absolute 
-  mr-60 
-  max-md:w-full 
-  max-md:h-auto 
-  max-md:relative'
-
+        w-[700px] 
+        xl:ml-[95px] 
+        lg:ml-[95px] 
+        ml-4 
+        xl:h-[730px] 
+        lg:absolute 
+        mr-60 
+        max-md:w-full 
+        max-md:h-auto 
+        max-md:relative 
+        max-md:ml-0'
       
       />
 
