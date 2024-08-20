@@ -58,7 +58,7 @@ function About() {
 </div>
 
 <div
-  className="relative sm:w-[90%] md:w-[80%]   mx-auto flex justify-center items-center transition-all duration-500 bg-cover bg-no-repeat sm:ml-[150px]"
+  className="relative sm:w-[90%] md:w-[80%]   mx-auto flex justify-center items-center transition-all duration-500 bg-cover bg-no-repeat "
   style={{
     height: '480px',
     backgroundImage: `url(${image1})`,
@@ -91,7 +91,7 @@ function About() {
       {/* Main content section */}
       <div className="relative z-20 w-[90%] sm:w-[100%] mx-auto text-black p-4">
         {/* Mission Statement Section */}
-        <div className="sm:w-[70%]  md:w-[80%]   sm:ml-80 sm:h-[200px] lg:h-[300px] lg:ml-[130px] md:h-[400px]  bg-gray-100 md:ml-[100px]  shadow-xl sm:rounded-2xl mb-10 grid sm:grid-cols-2">
+        <div className="sm:w-[70%]  md:w-[82%]   sm:ml-80 sm:h-[200px] lg:h-[300px] lg:mx-auto md:h-[400px]  bg-gray-100 md:ml-[100px]  shadow-xl sm:rounded-2xl mb-10 grid sm:grid-cols-2">
           <div className="p-6 sm:p-5">
             <p className="font-light text-[5vw] sm:text-[40px] md:text[20px] text-[#800080]" data-aos="fade-up">Mission Statement</p>
             <p className="font-sans text-[4vw] md-text-[8vw] sm:text-[16px] text-balance">
@@ -106,7 +106,7 @@ function About() {
         </div>
 
         {/* Another Mission Statement Section */}
-        <div className="sm:w-[70%] lg:h-[300px] lg:ml-[130px] md:w-[80%] md:ml-[100px] md:h-[400px]  bg-gray-200 sm:h-[300px] shadow-2xl sm:ml-[200px] grid sm:grid-cols-2">
+        <div className="sm:w-[70%]  md:w-[82%] lg:h-[300px] lg:mx-auto  md:mx-auto md:h-[400px]  bg-gray-200 sm:h-[300px] shadow-2xl sm:ml-[200px] grid sm:grid-cols-2">
           <img src={aboutimg2} className="w-full h-[300px] object-cover" alt="Descriptive Alt Text" />
           <div className="p-6 sm:p-5">
             <p className="font-thin text-[5vw] sm:text-[40px] text-[#800080]" data-aos="fade-up">Vision Statement</p>
@@ -117,7 +117,7 @@ function About() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="w-full sm:w-[80%] xl:w-[80%] mx-auto lg:p-10 mt-10 lg:mr-[170px] xl:mr-[155px] bg-primary grid grid-cols-1 sm:grid-cols-1 gap-6">
+        <div className="w-full sm:w-[80%] xl:w-[82%] mx-auto lg:p-10 mt-10 lg:mx-auto xl:mx-auto  bg-primary grid grid-cols-1 sm:grid-cols-1 gap-6">
   <div className="p-4 sm:p-6">
     <p className="text-[4vw] sm:text-[45px] text-center text-[#800080]" data-aos="fade-up">
       Experience the Holistic Difference
@@ -134,7 +134,7 @@ function About() {
 
 
         {/* Video Section with Overlay */}
-        <div className="sm:w-[83%] md:ml-[65px] lg:ml-[110px]  sm:ml-[130px] mt-[100px]  sm:mt-10 sm:h-[400px]  grid sm:grid-cols-1">
+        <div className="sm:w-[82%] md:ml-[65px] lg:mx-auto  sm:ml-[130px] mt-[100px]  sm:mt-10 sm:h-[400px]  grid sm:grid-cols-1">
           <div className="relative p-6 sm:p-5 md:p-0">
             <video
               className="object-cover w-full h-[480px]  transition-all duration-500"
