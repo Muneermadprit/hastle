@@ -212,27 +212,21 @@ function About() {
           </div>
         </div>
       </div>
-     
-      <div className='sm:relative    absolute   overflow-hidden w-[94%] max-w-[800px] mx-auto ml-2 lg:absolute xl:mx-auto xl:ml-[350px] block mt-10 bg-white shadow-bulge text-center font-thin-bold text-[#800080] p-4'>
-  <p className='mt-4 text-lg sm:text-[21px]'>Stay Up to Date with Holistic Care Services</p>
-  <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
-    <input
-      data-aos='fade-up'
-      type='text'
-      placeholder='Enter your E-mail'
-      className='w-full sm:w-[500px] text-[15px] text-blue h-[40px] p-3 rounded-full border border-black focus:outline-none focus:ring-2 focus:ring-primary placeholder-black'
-    />
-    <button data-aos='fade-up' className='mt-4 sm:mt-0 text-[18px] p-2 w-full sm:w-[200px] hover:bg-gray-400 rounded-xl bg-[#800080] text-white'>
-      Subscribe
-    </button>
-  </div>
-  <p className='text-xs sm:text-base text-black mt-4'>
-    Compassionate care is just a call away - let us support you or your loved one today
-    <a href="#" className="text-base underline ml-2">Contact us</a>
-  </p>
-</div>
+      <div class="bg-gradient-to-r from-primary  to-primary py-20 px-6 relative font-[sans-serif]">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-white text-4xl font-extrabold">Subscribe to Our Newsletter</h2>
+        <div class="my-6">
+          <p class="text-base text-gray-200">Subscribe to our newsletter and stay up to date with the latest news, updates, and exclusive offers. Get valuable insights. Join our community today!</p>
+        </div>
 
-<div className='w-full  sm:h-[300px] h-[400px]  bg-primary mt-10'></div>
+        <div class="max-w-2xl left-0 right-0 mx-auto w-full bg-white p-5 flex items-center shadow-lg absolute -bottom-10">
+          <input type="email" placeholder="Enter your email" class="w-full bg-gray-50 py-3.5 px-4 text-gray-800 text-base focus:outline-none" />
+          <button class="bg-[#a91079] hover:bg-[#a91079e2] text-white text-base font-semibold tracking-wide py-3.5 px-6 focus:outline-none">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
 
       {/* Footer Component */}
       <Footer />

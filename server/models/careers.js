@@ -1,6 +1,6 @@
 class careers {
-    constructor(id,name, email,expeiences,phonenumber,message,resume) {
-        this.id = id;
+    constructor(name, email,expeiences,phonenumber,message,resume) {
+        
         this.name = name;
         this.email = email;
         this.experiences = expeiences,

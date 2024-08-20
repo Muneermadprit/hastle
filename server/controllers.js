@@ -35,7 +35,7 @@ const getCareers = async (req, res) => {
                     careers.email,
                     careers.experiences,
                     careers.phonenumber,
-                    careers.messages,
+                    careers.message,
                     careers.resume
                 );
                 careerArray.push(career);
@@ -71,9 +71,13 @@ const getContacts = async (req, res) => {
             contactSnapshot.forEach(doc => {
                 const contact = doc.data();
                 const contacts = new Contacts(
-                    contact.name,
+                    contact.fullname,
                     contact.email,
-                    contact.messages
+                    contact.phonenumber,
+                    contact.street,
+                    contact.city,
+                    contact.postcode,
+                    contact.message
                 );
                 contactArray.push(contacts);
             });

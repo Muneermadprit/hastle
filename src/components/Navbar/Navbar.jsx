@@ -74,7 +74,7 @@ const Navbar = () => {
                             CAREERS
                             <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[70px] transition-all duration-500"></div>
                         </Link>
-                        <Link to='/hastle/blogs' className='font-bold text-[#800080] text-[17px] group'>
+                        <Link to='/hastle/blog' className='font-bold text-[#800080] text-[17px] group'>
                             BLOGS
                             <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[50px] transition-all duration-500"></div>
                         </Link>
@@ -123,7 +123,7 @@ const Navbar = () => {
                             </div>
                         )}
                         <Link to='/hastle/careers' className='block py-2 text-[#800080] text-[17px] font-bold'>CAREERS</Link>
-                        <Link to='/hastle/blogs' className='block py-2 text-[#800080] text-[17px] font-bold'>BLOGS</Link>
+                        <Link to='/hastle/blog' className='block py-2 text-[#800080] text-[17px] font-bold'>BLOGS</Link>
                         <Link to='/hastle/contact' className='block py-2 text-[#800080] text-[17px] font-bold'>CONTACT US</Link>
                     </div>
                 )}
