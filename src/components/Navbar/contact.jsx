@@ -85,7 +85,19 @@ const ContactSection = () => {
 
       <img 
         src={contactimage} 
-        className='w-[700px]  md:ml-[0px]  xl:ml-[95px] lg-ml-[95px]   xl:h-[730px] lg:absolute ml-[20px] mr-60 max-md:w-full max-md:h-auto max-md:relative' 
+        className='
+  w-[700px] 
+  xl:ml-[95px] 
+  lg:ml-[95px] 
+  ml-4 
+  xl:h-[730px] 
+  lg:absolute 
+  mr-60 
+  max-md:w-full 
+  max-md:h-auto 
+  max-md:relative'
+
+      
       />
 
       <div className="grid lg:grid-cols-2 lg:gap-16 md:grid-cols-1  items-center lg:mb-10 lg:h-[600px] overflow-hidden pr-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-w-6xl mx-auto sm:mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:h-full  max-md:before:hidden max-md:pr-0 max-md:shadow-none max-md:mx-4 max-md:h-auto max-md:gap-8">
