@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import testimoniallogo from '../../assets/testimoniallogo.png'
+import testimoniallogo from '../../assets/testimoniallogo.png';
 
-// Updated testimonials data with images and space
 const testimonials = [
   {
     id: 1,
@@ -40,7 +39,6 @@ const testimonials = [
   },
 ];
 
-// Number of testimonials to show per page
 const ITEMS_PER_PAGE = 3;
 
 const TestimonialCarousel = () => {
@@ -62,7 +60,6 @@ const TestimonialCarousel = () => {
     );
   };
 
-  // Slice the testimonials array to get the current page of testimonials
   const visibleTestimonials = testimonials.slice(
     currentIndex,
     currentIndex + ITEMS_PER_PAGE
@@ -70,50 +67,52 @@ const TestimonialCarousel = () => {
 
   return (
     <>
-    <div className='text-center max-w-[600px] mx-auto'>
-          <img src={testimoniallogo} className='ml-10' alt='Testimonial Logo' />
-          <p className='text-sm text-primary'>What our customers are saying</p>
-          <h1 className='text-3xl font-bold'>Testimonial</h1>
-          <p className='text-xs text-gray-400'>Good products have more qualities</p>
-        </div>
-
-    <div className="relative max-w-6xl mx-auto p-4">
-
-      <div className="relative overflow-hidden">
-        <div className="flex transition-transform duration-500 ease-in-out">
-          {visibleTestimonials.map((testimonial) => (
-            <div key={testimonial.id} className="flex-none w-full lg:w-1/3 p-4">
-              <blockquote className="bg-white p-6 rounded-lg shadow-lg">
-                <img
-                  src={testimonial.img}
-                  alt={`Testimonial from ${testimonial.name}`}
-                  className="w-16 h-16 rounded-full mx-auto mb-4"
-                />
-                <p className="text-[10px] lg:text-[12px] italic">{testimonial.text}</p>
-                <footer className="mt-4 text-right font-bold text-sm lg:text-base">
-                  – {testimonial.name}
-                </footer>
-              </blockquote>
-              {testimonial.space}
-            </div>
-          ))}
-        </div>
-        <button
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-gray-800 p-2 rounded-full"
-          onClick={prevSlide}
-        >
-          &lt;
-        </button>
-        <button
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-gray-800 p-2 rounded-full"
-          onClick={nextSlide}
-        >
-          &gt;
-        </button>
+      <div className='text-center max-w-[600px] mx-auto '>
+        <img src={testimoniallogo} className='ml-10' alt='Testimonial Logo' />
+        <p className='text-sm text-primary'>What our customers are saying</p>
+        <h1 className='text-3xl font-bold'>Testimonial</h1>
+        <p className='text-xs text-gray-400'>Good products have more qualities</p>
       </div>
-    </div>
+
+      <div className="relative max-w-6xl mx-auto p-4  xl:mb-10 xl:pb-10">
+        <div className="relative overflow-hidden mb-[20px]">
+          <div className="flex transition-transform duration-500 ease-in-out">
+            {visibleTestimonials.map((testimonial) => (
+              <div key={testimonial.id} className="flex-none w-full lg:w-1/3 p-4">
+                <blockquote className="bg-white p-6 rounded-lg shadow-lg">
+                  <img
+                    src={testimonial.img}
+                    alt={`Testimonial from ${testimonial.name}`}
+                    className="w-16 h-16 rounded-full mx-auto mb-4"
+                  />
+                  <p className="text-[10px] lg:text-[12px] italic">{testimonial.text}</p>
+                  <footer className="mt-4 text-right font-bold text-sm lg:text-base">
+                    – {testimonial.name}
+                  </footer>
+                </blockquote>
+                {testimonial.space}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="absolute inset-x-0 bottom-0 flex justify-center items-center space-x-4 mt-8">
+          <button
+            className="text-white bg-gray-800 p-4 rounded-full transform transition-transform duration-300 hover:scale-110"
+            onClick={prevSlide}
+          >
+            &lt;
+          </button>
+          <button
+            className="text-white bg-gray-800 p-4 rounded-full transform transition-transform duration-300 hover:scale-110"
+            onClick={nextSlide}
+          >
+            &gt;
+          </button>
+        </div>
+      </div>
     </>
   );
 };
 
 export default TestimonialCarousel;
+

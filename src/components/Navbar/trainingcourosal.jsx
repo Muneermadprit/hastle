@@ -92,8 +92,8 @@ function Training() {
                     {/* Header section */}
                     <div className='text-center max-w-[600px] mx-auto'>
                         <p className='text-sm text-primary'></p>
-                        <h1 className='text-3xl mb-10 font-bold'>Training </h1>
-                        <p className='text-xs text-gray-400'>In the hands of skilled caregivers, every elderly person finds a world of compassion and understanding.</p>
+                        <h1 className='text-3xl mb-4 font-bold'>Training </h1>
+                        <p className='text-[20px] text-gray-400  '>In the hands of skilled caregivers, every elderly person finds a world of compassion and understanding.</p>
                     </div>
                     <div>
                         {/* Testimonial card */}

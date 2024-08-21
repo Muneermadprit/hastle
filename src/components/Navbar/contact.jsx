@@ -104,8 +104,8 @@ const ContactSection = () => {
   />
 </div>
 
-        <div className='text-center md:text-left max-md:w-full ] lg:absolute lg:ml-[590px] md:mr-10 bg-red-500'>
-          <h2 className="text-gray-800 text-2xl font-bold  lg:ml-[180px]  max-md:ml-0  md:mb-10 md:text-center">CONTACT US</h2>
+        <div className='text-center md:text-left max-md:w-full ] lg:absolute lg:ml-[590px] md:mr-10 '>
+          <h2 className="text-gray-800 text-2xl font-bold  lg:ml-[180px]  max-md:ml-0  md:mb-10 ">CONTACT US</h2>
           <form className=' ml-1 '>
             <div className="space-y-4 ">
               <input

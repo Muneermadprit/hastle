@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import image1 from './assets/aboutus.jpeg';
 import image2 from './assets/aboutpagemob.jpeg';
 import image3 from './assets/blog1.jpeg';
+import abouthero from'./assets/abouthero.jpg'
 import aboutimg2 from './assets/aboutimage2new.jpeg'
 import whyimage1 from './assets/charity.png';
 import whyimage2 from './assets/family.png';
@@ -52,8 +53,8 @@ function About() {
     At Holistic Care Services, we believe in creating a world where our clients flourish. 
     Led by the visionary GP Dr. Kunbi Taiwo and Tola Taiwo, our team of compassionate and 
     highly trained care professionals provides personalized care that goes beyond mere assistance. 
-    Our mission is to <span className="font-medium">celebrate each triumph, big or small, and remind 
-    our clients that aging is not about limitations but embracing life's possibilities</span>
+    Our mission is to celebrate each triumph, big or small, and remind 
+    our clients that aging is not about limitations but embracing life's possibilities
   </p>
 </div>
 
@@ -159,7 +160,7 @@ function About() {
         </div>
         <div className="w-full h-auto sm:mt-40 grid sm:grid-cols-1 gap-4 px-4">
   <div className="w-full h-full">
-    <h1 className="text-[#800080] text-center text-[10px] sm:text-[30px] mb-2 font-thin">
+    <h1 className="text-[#800080] text-center text-[10px] sm:text-[30px] xl:text-[40px] mb-2 font-thin">
       A Gentle Touch for a Golden Age
     </h1>
     <p className="text-center text-[10px] sm:text-base sm:px-10">
@@ -168,7 +169,7 @@ function About() {
   </div>
 
   <div className="w-full h-full">
-    <h1 className="text-[#800080] text-center text-[10px] sm:text-[30px] font-thin">
+    <h1 className="text-[#800080] text-center text-[10px] sm:text-[30px] xl:text-[40px] font-thin">
       Championing Your Independence
     </h1>
     <p className="text-center text-[10px] sm:text-base sm:px-10">
@@ -189,14 +190,14 @@ function About() {
           </h1>
           <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 sm:w-full sm:px-20 px-5'>
             <div className='flex flex-col items-center text-center sm:text-[25px] text-[15px] font-bold text-gray-500'>
-              <img src={whyimage1} className='w-40 h-40 mb-4'/>
+              <img src={whyimage2} className='w-40 h-40 mb-4'/>
              <p className='text-[#800080]'>We are different</p> 
               <p className='text-sm font-normal p-4 '>
               Our award-winning team is not just about providing care; it's about creating a family atmosphere. Our care professionals are carefully chosen for their warmth, compassion, and dedication. They will become a trusted friend, someone to chat with, share stories with, and even help with those little things that make a big difference
               </p>
             </div>
             <div className='flex flex-col items-center text-center sm:text-[25px] text-[15px] font-bold text-gray-500'>
-              <img src={whyimage2} className='w-40 h-40 mb-4'/>
+              <img src={whyimage1} className='w-40 h-40 mb-4'/>
               <p className='text-[#800080]'>Warm Hands, Kind Hearts</p>
               <p className='text-sm font-normal p-4'>
               We listen to your needs and create a care plan that is unique to you, adapting as your needs change. They will treat you with dignity and become trusted companions, ready to help with daily tasks or simply share a conversation
