@@ -20,6 +20,7 @@ import Testimonial from './components/Navbar/testimonial'
 import pngimage from './assets/caring.png'
 import pngimage2 from './assets/supportive.png'
 import pngimage3 from './assets/proffessional.png'
+import heroservices from './assets/serviceheroimages.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
