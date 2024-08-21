@@ -81,10 +81,10 @@ const AnimatedContainer = () => {
               <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-purple-500 text-[10px] sm:text-[12px] md:text-[16px] lg:text-[20px]  ">Schedule a Free Consultation</span>
             </button>
           </div>
-          <div className={`md:w-full mx-10 md:h-[400px] mt-[800px]  ${textClass}`}>
-             <div className='sm:mt-[300px] xl:mt-10'>
+          <div className={`md:w-full mx-10 md:h-[400px]  mt-[800px] hidden    ${textClass}`}>
+             <div className='sm:mt-[300px] xl:mt-10 '>
         
-          <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 sm:w-full sm:px-20 px-5'>
+          <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 sm:w-full sm:px-20 px-5 '>
             <div className='flex flex-col items-center text-center sm:text-[25px] text-[15px] font-bold text-gray-500'>
               <img src={whyimage1} className='w-40 h-40 mb-4'/>
              <p className='text-[#800080] '>We are different</p> 
@@ -92,7 +92,7 @@ const AnimatedContainer = () => {
               Our award-winning team is not just about providing care; it's about creating a family atmosphere. Our care professionals are carefully chosen for their warmth, compassion, and dedication. They will become a trusted friend, someone to chat with, share stories with, and even help with those little things that make a big difference
               </p>
             </div>
-            <div className='flex flex-col items-center text-center sm:text-[25px] text-[15px] font-bold text-gray-500'>
+            <div className='flex flex-col items-center text-center  sm:text-[25px] text-[15px] font-bold text-gray-500'>
               <img src={whyimage2} className='w-40 h-40 mb-4'/>
               <p className='text-[#800080]'>Warm Hands, Kind Hearts</p>
               <p className='text-sm font-normal p-4'>
