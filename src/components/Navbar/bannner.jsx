@@ -20,12 +20,12 @@ function Banner() {
           
            
           </div>
-          <div className='sm:hidden  sm:h-[500px] md:h-[200px] h-[300px] '>
+          <div className='sm:hidden  sm:h-[500px] md:h-[200px]  h-[300px]  '>
 
           <img
               src={banner1}
               alt='Banner'
-              className='bg-white sm:w-[300px] w-[200px] md:w-[50px]  md:h-[50px] sm:h-[300px] drop-shadow-md object-cover absolute sm:mt-[200px] mt-[150px] md:mt-0    'data-aos='flip-right'
+              className='bg-white sm:w-[300px] w-[200px] md:w-[50px]  md:h-[50px]  md:hidden sm:h-[300px] drop-shadow-md object-cover absolute sm:mt-[200px] mt-[150px] md:mt-0    'data-aos='flip-right'
             />
           <img
               src={banner2}
@@ -38,21 +38,21 @@ function Banner() {
           <img
               src={banner1}
               alt='Banner'
-              className='bg-white sm:w-[300px] md:w-[200px] w-[100px] sm:h-[300px] drop-shadow-md object-cover absolute sm:mt-[200px]   sm:block hidden 'data-aos='flip-left'
+              className='bg-white  sm:w-[300px] md:hidden w-[100px] sm:h-[300px] drop-shadow-md object-cover absolute sm:mt-[200px]    sm:block hidden 'data-aos='flip-left'
             />
           <img
               src={banner2}
               alt='Banner'
-              className='bg-white sm:w-[300px] w-[100px] sm:h-[300px] drop-shadow-md object-cover absolute sm:ml-[200px] z-20 border-solid border-[#800080] border-[10px] sm:block hidden ' data-aos="zoom-in-up"
+              className='bg-white sm:w-[300px] w-[100px] sm:h-[300px] drop-shadow-md object-cover absolute sm:ml-[200px] z-20 border-solid border-[#800080] border-[10px] md:w-[200px] sm:block hidden ' data-aos="zoom-in-up"
             />
           <img
               src={banner3}
               alt='Banner'
-              className='bg-white sm:w-[300px]  w-[100px] sm:h-[300px] drop-shadow-md object-cover absolute ml-[400px] mb-[400px]  z-10 hidden sm:block' data-aos='flip-left'
+              className='bg-white sm:w-[300px]  w-[100px] sm:h-[300px] drop-shadow-md object-cover absolute xl:ml-[400px] mb-[400px]  z-10 hidden sm:block md:w-[200px]' data-aos='flip-left'
             />
             
           {/* Text detail section */}
-          <div className='text-center sm:text-left sm:w-[500px] sm:ml-40' data-aos="fade-left" >
+          <div className='text-center sm:text-left sm:w-[500px] md:w-[400px] sm:ml-40' data-aos="fade-left" >
             <h1 className='text-3xl font-bold mb-4'> Your loved ones deserve the best in their golden years—a place where care feels like home</h1>
             <p className='text-lg mb-6'>
             we provide a warm, welcoming environment where your loved ones can enjoy their golden years with dignity and respect. Our dedicated team offers round-the-clock care, ensuring all residents receive the attention and support they need. With a range of activities to keep the mind and body active, along with delicious, nutritious meals, we strive to create a home-like atmosphere that fosters companionship and joy. Whether it's for short-term respite care or a long-term stay, our facility is a place where comfort, care, and community come together to make every day meaningful."

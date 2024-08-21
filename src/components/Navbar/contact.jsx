@@ -86,8 +86,8 @@ const ContactSection = () => {
 
     
 
-      <div className="grid lg:grid-cols-2 lg:gap-16 md:grid-cols-1  items-center lg:mb-10 lg:h-[600px] overflow-hidden pr-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-w-6xl mx-auto sm:mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:h-full  max-md:before:hidden max-md:pr-0 max-md:shadow-none max-md:mx-4 max-md:h-auto max-md:gap-8">
-      <div className="rounded-3xl lg:flex overflow-hidden  h-[800px] relative">
+      <div className="grid lg:grid-cols-2 lg:gap-16 md:grid-cols-1  h-[300px]  items-center lg:mb-10 lg:h-[600px] overflow-hidden pr-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-w-6xl mx-auto sm:mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:h-full  max-md:before:hidden max-md:pr-0 max-md:shadow-none max-md:mx-4 max-md:h-auto max-md:gap-8">
+      <div className="rounded-3xl lg:flex overflow-hidden h-[300px] x:lh-[800px] md:h-[800px] relative">
   <img 
     src={contactimage} 
     className="
@@ -104,8 +104,8 @@ const ContactSection = () => {
   />
 </div>
 
-        <div className='text-center md:text-left max-md:w-full ] lg:absolute lg:ml-[590px]'>
-          <h2 className="text-gray-800 text-2xl font-bold  lg:ml-[180px]  max-md:ml-0">CONTACT US</h2>
+        <div className='text-center md:text-left max-md:w-full ] lg:absolute lg:ml-[590px] md:mr-10 bg-red-500'>
+          <h2 className="text-gray-800 text-2xl font-bold  lg:ml-[180px]  max-md:ml-0  md:mb-10 md:text-center">CONTACT US</h2>
           <form className=' ml-1 '>
             <div className="space-y-4 ">
               <input
