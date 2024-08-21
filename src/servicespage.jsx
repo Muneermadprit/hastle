@@ -20,7 +20,7 @@ import Testimonial from './components/Navbar/testimonial'
 import pngimage from './assets/caring.png'
 import pngimage2 from './assets/supportive.png'
 import pngimage3 from './assets/proffessional.png'
-import heroservices from './assets/serviceheroimages.jpeg'
+import heroservices from './assets/serviceimagescare.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -133,7 +133,7 @@ function Servicespage() {
 
       <div className='relative'>
   <div className='mt-20 relative'>
-    <img src={mainhero} className='h-[600px] xl:w-[100%] md:flex lg:flex hidden xl:flex' />
+    <img src={heroservices} className='h-[600px] xl:w-[100%] md:flex lg:flex hidden xl:flex' />
     <img src={servicesmain} className='h-[500px] flex xl:hidden xl:w-[70%] md:hidden xl:ml-60' />
   </div>
   <div className="absolute inset-0 flex flex-col justify-center items-center z-50 mt-[420px] text-white">
@@ -159,7 +159,7 @@ function Servicespage() {
       </div>
       <div ><h1 className='text-center  text-[30px] text-[#800080] xl:mt-10 '>Daily Support/Visiting Care Services</h1>
       <p className='text-center mb-10'>offers a variety of customized visiting care services tailored to provide our clients and their families with the right choices and more possibilities while ensuring they oversee their care</p></div>
-      <div className='xl:w-[100%] h-auto xl:h-[1700px] bg-gray-300/20 mb-10 ml-10 shadow-xl'>
+      <div className='xl:w-[100%] h-auto xl:h-[1700px] lg-[1700px] bg-gray-300/20 mb-10 ml-10 shadow-xl'>
       <div className='w-full xl:h-[400px]  grid lg:grid-cols-3  mb-10 '>
         <div className='w-[80%] xl:h-[95%] bg-white rounded-3xl border-solid border-[0px] border-black  ml-10  mt-10'>
           <img src={overnightcare} className='xl:h-[300px] object-fill h-[200px] w-full  xl:w-full  rounded-t-3xl shadow-sm'/>
@@ -182,29 +182,29 @@ function Servicespage() {
        
        
       </div>
-      <div className='w-full  xl:px-0  '>
+      <div className='w-full xl:px-0'>
   <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-5 xl:gap-6 xl:w-[100%] mx-auto xl:mt-40 xl:mb-20'>
-    <div className=' flex flex-col items-center '>
-      <img src={pngimage} className='w-50 xl:h-[450px] w-50  xl:mt-[28px] ' alt='Caring' />
+    <div className='flex flex-col items-center'>
+      <img src={pngimage} className='w-[100%] xl:h-[450px] sm:w-[70%] md:w-[80%] xl:mt-[28px]' alt='Caring' />
       <h1 className='text-[16px] sm:text-[18px] md:text-[20px] text-[#800080] font-bold text-center mt-2'>
         Caring
       </h1>
     </div>
-    <div className=' p-4 flex flex-col items-center mt-5'>
-      <img src={pngimage2} className='w-50 h-50' alt='Supportive' />
+    <div className='flex flex-col items-center'>
+      <img src={pngimage2} className='w-[100%] xl:h-[450px] sm:w-[70%] md:w-[80%] xl:mt-[28px]' alt='Supportive' />
       <h1 className='text-[16px] sm:text-[18px] md:text-[20px] text-[#800080] font-bold text-center mt-2'>
         Supportive
       </h1>
     </div>
-    
-    <div className=' flex flex-col items-center xl:mt-[50px]'>
-      <img src={pngimage3} className='w-30 h-[420px] xl:mt-[8px] w-50' alt='Personalized' />
+    <div className='flex flex-col items-center'>
+      <img src={pngimage3} className='w-[100%] xl:h-[450px] sm:w-[70%] md:w-[80%] xl:mt-[28px]' alt='Personalized' />
       <h1 className='text-[16px] sm:text-[18px] md:text-[20px] text-[#800080] font-bold text-center mt-2'>
         Personalized
       </h1>
     </div>
   </div>
 </div>
+
 
 
 
