@@ -11,10 +11,15 @@ import servicelist3 from './assets/servicelists2.jpeg'
 import servicelist4 from './assets/servicelists3.jpeg'
 import servicelist5 from './assets/servicelisst4.jpeg'
 import servicelist6 from './assets/absnew.jpeg'
+import nutritionimage from './assets/nutritionimage.jpeg'
+import overnightcare from './assets/overnightcare.jpeg'
+import overnights from './assets/overnights.jpeg'
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Navbar/footer';
 import Testimonial from './components/Navbar/testimonial'
 import pngimage from './assets/caring.png'
+import pngimage2 from './assets/supportive.png'
+import pngimage3 from './assets/proffessional.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -130,17 +135,16 @@ function Servicespage() {
     <img src={mainhero} className='h-[600px] xl:w-[100%] md:flex lg:flex hidden xl:flex' />
     <img src={servicesmain} className='h-[500px] flex xl:hidden xl:w-[70%] md:hidden xl:ml-60' />
   </div>
-  <p className='absolute top-0 left-1/4 z-50 text-white mt-[420px] text-center'>
-  <div className="hidden xl:flex text-center">
-        <h1 className="text-6xl text-white mt-10   rounded-full font-thin mb-6 mx-auto text-center ">
-          Our Services
-          <p className="text-lg font-thin mt-10">
-            We provide practical support that enables people to live their best life for as long as possible.
-          </p>
-        </h1>
-      </div>
-  </p>
+  <div className="absolute inset-0 flex flex-col justify-center items-center z-50 mt-[420px] text-white">
+    <h1 className="text-6xl text-white rounded-full font-thin mb-6 text-center">
+      Our Services
+    </h1>
+    <p className="text-lg font-thin text-center">
+      We provide practical support that enables people to live their best life for as long as possible.
+    </p>
+  </div>
 </div>
+
 
       
       <div className=" xl:hidden">
@@ -154,51 +158,46 @@ function Servicespage() {
       </div>
       <div ><h1 className='text-center  text-[30px] text-[#800080] xl:mt-10 '>Daily Support/Visiting Care Services</h1>
       <p className='text-center mb-10'>offers a variety of customized visiting care services tailored to provide our clients and their families with the right choices and more possibilities while ensuring they oversee their care</p></div>
-      <div className='xl:w-[100%] h-auto xl:h-[1500px] bg-gray-300/20 mb-10 ml-10 shadow-xl'>
+      <div className='xl:w-[100%] h-auto xl:h-[1700px] bg-gray-300/20 mb-10 ml-10 shadow-xl'>
       <div className='w-full xl:h-[400px]  grid lg:grid-cols-3  mb-10 '>
         <div className='w-[80%] xl:h-[95%] bg-white rounded-3xl border-solid border-[0px] border-black  ml-10  mt-10'>
-          <img src={servicelist1} className='xl:h-[300px] object-fill h-[200px] w-full bg-red-500 xl:w-full  rounded-t-3xl shadow-sm'/>
+          <img src={overnightcare} className='xl:h-[300px] object-fill h-[200px] w-full  xl:w-full  rounded-t-3xl shadow-sm'/>
           <h1 className='text-[20px] text-[#800080] font-bold text-center
           '>Personal Care</h1>
-          <p className='text-center font-light'>We assist with daily activities like bathing, dressing, and grooming to ensure our clients maintain their dignity and well-being</p>
+          <p className='text-center font-light xl:px-2'>We assist with daily activities like bathing, dressing, and grooming to ensure our clients maintain their dignity and well-being</p>
         </div>
         <div className='w-[80%] xl:h-[95%]  bg-white rounded-3xl border-solid border-[0px] border-black ml-10 mt-10'>
         <img src={servicelist2} className='   xl:h-[300px] object-cover w-full  h-[200px] rounded-t-3xl shadow-sm'/>
           <h1 className='text-[20px] text-[#800080] font-bold text-center
           '>Medication Support</h1>
-          <p className='text-center font-light'>Our caregivers help with medication reminders and administration to ensure our clients take their medications on time and safely</p>
+          <p className='text-center font-light xl:px-2'>Our caregivers help with medication reminders and administration to ensure our clients take their medications on time and safely</p>
         </div>
         <div className='w-[80%] xl:h-[95%]  bg-white rounded-3xl  border-solid border-[0px] border-black   ml-10 mt-10'>
         <img src={servicelist3} className='h-[300px] w-full object-fill  rounded-t-3xl shadow-sm'/>
           <h1 className='text-[20px] text-[#800080] xl-px-10 font-bold text-center
           '>Domestic Assistance/Household Tasks</h1>
-          <p className='text-center font-light xl:px-2'>We provide support with household chores such as cleaning, laundry, and meal preparation to help maintain a clean and comfortable living environment</p>
+          <p className='text-center font-light xl:px-4'>We provide support with household chores such as cleaning, laundry, and meal preparation to help maintain a clean and comfortable living environment</p>
         </div>
        
        
       </div>
-      <div className='w-full px-4 xl:px-0 '>
-  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 xl:gap-6 xl:w-[80%] mx-auto xl:mt-40 xl:mb-20'>
+      <div className='w-full  xl:px-0  '>
+  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-5 xl:gap-6 xl:w-[100%] mx-auto xl:mt-40 xl:mb-20'>
     <div className=' flex flex-col items-center '>
-      <img src={pngimage} className='w-50 h-50 ' alt='Caring' />
+      <img src={pngimage} className='w-50 xl:h-[450px] w-50  xl:mt-[28px] ' alt='Caring' />
       <h1 className='text-[16px] sm:text-[18px] md:text-[20px] text-[#800080] font-bold text-center mt-2'>
         Caring
       </h1>
     </div>
-    <div className='bg-white shadow-bulge p-4 flex flex-col items-center'>
-      <img src={pngimage} className='w-24 h-24' alt='Supportive' />
+    <div className=' p-4 flex flex-col items-center mt-5'>
+      <img src={pngimage2} className='w-50 h-50' alt='Supportive' />
       <h1 className='text-[16px] sm:text-[18px] md:text-[20px] text-[#800080] font-bold text-center mt-2'>
         Supportive
       </h1>
     </div>
-    <div className='bg-white shadow-bulge p-4 flex flex-col items-center'>
-      <img src={pngimage} className='w-24 h-24' alt='Experienced' />
-      <h1 className='text-[16px] sm:text-[18px] md:text-[20px] text-[#800080] font-bold text-center mt-2'>
-        Experienced
-      </h1>
-    </div>
-    <div className='bg-white shadow-bulge p-4 flex flex-col items-center'>
-      <img src={pngimage} className='w-24 h-24' alt='Personalized' />
+    
+    <div className=' flex flex-col items-center xl:mt-[50px]'>
+      <img src={pngimage3} className='w-30 h-[420px] xl:mt-[8px] w-50' alt='Personalized' />
       <h1 className='text-[16px] sm:text-[18px] md:text-[20px] text-[#800080] font-bold text-center mt-2'>
         Personalized
       </h1>
@@ -212,24 +211,24 @@ function Servicespage() {
 <div className='w-full xl:h-[400px] grid gap-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-10'>
   
 <div className='w-[80%] xl:h-[95%] bg-white rounded-3xl border-solid border-[0px] border-black  ml-10  mt-10'>
-          <img src={servicelist4} className='xl:h-[300px] object-fill h-[200px] w-full bg-red-500 xl:w-full  rounded-t-3xl shadow-sm'/>
+          <img src={nutritionimage} className='xl:h-[300px] object-fill h-[200px] w-full bg-red-500 xl:w-full  rounded-t-3xl shadow-sm'/>
           <h1 className='text-[20px] text-[#800080] font-bold text-center
           '>Nutrition and Hydration</h1>
-          <p className='text-center font-light'>Led by Dr. Kunbi Taiwo, our team understands the importance of good nutrition and hydration. We assist with meal planning and preparation to ensure our clients receive balanced and healthy meals.</p>
+          <p className='text-center font-light px-4'>Led by Dr. Kunbi Taiwo, our team understands the importance of good nutrition and hydration. We assist with meal planning and preparation to ensure our clients receive balanced and healthy meals.</p>
         </div>
   
         <div className='w-[80%] xl:h-[95%] bg-white rounded-3xl border-solid border-[0px] border-black  ml-10  mt-10'>
-          <img src={servicelist5} className='xl:h-[300px] object-fill h-[200px] w-full bg-red-500 xl:w-full  rounded-t-3xl shadow-sm'/>
+          <img src={overnights} className='xl:h-[300px] object-fill h-[200px] w-full bg-red-500 xl:w-full  rounded-t-3xl shadow-sm'/>
           <h1 className='text-[20px] text-[#800080] font-bold text-center
           '>Overnight Care</h1>
-          <p className='text-center font-light'>Our team provides support during the night, offering reassurance and assistance to ensure a safe and restful night’s sleep for our clients.</p>
+          <p className='text-center font-light xl:px-4'>Our team provides support during the night, offering reassurance and assistance to ensure a safe and restful night’s sleep for our clients.</p>
         </div>
   
         <div className='w-[80%] xl:h-[95%] bg-white rounded-3xl border-solid border-[0px] border-black  ml-10  mt-10'>
           <img src={servicelist6} className='xl:h-[300px] object-fill h-[200px] w-full bg-red-500 xl:w-full  rounded-t-3xl shadow-sm'/>
           <h1 className='text-[20px] text-[#800080] font-bold text-center
           '>Respite Care</h1>
-          <p className='text-center font-light'>We offer temporary relief for primary caregivers, allowing them to rest and recharge while we take care of their loved ones.</p>
+          <p className='text-center font-light xl:px-4'>We offer temporary relief for primary caregivers, allowing them to rest and recharge while we take care of their loved ones.</p>
         </div>
 
 </div>
