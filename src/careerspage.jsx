@@ -152,7 +152,7 @@ function Careerspage() {
 
  {/* Join Us Banner */}
 <div class="bg-gray-50 mt-20 font-[sans-serif] relative mb-10 max-w-6xl shadow-lg h-[500px] w-full shadow-[#e9d9f3] mx-auto rounded overflow-hidden">
-  <div class="grid sm:grid-cols-2 md:grid-cols-1 gap-6">
+  <div class="grid sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 lg-grid-cols-2 gap-6">
     <div class="text-center p-6 flex flex-col justify-center items-center">
       <h3 class="font-light text-3xl sm:text-4xl md:text-5xl text-[#800080] leading-tight">
         <span class="text-gray-800">Become a Valued Member of Our </span> Team
