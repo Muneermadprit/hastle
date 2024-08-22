@@ -87,7 +87,7 @@ const ContactSection = () => {
     
 
       <div className="grid lg:grid-cols-2  :gap-16 md:grid-cols-1  h-[300px]  items-center lg:mb-10 lg:h-[600px] md:h-[1200px] overflow-hidden pr-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-w-6xl mx-auto sm:mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:h-full  max-md:before:hidden max-md:pr-0 max-md:shadow-none max-md:mx-4 max-md:h-auto max-md:gap-8">
-      <div className="rounded-3xl lg:flex overflow-hidden h-[300px] md:h-[500px] md:ml-10  x:lh-[800px] lg:h-[800px]  relative">
+      <div className="rounded-3xl lg:flex overflow-hidden h-[300px] md:h-[500px] xl:ml-[]  x:lh-[800px] lg:h-[800px]  relative">
   <img 
     src={contactimage} 
     className="
