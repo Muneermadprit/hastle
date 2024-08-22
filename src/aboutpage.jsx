@@ -160,7 +160,7 @@ function About() {
         </div>
         <div className="w-full h-auto sm:mt-40 grid sm:grid-cols-1 gap-4 px-4">
   <div className="w-full h-full">
-    <h1 className="text-[#800080] text-center text-[10px] sm:text-[30px] xl:text-[40px] mb-2 font-thin">
+    <h1 className="text-[#800080] text-center text-[20px]  sm:text-[30px] xl:text-[40px] mb-2 font-thin">
       A Gentle Touch for a Golden Age
     </h1>
     <p className="text-center text-[10px] sm:text-base sm:px-10">
@@ -169,7 +169,7 @@ function About() {
   </div>
 
   <div className="w-full h-full">
-    <h1 className="text-[#800080] text-center text-[10px] sm:text-[30px] xl:text-[40px] font-thin">
+    <h1 className="text-[#800080] text-center text-[20px]  sm:text-[30px] xl:text-[40px] font-thin">
       Championing Your Independence
     </h1>
     <p className="text-center text-[10px] sm:text-base sm:px-10">
@@ -184,7 +184,7 @@ function About() {
 
       
         {/* Additional Content */}
-        <div className='sm:mt-[300px] xl:mt-10'>
+        <div className='sm:mt-[300px] xl:mt-10 mt-10'>
           <h1 className='text-center text-sm sm:text-[40px] font-bold text-[#800080] sm:mb-10 mb-5'>
             Why choose Holistics?
           </h1>

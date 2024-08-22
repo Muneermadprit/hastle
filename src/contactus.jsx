@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Navbar/footer';
 import ContactSection from './components/Navbar/contact';
 import logo from './assets/logo.jpeg'
+import ContactSectionpage from './components/Navbar/contactpagecomponent';
 
 function ContactUs() {
   return (
@@ -25,15 +26,16 @@ function ContactUs() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             {/* Address Block */}
             <div className="p-6 bg-gray-100 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-              <h3 className="text-2xl font-bold mb-4">Our Address</h3>
-              <p className="text-gray-600 mb-4">1234 Elm Street, Suite 567<br />Springfield, IL 62704</p>
-              <a href="mailto:info@example.com" className="text-blue-500 hover:underline">info@example.com</a>
+              <h3 className="text-2xl font-bold mb-4 ">Our Address</h3>
+              <p className="text-gray-600 mb-4">Holistic Care Services
+             <br /> Unit A4B, 25 Goodlass Rd, Liverpool L24 9HJ, United Kingdom</p>
+              <a href="mailto:info@example.com" className="text-blue-500 hover:underline">office@holistic-careservices.co.uk</a>
             </div>
 
             {/* Phone Block */}
             <div className="p-6 bg-gray-100 rounded-lg shadow-lg transition-transform transform hover:scale-105">
               <h3 className="text-2xl font-bold mb-4">Call Us</h3>
-              <p className="text-gray-600 mb-4">+1 (555) 123-4567<br />+1 (555) 987-6543</p>
+              <p className="text-gray-600 mb-4">+0151 665 0520<br /></p>
               <a href="tel:+15551234567" className="text-blue-500 hover:underline">Call Now</a>
             </div>
 
@@ -197,7 +199,7 @@ function ContactUs() {
       </section>
 
       {/* Contact Form Section */}
-     <ContactSection/>
+     <ContactSectionpage/>
 
       
 
