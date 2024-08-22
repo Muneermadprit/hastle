@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import demo from '../../assets/heromob.mp4';
 
-const AnimatedContainermob = () => {
+const AnimatedContainertab = () => {
   const [style, setStyle] = useState({
     width: '90%',
-    height: '600px',
+    height: '800px',
     borderRadius: '0%',
     transform: 'translateY(0px)', // Initial position
     marginBottom: '0px', // Initial margin-bottom
@@ -20,7 +20,7 @@ const AnimatedContainermob = () => {
 
     // Calculate width, height, transform, and margin-bottom based on scroll progress
     const width = `${100 - progress * 100}%`; // Reduces width to 0%
-    const height = `${600 - progress * 400}px`; // Decrease height at a slower rate (reduced speed)
+    const height = `${800 - progress * 400}px`; // Decrease height at a slower rate (reduced speed)
     const transform = `translateY(${progress * 200}px)`; // Move container down at a slower speed
     const marginBottom = `${progress * 200}px`; // Reduce margin-bottom change for smoother scrolling
 
@@ -52,7 +52,7 @@ const AnimatedContainermob = () => {
 
   return (
     <div
-      className="w-full h-auto flex justify-center items-center bg-gray-200 overflow-hidden sm:flex md:hidden lg:hidden"
+      className="w-full h-auto hidden justify-center items-center bg-gray-200 overflow-hidden  md:flex lg:hidden"
       style={{
         transition: 'transform 0.9s ease-out, margin-bottom 0.9s ease-out', // Smoother and slower transition for container movement and margin
         transform: style.transform, // Apply transform to move the main container
@@ -74,22 +74,22 @@ const AnimatedContainermob = () => {
         >
           <source src={demo} type="video/mp4" />
         </video>
-        <div className='absolute mt-[400px]'>
+        <div className='absolute left-0 top-[400px] ml-4'>
+  <div
+    className={`text-white text-[28px] text-left sm:text-[24px] md:text-[40px] font-bold transition-opacity duration-[0.9s] ease-out ${textClass}`}
+  >
+    Quality Home Care Services<span> in Liverpool</span> <br />
+  </div>
+  <button className={`${textClass} group mt-4 px-6 py-3 w-[180px] md:w-[250px] lg:w-[200px] border border-white bg-purple-500 text-white shadow-2xl transition-all hover:text-purple-500 hover:bg-white rounded-md`}>
+    <span className="font-semibold text-[14px] md:text-[15px] lg:text-[16px]">
+      Schedule <br/> Free Consultation
+    </span>
+  </button>
+</div>
 
-        <div
-          className={`text-white ml-1 text-[28px] sm:text-[24px] md:text-[20px] font-bold transition-opacity duration-[0.9s] ease-out ${textClass}`}
-        >
-          Quality Home Care Services<span className='ml-4'>in Liverpool</span> <br />
-        </div>
-        <button className={`${textClass} group mt-4 px-6 py-3 w-[180px] md:w-[150px] lg:w-[200px] border border-white bg-purple-500 text-white shadow-2xl transition-all hover:text-purple-500 hover:bg-white rounded-md`}>
-            <span className="font-semibold text-[14px] md:text-[12px] lg:text-[16px]">
-              Schedule <br/> Free Consultation
-            </span>
-          </button>
-        </div>
       </div>
     </div>
   );
 };
 
-export default AnimatedContainermob;
+export default AnimatedContainertab;

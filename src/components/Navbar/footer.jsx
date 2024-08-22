@@ -3,7 +3,7 @@ import Logo from '../../assets/foterlogo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-50 text-center text-surface/75 dark:bg-[#800080] dark:text-white/75 lg:text-left">
+    <footer className="bg-zinc-50 text-center text-surface/75 dark:bg-[#800080] dark:text-white/75 lg:text-left ">
       <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
         <div className="me-12 hidden lg:block">
           <span>Get connected with us on social networks:</span>

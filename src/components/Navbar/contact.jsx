@@ -73,10 +73,10 @@ const ContactSection = () => {
 
   return (
     <div className='relative '>
-      <div className='w-[80%] h-[500px] b ml-[150px] max-md:w-full max-md:h-[300px] max-md:ml-0'>
+      <div className='w-[80%] h-[500px]   md:mx-0 max-md:w-full max-md:h-[300px] '>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.410717585168!2d-2.8721811!3d53.3538041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ae196e48c384f%3A0x4d450bcfb457f810!2sHolistic%20Care%20Services!5e0!3m2!1sen!2sin!4v1723283657434!5m2!1sen!2sin"
-          className="absolute top-0 left-0 w-[80%] h-[500px] border-0 ml-[150px] max-md:w-full max-md:h-[300px] max-md:ml-0"
+          className="absolute top-0 left-0 w-[80%] h-[500px] border-0 xl:ml-[150px] md:ml-[80px] max-md:w-full max-md:h-[300px] max-md:ml-0"
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
@@ -86,8 +86,8 @@ const ContactSection = () => {
 
     
 
-      <div className="grid lg:grid-cols-2 lg:gap-16 md:grid-cols-1  h-[300px]  items-center lg:mb-10 lg:h-[600px] overflow-hidden pr-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-w-6xl mx-auto sm:mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:h-full  max-md:before:hidden max-md:pr-0 max-md:shadow-none max-md:mx-4 max-md:h-auto max-md:gap-8">
-      <div className="rounded-3xl lg:flex overflow-hidden h-[300px] x:lh-[800px] md:h-[800px] relative">
+      <div className="grid lg:grid-cols-2  :gap-16 md:grid-cols-1  h-[300px]  items-center lg:mb-10 lg:h-[600px] md:h-[1200px] overflow-hidden pr-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-w-6xl mx-auto sm:mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:h-full  max-md:before:hidden max-md:pr-0 max-md:shadow-none max-md:mx-4 max-md:h-auto max-md:gap-8">
+      <div className="rounded-3xl lg:flex overflow-hidden h-[300px] md:h-[500px] md:ml-10  x:lh-[800px] lg:h-[800px]  relative">
   <img 
     src={contactimage} 
     className="
@@ -104,7 +104,7 @@ const ContactSection = () => {
   />
 </div>
 
-        <div className='text-center md:text-left max-md:w-full ] lg:absolute lg:ml-[590px] md:mr-10 '>
+        <div className='text-center  md:ml-20 lg:text-left max-md:w-full  lg:absolute  lg:ml-[590px] md:mr-10 '>
           <h2 className="text-gray-800 text-2xl font-bold  lg:ml-[180px]  max-md:ml-0  md:mb-1  xl:mt-10 ">CONTACT US</h2>
           <form className=' ml-1 '>
             <div className="space-y-4 ">
@@ -182,7 +182,7 @@ const ContactSection = () => {
           </form>
 
 
-          <ul className="lg:mt-[150px] lg:ml-10 flex flex-wrap justify-center md:justify-start gap-6 ">
+          <ul className="lg:mt-[150px]  md:ml-20 lg:ml-10 flex flex-wrap justify-center md:justify-start gap-6 ">
             <li className="flex items-center text-black">
               <MdOutgoingMail />
               <a href="javascript:void(0)" className="text-sm ml-4">

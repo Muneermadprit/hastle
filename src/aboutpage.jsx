@@ -92,7 +92,7 @@ function About() {
       {/* Main content section */}
       <div className="relative z-20 w-[90%] sm:w-[100%] mx-auto text-black p-4">
         {/* Mission Statement Section */}
-        <div className="sm:w-[70%]  md:w-[82%]   sm:ml-80 sm:h-[200px] lg:h-[300px] lg:mx-auto md:h-[400px]  bg-gray-100 md:ml-[100px]  shadow-xl sm:rounded-2xl mb-10 grid sm:grid-cols-2">
+        <div className="sm:w-[70%]  md:w-[82%]   sm:ml-80 sm:h-[200px] lg:h-[300px] lg:mx-auto md:h-[450px]  bg-gray-100 md:ml-[75px]  shadow-xl sm:rounded-2xl mb-10 grid sm:grid-cols-2">
           <div className="p-6 sm:p-5">
             <p className="font-light text-[5vw] sm:text-[40px] md:text[20px] text-[#800080]" data-aos="fade-up">Mission Statement</p>
             <p className="font-sans text-[4vw] md-text-[8vw] sm:text-[16px] text-balance">
@@ -107,7 +107,7 @@ function About() {
         </div>
 
         {/* Another Mission Statement Section */}
-        <div className="sm:w-[70%]  md:w-[82%] lg:h-[300px] lg:mx-auto  md:mx-auto md:h-[400px]  bg-gray-200 sm:h-[300px] shadow-2xl sm:ml-[200px] grid sm:grid-cols-2">
+        <div className="sm:w-[70%]  md:w-[82%] lg:h-[300px] lg:mx-auto  md:mx-auto md:h-[450px]  bg-gray-200 sm:h-[300px] shadow-2xl sm:ml-[200px]  grid sm:grid-cols-2">
           <img src={aboutimg2} className="w-full h-[300px] object-cover" alt="Descriptive Alt Text" />
           <div className="p-6 sm:p-5">
             <p className="font-thin text-[5vw] sm:text-[40px] text-[#800080]" data-aos="fade-up">Vision Statement</p>
