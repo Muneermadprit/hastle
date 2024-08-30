@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import image1 from '../../assets/image1.jpeg'
@@ -13,7 +14,7 @@ function Topproducts() {
         {
             id:1,
             src:image1,
-            tittle:'Personal Care',
+            tittle:'Visiting Services',
             Description: "Assistance with daily activities like bathing, dressing, and grooming."
            
         },
@@ -61,7 +62,11 @@ function Topproducts() {
         {/* Body section */}
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 hover:text-white  md:gap-10 place-items-center  '>
         {topprodect.map((data, index) => (
-  <div
+          
+          
+          
+    <Link to={`/hastle/service${index + 1}`}>
+ <div
     key={data.id}
     data-aos={index % 2 === 0 ? 'zoom-left' : 'zoom-right'}
     data-aos-delay='300'
@@ -78,6 +83,7 @@ function Topproducts() {
     <p className=' p-2 rounded-xl text-center hover:text-white group-hover:text-[white] text-black' >{data.Description}</p>
    
   </div>
+  </Link>
 ))}
 
 </div>

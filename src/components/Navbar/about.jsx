@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 
 import about from '../../assets/aboutimg.jpeg';
 
@@ -40,9 +40,11 @@ function Product() {
 
         {/* body section */}
         <div className='w-full text-center mb-10'>
+          <Link to='/hastle/about'>
           <button className="text-red px-30 mx-auto sm:rounded-xl rounded-2xl mb-10 hover:before:bg-red border-red-500 relative h-[30px] overflow-hidden border border-[#800080] bg-white px-3 text-[#800080] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#800080] before:transition-all before:duration-500 hover:text-white hover:shadow-[#800080] hover:before:left-0 hover:before:w-full">
             <span className="relative z-10 text-[20px] ">Learn More</span>
           </button>
+          </Link>
           <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 place-items-center gap-5'>
             {/* card section */}
             {productData.map((data) => (
