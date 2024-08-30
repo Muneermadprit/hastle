@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState,forwardRef } from 'react';
 import { MdOutlinePhoneForwarded } from "react-icons/md";
 import { MdOutgoingMail } from "react-icons/md";
 import { BsFillSendFill } from "react-icons/bs";
 import contactimage from '../../assets/contact.png'
 import axios from 'axios';
 
-const ContactSection = () => {
+const ContactSection = forwardRef((props, ref) => {
   const [fullname ,setFullname] = useState();
   const [email ,setEmail] = useState();
   const [street ,setStreet] = useState();
@@ -72,7 +72,7 @@ const ContactSection = () => {
   }
 
   return (
-    <div className='relative  mt-10'>
+    <div className='relative  mt-10' >
       <div className='w-[80%] h-[500px]   md:mx-0 max-md:w-full max-md:h-[300px] '>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.410717585168!2d-2.8721811!3d53.3538041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ae196e48c384f%3A0x4d450bcfb457f810!2sHolistic%20Care%20Services!5e0!3m2!1sen!2sin!4v1723283657434!5m2!1sen!2sin"
@@ -86,7 +86,7 @@ const ContactSection = () => {
 
     
 
-      <div className="grid lg:grid-cols-2  :gap-16 md:grid-cols-1  h-[300px]  items-center lg:mb-10 lg:h-[600px] md:h-[1200px] overflow-hidden pr-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-w-6xl mx-auto sm:mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:h-full  max-md:before:hidden max-md:pr-0 max-md:shadow-none max-md:mx-4 max-md:h-auto max-md:gap-8">
+      <div className="grid lg:grid-cols-2  :gap-16 md:grid-cols-1  h-[300px]  items-center lg:mb-10 lg:h-[600px] md:h-[1200px] overflow-hidden pr-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] max-w-6xl mx-auto sm:mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:h-full  max-md:before:hidden max-md:pr-0 max-md:shadow-none max-md:mx-4 max-md:h-auto max-md:gap-8"  ref={ref}>
       <div className="rounded-3xl lg:flex overflow-hidden h-[300px] md:h-[500px] xl:ml-[]  x:lh-[800px] lg:h-[800px]  relative">
   <img 
     src={contactimage} 
@@ -200,6 +200,6 @@ const ContactSection = () => {
       </div>
     </div>
   );
-};
+})
 
 export default ContactSection;

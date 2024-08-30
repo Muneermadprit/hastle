@@ -4,7 +4,7 @@ import whyimage1 from '../../assets/charity.png';
 import whyimage2 from '../../assets/family.png';
 import whyimage3 from '../../assets/friends.png';
 
-const AnimatedContainer = () => {
+const AnimatedContainer = ({ onScrollToSubscription }) => {
   const [style, setStyle] = useState({
     width: '100%',
     height: '1400px',
@@ -77,7 +77,7 @@ const AnimatedContainer = () => {
               Quality Home Care Services in Liverpool<br />
             </div>
             <span className={`ml-[65px] text-[14px] sm:text-[18px] md:text-[22px] lg:text-[26px] leading-tight text-white ${textClass}`}>Personalized, Compassionate Care for Your Loved Ones</span><br />
-            <button className={`group relative min-h-[30px] p-6 w-[100px] sm:w-[150px] md:w-[200px] lg:w-[300px] overflow-hidden border border-white bg-[#800080] text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-white before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-white after:duration-500 hover:text-purple-500 hover:bg-white hover:before:h-full hover:after:h-full rounded-xl ml-[2px] md:ml-[20px] lg:ml-[70px] mt-10 px-20 ${textClass}`}>
+            <button  onClick={onScrollToSubscription} className={`group relative min-h-[30px] p-6 w-[100px] sm:w-[150px] md:w-[200px] lg:w-[300px] overflow-hidden border border-white bg-[#800080] text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-white before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-white after:duration-500 hover:text-purple-500 hover:bg-white hover:before:h-full hover:after:h-full rounded-xl ml-[2px] md:ml-[20px] lg:ml-[70px] mt-10 px-20 ${textClass}`}>
               <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-purple-500 text-[10px] sm:text-[12px] md:text-[16px] lg:text-[20px]  ">Schedule a Free Consultation</span>
             </button>
           </div>

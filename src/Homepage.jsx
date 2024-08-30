@@ -17,6 +17,7 @@ import AnimatedContainerTab from './components/Navbar/hoveresttablets';
 
 function Homepage() {
   const subscriptionRef = useRef(null);
+  const contactRef = useRef(null);
 
   const handleScrollToSubscription = () => {
    
@@ -25,12 +26,19 @@ function Homepage() {
     }
   };
 
+  const handleScrollToContact = () => {
+   
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='overflow-hidden'>
       <Navbar onScrollToSubscription={handleScrollToSubscription} />
       <Hero />
-      <AnimatedContainer />
-      <AnimatedContainerMob />
+      <AnimatedContainer onScrollToSubscription={handleScrollToContact} />
+      <AnimatedContainerMob  />
       <AnimatedContainerTab />
       <Product />
       <TopProducts />
@@ -39,7 +47,7 @@ function Homepage() {
       <Blog />
       <Subscription ref={subscriptionRef} />
       <Testimonial />
-      <ContactSection />
+      <ContactSection  ref={contactRef} />
       <Footer />
     </div>
   );
