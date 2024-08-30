@@ -29,7 +29,7 @@ function Blog() {
       </div>
       <div className="my-6">
         <h3 className="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:group-hover:text-[#800080]">
-        Tips for Choosing the Right Home Care Provider
+        Caring for the Elderly: A Comprehensive Guide
         </h3>
         <p className="mt-5 text-gray-600 dark:text-neutral-400">
        
@@ -52,7 +52,7 @@ function Blog() {
       </div>
       <div className="my-6">
         <h3 className="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:group-hover:text-[#800080]">
-        Understanding the Benefits of Home Care"
+        Understanding the Benefits of Home Care
         </h3>
         <p className="mt-5 text-gray-600 dark:text-neutral-400">
        
