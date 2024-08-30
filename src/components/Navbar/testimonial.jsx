@@ -95,9 +95,9 @@ const Testimonial = () => {
             ))}
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 flex justify-center items-center space-x-4 mb-10 xl:mb-0 ">
+        <div className="absolute inset-x-0 bottom-0 flex justify-center items-center space-x-4  xl:mb-0    ">
           <button
-            className="text-white bg-gray-800 p-4 rounded-full transform transition-transform duration-300 hover:scale-110"
+            className="text-white bg-gray-800 p-4 rounded-full transform transition-transform duration-300 hover:scale-110 "
             onClick={prevSlide}
           >
             &lt;

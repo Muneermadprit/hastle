@@ -16,6 +16,10 @@ import AnimatedContainerMob from './components/Navbar/HoverTestMobile';
 import AnimatedContainerTab from './components/Navbar/hoveresttablets';
 
 function Homepage() {
+
+
+
+
   const subscriptionRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -38,7 +42,7 @@ function Homepage() {
       <Navbar onScrollToSubscription={handleScrollToSubscription} />
       <Hero />
       <AnimatedContainer onScrollToSubscription={handleScrollToContact} />
-      <AnimatedContainerMob  />
+      <AnimatedContainerMob  onScrollToSubscription={handleScrollToContact}  />
       <AnimatedContainerTab />
       <Product />
       <TopProducts />

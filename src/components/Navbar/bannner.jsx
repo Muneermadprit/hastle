@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import banner1 from '../../assets/banner1.png';
+import { Link } from 'react-router-dom';
 import banner2 from '../../assets/banner2.png';
 import banner3 from '../../assets/banner3.png';
 import AOS from 'aos';
@@ -55,11 +56,13 @@ function Banner() {
           <div className='text-center sm:text-left sm:w-[500px] md:w-[300px] lg:w-[400px] xl:w-[500px] sm:ml-40' data-aos="fade-left" >
             <h1 className='text-3xl font-bold mb-4'> Your loved ones deserve the best in their golden years—a place where care feels like home</h1>
             <p className='text-lg mb-6'>
-            we provide a warm, welcoming environment where your loved ones can enjoy their golden years with dignity and respect. Our dedicated team offers round-the-clock care, ensuring all residents receive the attention and support they need. With a range of activities to keep the mind and body active, along with delicious, nutritious meals, we strive to create a home-like atmosphere that fosters companionship and joy. Whether it's for short-term respite care or a long-term stay, our facility is a place where comfort, care, and community come together to make every day meaningful."
+            We provide a warm, welcoming environment where your loved ones can enjoy their golden years with dignity and respect. Our dedicated team offers round-the-clock care, ensuring all residents receive the attention and support they need. With a range of activities to keep the mind and body active, along with delicious, nutritious meals, we strive to create a home-like atmosphere that fosters companionship and joy. Whether it's for short-term respite care or a long-term stay, our facility is a place where comfort, care, and community come together to make every day meaningful.
             </p>
+            <Link to='/hastle/about'>
             <button className='bg-[#800080] text-white py-2 px-4 rounded hover:bg-primary-dark transition duration-300'>
               Learn More
             </button>
+            </Link>
           </div>
         </div>
       </div>

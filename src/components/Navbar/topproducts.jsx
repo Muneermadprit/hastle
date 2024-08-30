@@ -75,7 +75,7 @@ function Topproducts() {
       alt={`Product ${data.id}`} 
     />
     <p className=' font-bold text-[20px] group-hover:text-[white]  text-[#800080] rounded-xl mb-2 mt-2  '>{data.tittle}</p>
-    <p className=' p-2 rounded-xl text-center hover:text-white' >{data.Description}</p>
+    <p className=' p-2 rounded-xl text-center hover:text-white group-hover:text-[white] text-black' >{data.Description}</p>
    
   </div>
 ))}
