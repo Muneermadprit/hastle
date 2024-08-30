@@ -1,6 +1,7 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 import blog1 from '../../assets/blog1.jpeg'
 import blog2 from '../../assets/blog2.jpeg'
 import blog3 from '../../assets/blog3.jpeg'
@@ -22,7 +23,7 @@ function Blog() {
      data-aos-easing="ease-in-sine" >
    
     
-   <a className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl p-5 dark:border-[#800080] dark:hover:border-transparent dark:hover:shadow-black/40 dark:focus:border-transparent dark:focus:shadow-black/40" href="#">
+   <Link to='/hastle/blogcontent1' className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl p-5 dark:border-[#800080] dark:hover:border-transparent dark:hover:shadow-black/40 dark:focus:border-transparent dark:focus:shadow-black/40" href="#">
       <div className="aspect-w-16 aspect-h-11">
         <img className="w-full object-cover rounded-xl" src={blog1} alt="Blog Image"/>
       </div>
@@ -34,18 +35,18 @@ function Blog() {
        
         Learn how to find the best care for your loved one
         </p>
-        <a href='#' className='text-[#800080] '>Learn more</a>
+        <Link to='/hastle/blogcontent1'  className='text-[#800080] '>Learn more</Link>
       </div>
       <div className="mt-auto flex items-center gap-x-3">
-        <img className="size-8 rounded-full" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"/>
+       
         <div>
           <h5 className="text-sm text-gray-800 dark:text-neutral-200">By Aaron Larsson</h5>
         </div>
       </div>
-    </a>
+    </Link>
   
    
-    <a className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl p-5 dark:border-[#800080] dark:hover:border-transparent dark:hover:shadow-black/40 dark:focus:border-transparent dark:focus:shadow-black/40" href="#">
+    <Link to='/hastle/blogcontent2' className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl p-5 dark:border-[#800080] dark:hover:border-transparent dark:hover:shadow-black/40 dark:focus:border-transparent dark:focus:shadow-black/40" href="#">
       <div className="aspect-w-16 aspect-h-11">
         <img className="w-full object-cover rounded-xl" src={blog2} alt="Blog Image"/>
       </div>
@@ -57,17 +58,17 @@ function Blog() {
        
         Discover how home care can improve quality of life
         </p>
-        <a href='#' className='text-[#800080] '>Learn more</a>
+        <Link to='/hastle/blogcontent2' className='text-[#800080] '>Learn more</Link>
       </div>
       <div className="mt-auto flex items-center gap-x-3">
-        <img className="size-8 rounded-full" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"/>
+      
         <div>
           <h5 className="text-sm text-gray-800 dark:text-neutral-200">By Aaron Larsson</h5>
         </div>
       </div>
-    </a>
+    </Link>
   
-    <a className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl p-5 dark:border-[#800080] dark:hover:border-transparent dark:hover:shadow-black/40 dark:focus:border-transparent dark:focus:shadow-black/40" href="#">
+    <Link to='/hastle/blogcontent3' className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl p-5 dark:border-[#800080] dark:hover:border-transparent dark:hover:shadow-black/40 dark:focus:border-transparent dark:focus:shadow-black/40" href="#">
       <div className="aspect-w-16 aspect-h-11">
         <img className="w-full object-cover rounded-xl" src={blog3} alt="Blog Image"/>
       </div>
@@ -78,22 +79,22 @@ function Blog() {
         <p className="mt-5 text-gray-600 dark:text-neutral-400">
           An assaignment of weekends
         </p>
-        <a href='#' className='text-[#800080] '>Learn more</a>
+        <Link to='/hastle/blogcontent3' className='text-[#800080] '>Learn more</Link>
       </div>
       <div className="mt-auto flex items-center gap-x-3">
-        <img className="size-8 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"/>
+        
         <div>
           <h5 className="text-sm text-gray-800 dark:text-neutral-200">By Lauren Waller</h5>
         </div>
       </div>
-    </a>
+    </Link>
 
   </div>
 
   <div className="mt-12 text-center">
-    <a className="py-3 px-4 inline-flex items-center gap-x-1 text-sm font-medium rounded-full border border-gray-200 bg-white text-blue-600 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-blue-500 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
+    <Link to='/hastle/blog' className="py-3 px-4 inline-flex items-center gap-x-1 text-sm font-medium rounded-full border border-gray-200 bg-white text-blue-600 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-blue-500 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
       <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-    </a>
+    </Link>
   </div>
 
 </div>

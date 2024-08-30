@@ -72,7 +72,7 @@ const ContactSection = () => {
   }
 
   return (
-    <div className='relative '>
+    <div className='relative  mt-10'>
       <div className='w-[80%] h-[500px]   md:mx-0 max-md:w-full max-md:h-[300px] '>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.410717585168!2d-2.8721811!3d53.3538041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ae196e48c384f%3A0x4d450bcfb457f810!2sHolistic%20Care%20Services!5e0!3m2!1sen!2sin!4v1723283657434!5m2!1sen!2sin"
@@ -182,7 +182,7 @@ const ContactSection = () => {
           </form>
 
 
-          <ul className="lg:mt-[150px]  md:ml-20 lg:ml-10 flex flex-wrap justify-center md:justify-start gap-6 ">
+          <ul className="lg:mt-[150px]  md:ml-20 lg:ml-10 flex flex-wrap justify-center md:justify-start gap-2  mb-5 mt-5">
             <li className="flex items-center text-black">
               <MdOutgoingMail />
               <a href="javascript:void(0)" className="text-sm ml-4">
@@ -191,7 +191,7 @@ const ContactSection = () => {
             </li>
             <li className="flex items-center text-black">
               <MdOutlinePhoneForwarded />
-              <a href="javascript:void(0)" className="text-sm ml-4">
+              <a href="" className="text-sm ml-4 ">
                 <strong>44 123 456 7890</strong>
               </a>
             </li>

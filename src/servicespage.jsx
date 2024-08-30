@@ -16,11 +16,12 @@ import overnightcare from './assets/overnightcare.jpeg'
 import overnights from './assets/overnights.jpeg'
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Navbar/footer';
-import Testimonial from './components/Navbar/testimonial'
+import Testimonial from './components/Navbar/Testimonial';
 import pngimage from './assets/caring.png'
 import pngimage2 from './assets/supportive.png'
 import pngimage3 from './assets/proffessional.png'
 import heroservices from './assets/serviceimagescare.jpeg'
+import Emailsubscription from './components/Navbar/emailsubscription';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -149,7 +150,7 @@ function Servicespage() {
 
       
       <div className=" xl:hidden lg-hidden ">
-        <h1 className="text-6xl text-[#800080] mt-10   rounded-full font-thin mb-6 mx-auto text-center ">
+        <h1 className="text-6xl text-black mt-10   rounded-full font-thin mb-6 mx-auto text-center ">
           Our Services
           
           <p className="text-lg font-thin   ">
@@ -236,22 +237,7 @@ function Servicespage() {
 
       </div>
      <Testimonial /> 
-    {/* Subscription Section */}
-    <div className="bg-gradient-to-r from-primary to-primary py-20 mt-10 px-6 relative font-[sans-serif]">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-white text-4xl font-extrabold">Subscribe to Our Newsletter</h2>
-          <div className="my-6">
-            <p className="text-base text-gray-200">Subscribe to our newsletter and stay up to date with the latest news, updates, and exclusive offers. Get valuable insights. Join our community today!</p>
-          </div>
-
-          <div className="max-w-2xl mx-auto w-full bg-white p-5 flex items-center shadow-lg">
-            <input type="email" placeholder="Enter your email" className="w-full bg-gray-50 py-3.5 px-4 text-gray-800 text-base focus:outline-none" />
-            <button className="bg-[#a91079] hover:bg-[#a91079e2] text-white text-base font-semibold tracking-wide py-3.5 px-6 focus:outline-none">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+     <Emailsubscription/>
 
       <Footer />
     </div>

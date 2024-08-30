@@ -7,6 +7,13 @@ const Contacts = require('./models/contacts');
 const Subscribers = require('./models/subscribers');
 const Query = require('./models/querys');
 
+
+
+
+
+
+
+
 // Add Career
 const addCareers = async (req, res) => {
     try {
@@ -73,10 +80,10 @@ const getContacts = async (req, res) => {
                 const contacts = new Contacts(
                     contact.fullname,
                     contact.email,
-                    contact.phonenumber,
                     contact.street,
                     contact.city,
                     contact.postcode,
+                    contact.phonenumber,
                     contact.message
                 );
                 contactArray.push(contacts);

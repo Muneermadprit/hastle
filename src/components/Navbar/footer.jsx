@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from '../../assets/foterlogo.png';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,28 +30,28 @@ const Footer = () => {
               Services
             </h6>
             <p className="mb-4">
-            <a className="p-2 px-4 group" href="#">
+            <Link to='/hastle/service1' className="p-2 px-4 group" href="#">
         Personal Care
         <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
-    </a>
+    </Link>
             </p>
             <p className="mb-4">
-            <a className="p-2 px-4 group" href="#">
+            < Link to='/hastle/service2' className="p-2 px-4 group" href="#">
         Medical Care
         <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
-    </a>
+    </Link>
             </p>
             <p className="mb-4">
-            <a className="p-2 px-4 group" href="#">
-        CompanienShip
+            <Link to='/hastle/service1' className="p-2 px-4 group" href="#">
+        Companionship
         <div class="bg-amber-500 h-[1px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
-    </a>
+    </Link>
             </p>
             <p>
-            <a className="p-2 px-4 group" href="#">
+            <Link to='/hastle/service1' className="p-2 px-4 group" href="#">
         Household Assistance
         <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
-    </a>
+    </Link>
             </p>
           </div>
 

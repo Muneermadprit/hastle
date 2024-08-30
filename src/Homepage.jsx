@@ -1,35 +1,43 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Navbar/hero';
-import Prodect from './components/Navbar/about';
-import Topproducts from './components/Navbar/topproducts';
+import Hero from './components/Navbar/Hero';
+import Product from './components/Navbar/about';
+import TopProducts from './components/Navbar/TopProducts';
 import Banner from './components/Navbar/bannner';
-import Subscription from './components/Navbar/subscription';
-import Testimonial from './components/Navbar/testimonial';
+import Subscription from './components/Navbar/Subscription';
+import Testimonial from './components/Navbar/Testimonial';
 import Footer from './components/Navbar/footer';
-import AnimatedContainer from './components/Navbar/hovertest';
-import ScrollableContainer from './components/Navbar/hovertestmobile';
-import AnimatedContainermob from './components/Navbar/hovertestmobile';
-import AnimatedContainertab from './components/Navbar/hoveresttablets';
-import Blog from './components/Navbar/blog';
+import AnimatedContainer from './components/Navbar/HoverTest';
+import ScrollableContainer from './components/Navbar/HoverTestMobile';
+import Blog from './components/Navbar/Blog';
 import ContactSection from './components/Navbar/contact';
 import Training from './components/Navbar/trainingcourosal';
-
+import AnimatedContainerMob from './components/Navbar/HoverTestMobile';
+import AnimatedContainerTab from './components/Navbar/hoveresttablets';
 
 function Homepage() {
+  const subscriptionRef = useRef(null);
+
+  const handleScrollToSubscription = () => {
+   
+    if (subscriptionRef.current) {
+      subscriptionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    < div className='overflow-hidden' >
-      <Navbar />
+    <div className='overflow-hidden'>
+      <Navbar onScrollToSubscription={handleScrollToSubscription} />
       <Hero />
       <AnimatedContainer />
-      <AnimatedContainermob />
-      <AnimatedContainertab/>
-      <Prodect />
-      <Topproducts />
+      <AnimatedContainerMob />
+      <AnimatedContainerTab />
+      <Product />
+      <TopProducts />
       <Banner />
-      <Training/>
+      <Training />
       <Blog />
-      <Subscription />
+      <Subscription ref={subscriptionRef} />
       <Testimonial />
       <ContactSection />
       <Footer />

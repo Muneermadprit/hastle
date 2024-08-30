@@ -9,7 +9,15 @@ import Dashbord from './dashbord';
 import Blog from './blog'
 import ContactSection from './components/Navbar/contact';
 import ContactUs from './contactus';
-
+import Servicespage2 from './servicepage2';
+import Servicespage3 from './servicepage3';
+import Servicespage4 from './servicepage4';
+import Blogcontet1 from './blogcontent1';
+import Blogcontent2 from './bogcontent2';
+import Blogcontent3 from './blogcontent3';
+import Blogcontent4 from './blogcontent4'
+import Blogcontent5 from './blogcontent5';
+import Blogcontent6 from './blogcontent6';
 function App() {
   return (
     <>
@@ -23,6 +31,15 @@ function App() {
         <Route path="/hastle/dasbord" element={<Dashbord />} />
         <Route path="/hastle/blog" element={<Blog />} />
         <Route path="/hastle/contact" element={<ContactUs />} />
+        <Route path="/hastle/service2" element={<Servicespage2 />} />
+        <Route path="/hastle/service3" element={<Servicespage3 />} />
+        <Route path="/hastle/service4" element={<Servicespage4 />} />
+        <Route path="/hastle/blogcontent1" element={<Blogcontet1 />} />
+        <Route path="/hastle/blogcontent2" element={<Blogcontent2 />} />
+        <Route path="/hastle/blogcontent3" element={<Blogcontent3 />} />
+        <Route path="/hastle/blogcontent4" element={<Blogcontent4 />} />
+        <Route path="/hastle/blogcontent5" element={<Blogcontent5 />} />
+        <Route path="/hastle/blogcontent6" element={<Blogcontent6 />} />
       </Routes>
     </Router>
     </>

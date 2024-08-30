@@ -41,7 +41,7 @@ const testimonials = [
 
 const ITEMS_PER_PAGE = 3;
 
-const TestimonialCarousel = () => {
+const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -75,7 +75,7 @@ const TestimonialCarousel = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto p-4  xl:mb-10 xl:pb-10">
-        <div className="relative overflow-hidden mb-[20px]">
+        <div className="relative overflow-hidden mb-[2px]">
           <div className="flex transition-transform duration-500 ease-in-out">
             {visibleTestimonials.map((testimonial) => (
               <div key={testimonial.id} className="flex-none w-full lg:w-1/3 p-4">
@@ -95,7 +95,7 @@ const TestimonialCarousel = () => {
             ))}
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 flex justify-center items-center space-x-4 mt-8">
+        <div className="absolute inset-x-0 bottom-0 flex justify-center items-center space-x-4 mb-10 xl:mb-0 ">
           <button
             className="text-white bg-gray-800 p-4 rounded-full transform transition-transform duration-300 hover:scale-110"
             onClick={prevSlide}
@@ -114,5 +114,5 @@ const TestimonialCarousel = () => {
   );
 };
 
-export default TestimonialCarousel;
+export default Testimonial;
 

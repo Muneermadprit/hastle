@@ -10,7 +10,7 @@ const CustomChart = () => {
     datasets: [
       {
         label: 'Sales',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [65, 59, 80, 81, 56, 55, 140],
         fill: false,
         borderColor: '#4B5563', // Gray-700
         backgroundColor: '#10B981', // Emerald-500

@@ -1,9 +1,14 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
+import { Link } from 'react-router-dom';
 import Footer from './components/Navbar/footer';
 import blog1 from './assets/blog1.jpeg';
 import blog2 from './assets/blog2.jpeg';
 import blog3 from './assets/blog3.jpeg';
+import blog4 from './assets/readmoresectionimage1.jpg'
+import blog5 from './assets/readmoresectionimage2.jpg'
+import blog6 from './assets/readmoresectionimage3.jpg'
+import Emailsubscription from './components/Navbar/emailsubscription';
 
 function Blog() {
   const posts = [
@@ -59,7 +64,8 @@ function Blog() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post, index) => (
             <article key={index} className="relative group bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 group-hover:opacity-70 transition duration-300"></div>
+             <Link to={`/hastle/blogcontent${index+1}`}>
+             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 group-hover:opacity-70 transition duration-300"></div>
               <img src={post.image} alt={post.title} className="w-full h-64 object-cover transition duration-300 transform group-hover:scale-110" />
               <div className="absolute bottom-0 p-6">
                 <h2 className="text-2xl font-bold text-white mb-2 transition duration-300 group-hover:text-yellow-400">{post.title}</h2>
@@ -68,28 +74,13 @@ function Blog() {
                   <p>By {post.author}</p>
                   <p>{post.date}</p>
                 </div>
-              </div>
+              </div></Link> 
             </article>
           ))}
         </div>
       </section>
       
-      {/* Subscription Section */}
-      <div className="bg-gradient-to-r from-primary to-primary py-20 px-6 relative font-[sans-serif]">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-white text-4xl font-extrabold">Subscribe to Our Newsletter</h2>
-          <div className="my-6">
-            <p className="text-base text-gray-200">Subscribe to our newsletter and stay up to date with the latest news, updates, and exclusive offers. Get valuable insights. Join our community today!</p>
-          </div>
-
-          <div className="max-w-2xl mx-auto w-full bg-white p-5 flex items-center shadow-lg">
-            <input type="email" placeholder="Enter your email" className="w-full bg-gray-50 py-3.5 px-4 text-gray-800 text-base focus:outline-none" />
-            <button className="bg-[#a91079] hover:bg-[#a91079e2] text-white text-base font-semibold tracking-wide py-3.5 px-6 focus:outline-none">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+      <Emailsubscription/>
 
       {/* Sub Blogs Section */}
       <div className="bg-white font-[sans-serif] my-4">
@@ -97,34 +88,45 @@ function Blog() {
           <div className="text-center">
             {/* Add any additional content here if needed */}
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 max-md:max-w-lg mx-auto">
+            <Link to='/hastle/blogcontent4'>
             <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
-              <img src="https://readymadeui.com/Imagination.webp" alt="Blog Post 1" className="w-full h-60 object-cover" />
+              <img src={blog4} alt="Blog Post 1" className="w-full h-60 object-cover" />
               <div className="p-6">
                 <span className="text-sm block text-gray-400 mb-2">10 FEB 2023 | BY JOHN DOE</span>
-                <h3 className="text-xl font-bold text-[#333]">A Guide to Igniting Your Imagination</h3>
+                <h3 className="text-xl font-bold text-[#333]">Pets as Companions: The Therapeutic Benefits for
+                Seniors</h3>
                 <hr className="my-6" />
-                <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+                <p className="text-gray-400 text-sm">Pets provide seniors with companionship, reduce loneliness, and boost mental health by lowering anxiety and increasing happiness. Caring for a pet also promotes physical activity and adds a sense of purpose to daily life.</p>
               </div>
             </div>
+            
+            </Link>
+            <Link to='/hastle/blogcontent5'>
             <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
-              <img src="https://readymadeui.com/hacks-watch.webp" alt="Blog Post 2" className="w-full h-60 object-cover" />
+              <img src={blog5} alt="Blog Post 2" className="w-full h-60 object-cover" />
               <div className="p-6">
                 <span className="text-sm block text-gray-400 mb-2">7 JUN 2023 | BY MARK ADAIR</span>
-                <h3 className="text-xl font-bold text-[#333]">Hacks to Supercharge Your Day</h3>
+                <h3 className="text-xl font-bold text-[#333]">The Importance of Mental Health Support in Elderly Home Care</h3>
                 <hr className="my-6" />
-                <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+                <p className="text-gray-400 text-sm">As we age, maintaining mental health becomes just as important as physical health, especially for seniors receiving care at home. In the UK, there's a growing emphasis on supporting the emotional well-being of older adults to help them maintain their independence and stay connected with loved ones.</p>
               </div>
             </div>
+            </Link>
+            <Link to='/hastle/blogcontent6'>
             <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
-              <img src="https://readymadeui.com/prediction.webp" alt="Blog Post 3" className="w-full h-60 object-cover" />
+              <img src={blog6} alt="Blog Post 3" className="w-full h-60 object-cover" />
               <div className="p-6">
                 <span className="text-sm block text-gray-400 mb-2">5 OCT 2023 | BY SIMON KONECKI</span>
-                <h3 className="text-xl font-bold text-[#333]">Trends and Predictions</h3>
+                <h3 className="text-xl font-bold text-[#333]">Managing Chronic Conditions in Elderly Home Care: A Comprehensive
+                Guide</h3>
                 <hr className="my-6" />
-                <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+                <p className="text-gray-400 text-sm">
+                Caring for elderly loved ones at home is rewarding but can be challenging, especially when managing chronic conditions. In the UK, as elderly home care services grow, families and caregivers need the right tools to manage seniors' health, enhancing their quality of life and independence.</p>
               </div>
             </div>
+            </Link>
           </div>
         </div>
       </div>

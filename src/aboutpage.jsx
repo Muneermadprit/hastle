@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef  } from 'react';
 import image1 from './assets/aboutus.jpeg';
 import image2 from './assets/aboutpagemob.jpeg';
 import image3 from './assets/blog1.jpeg';
@@ -18,8 +18,25 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Lottie from 'react-lottie';
 import animationData from './animaioplaybutton.json'; 
+import Emailsubscription from './components/Navbar/emailsubscription';
 
 function About() {
+
+
+  const subscriptionRef = useRef(null);
+
+  const handleScrollToSubscription = () => {
+   
+    if (subscriptionRef.current) {
+      subscriptionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
+
+
+
+
   const [overlayVisible, setOverlayVisible] = useState(true);
 
   useEffect(() => {
@@ -41,7 +58,7 @@ function About() {
 
   return (
     <div className="min-h-screen relative">
-      <Navbar /> {/* Navbar Component */}
+      <Navbar onScrollToSubscription={handleScrollToSubscription} /> {/* Navbar Component */}
       
       {/* Section with dynamic background image for mobile and desktop */}
       
@@ -92,7 +109,7 @@ function About() {
       {/* Main content section */}
       <div className="relative z-20 w-[90%] sm:w-[100%] mx-auto text-black p-4">
         {/* Mission Statement Section */}
-        <div className="sm:w-[70%]  md:w-[82%]   sm:ml-80 sm:h-[200px] lg:h-[300px] lg:mx-auto md:h-[450px]  bg-gray-100 md:ml-[75px]  shadow-xl sm:rounded-2xl mb-10 grid sm:grid-cols-2">
+        <div className="sm:w-[70%]  md:w-[82%]  mt-10  sm:ml-80 sm:h-[200px] lg:h-[300px] lg:mx-auto md:h-[450px]  bg-gray-100 md:ml-[75px]  shadow-xl sm:rounded-2xl mb-10 grid sm:grid-cols-2">
           <div className="p-6 sm:p-5">
             <p className="font-light text-[5vw] sm:text-[40px] md:text[20px] text-[#800080]" data-aos="fade-up">Mission Statement</p>
             <p className="font-sans text-[4vw] md-text-[8vw] sm:text-[16px] text-balance">
@@ -213,22 +230,7 @@ function About() {
           </div>
         </div>
       </div>
- {/* Subscription Section */}
- <div className="bg-gradient-to-r from-primary to-primary py-20 px-6 relative font-[sans-serif]">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-white text-4xl font-extrabold">Subscribe to Our Newsletter</h2>
-          <div className="my-6">
-            <p className="text-base text-gray-200">Subscribe to our newsletter and stay up to date with the latest news, updates, and exclusive offers. Get valuable insights. Join our community today!</p>
-          </div>
-
-          <div className="max-w-2xl mx-auto w-full bg-white p-5 flex items-center shadow-lg">
-            <input type="email" placeholder="Enter your email" className="w-full bg-gray-50 py-3.5 px-4 text-gray-800 text-base focus:outline-none" />
-            <button className="bg-[#a91079] hover:bg-[#a91079e2] text-white text-base font-semibold tracking-wide py-3.5 px-6 focus:outline-none">
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </div>
+      <Emailsubscription ref={subscriptionRef}/>
 
       {/* Footer Component */}
       <Footer />

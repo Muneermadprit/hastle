@@ -15,30 +15,23 @@ function Adminlogin({ close }) {
 
   const handleValidation = () => {
     const newErrors = {};
-
-    if (!adminid) newErrors.adminid = true;
-    if (!password) newErrors.password = true;
-
+    if (!adminid) newErrors.adminid = 'Admin ID is required.';
+    if (!password) newErrors.password = 'Password is required.';
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleLogin = async () => {
     if (!handleValidation()) return;
-
     try {
-      console.log("Sending request to /admin");
       const response = await axios.get('http://localhost:8082/admin/');
-      console.log("Response data:", response.data);
-
-      // Check if adminData is an array
       if (Array.isArray(response.data)) {
         const admin = response.data.find(
           (admin) => admin.adminid === adminid && admin.password === password
         );
-        
         if (admin) {
           alert('Login successful');
+          sessionStorage.setItem('sessionId', adminid);
           navigate('/hastle/dasbord');
         } else {
           alert('Invalid admin ID or password.');
@@ -58,10 +51,8 @@ function Adminlogin({ close }) {
       adminId: adminid,
       newPassword: newPassword
     };
-
     try {
       await axios.put('http://localhost:8082/admin/', data); // Update the endpoint if needed
-      console.log("Success");
       alert("Password changed successfully");
       setNewPassword("");
       setShowDialog(false);
@@ -77,12 +68,12 @@ function Adminlogin({ close }) {
 
   return (
     <div className="bg-white font-[sans-serif] min-h-screen flex flex-col items-center justify-center py-6 px-4 relative">
-      <div className="max-w-md w-full border p-8 rounded-md bg-gray-200">
+      <div className="max-w-md w-full border p-8 rounded-md bg-gray-200 relative">
         <button 
           onClick={close} 
           className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
         >
-          <FaTimes />
+         
         </button>
         <div className="text-center">
           <img src={logo} className='h-[150px] w-[150px] rounded-full ml-6 p-2' alt="Logo"/>
@@ -98,31 +89,28 @@ function Adminlogin({ close }) {
             <input 
               name="id" 
               type="text" 
-              required 
-              className="w-full text-sm text-gray-800 bg-white border-2 border-transparent focus:border-[#1E2772] px-4 py-3 rounded-md outline-none" 
+              className={`w-full text-sm text-gray-800 bg-white border-2 ${errors.adminid ? 'border-red-500' : 'border-transparent'} focus:border-[#1E2772] px-4 py-3 rounded-md outline-none`} 
               placeholder="Enter AdminID" 
               onChange={(e) => {
                 setAdminid(e.target.value);
-                setErrors((prev) => ({ ...prev, adminid: false }));
+                setErrors((prev) => ({ ...prev, adminid: '' }));
               }}
+              value={adminid}
             />
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" className="w-[18px] h-[18px] absolute right-4" viewBox="0 0 24 24">
-              <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
-              <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
-            </svg>
+            {errors.adminid && <p className="text-red-500 text-xs absolute right-4">{errors.adminid}</p>}
           </div>
 
           <div className="relative flex items-center">
             <input 
               name="password" 
               type={showPassword ? 'text' : 'password'} 
-              required 
-              className="w-full text-sm text-gray-800 bg-white border-2 border-transparent focus:border-[#1E2772] px-4 py-3 rounded-md outline-none" 
+              className={`w-full text-sm text-gray-800 bg-white border-2 ${errors.password ? 'border-red-500' : 'border-transparent'} focus:border-[#1E2772] px-4 py-3 rounded-md outline-none`} 
               placeholder="Enter password" 
               onChange={(e) => {
                 setPassword(e.target.value);
-                setErrors((prev) => ({ ...prev, password: false }));
+                setErrors((prev) => ({ ...prev, password: '' }));
               }}
+              value={password}
             />
             <svg
               onClick={togglePasswordVisibility}

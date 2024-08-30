@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { RiAdminLine } from "react-icons/ri";
 import Adminlogin from './Adminlogin';
 
-const Navbar = () => {
+const Navbar = ({ onScrollToSubscription }) => {
     const [showAdminLogin, setShowAdminLogin] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -88,7 +88,8 @@ const Navbar = () => {
                     </div>
 
                     {/* Subscribe Button */}
-                    <button className="group relative min-h-[50px] w-40 overflow-hidden border border-white bg-[#800080] text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-white before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-white after:duration-500 hover:text-[#800080] hover:bg-white hover:before:h-full hover:after:h-full rounded-full">
+                    <button className="group relative min-h-[50px] w-40 overflow-hidden border border-white bg-[#800080] text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-white before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-white after:duration-500 hover:text-[#800080] hover:bg-white hover:before:h-full hover:after:h-full rounded-full"
+                    onClick={onScrollToSubscription}>
                         <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-[#800080]">Subscribe</span>
                     </button>
                 </div>

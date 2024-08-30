@@ -3,9 +3,9 @@ class contacts{
         this.fullname = fullname;
         this.email = email;
         this.street = street;
-        this.city  = city;
+        this.city = city;
         this.postalcode = postalcode;
-        this.phonenumber = phonenumber;
+        this.phonenumber  = phonenumber;
         this.message = message;
 
 

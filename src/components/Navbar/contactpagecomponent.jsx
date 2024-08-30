@@ -3,6 +3,7 @@ import { MdOutlinePhoneForwarded } from "react-icons/md";
 import { MdOutgoingMail } from "react-icons/md";
 import { BsFillSendFill } from "react-icons/bs";
 import contactimage from '../../assets/contact.png';
+import contactnew from '../../assets/contactformlast.png'
 import axios from 'axios';
 
 const ContactSectionpage = () => {
@@ -67,9 +68,9 @@ const ContactSectionpage = () => {
   return (
     <div className='flex flex-col items-center mb-10'>
       <div className="relative max-w-6xl w-full h-auto flex flex-col md:flex-row items-center justify-center lg:gap-16 md:gap-4 overflow-hidden px-4 py-8 md:px-10">
-        <div className="relative w-full md:w-1/2 h-[300px] md:h-[500px] lg:h-[850px]">
+        <div className="relative w-full md:w-1/2 h-[300px] md:h-[500px] lg:h-[600px]">
           <img 
-            src={contactimage} 
+            src={contactnew} 
             className="absolute left-0 top-0 w-full h-full object-cover"
             alt="Contact"
           />
