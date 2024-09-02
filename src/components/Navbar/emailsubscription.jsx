@@ -33,7 +33,7 @@ const Emailsubscription = forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       {/* Subscription Section */}
-      <div className="bg-gradient-to-r from-primary to-primary py-20 px-6 relative font-[sans-serif]">
+      <div className="bg-gradient-to-r from-primary mt-10 to-primary py-20 px-6 relative font-[sans-serif]">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-white text-4xl font-extrabold">Subscribe to Our Newsletter</h2>
           <div className="my-6">

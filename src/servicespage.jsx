@@ -15,13 +15,13 @@ import nutritionimage from './assets/nutritionimage.jpeg'
 import overnightcare from './assets/overnightcare.jpeg'
 import overnights from './assets/overnights.jpeg'
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import Testimonial from './components/Navbar/Testimonial';
 import pngimage from './assets/caring.png'
 import pngimage2 from './assets/supportive.png'
 import pngimage3 from './assets/proffessional.png'
 import heroservices from './assets/serviceimagescare.jpeg'
-import Emailsubscription from './components/Navbar/emailsubscription';
+import Emailsubscription from './components/Navbar/Emailsubscription';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -159,7 +159,7 @@ function Servicespage() {
         </h1>
       </div>
       <div ><h1 className='text-center  text-[30px] text-[#800080] xl:mt-10 '>Daily Support/Visiting Care Services</h1>
-      <p className='text-center mb-10'>offers a variety of customized visiting care services tailored to provide our clients and their families with the right choices and more possibilities while ensuring they oversee their care</p></div>
+      <p className='text-center mb-10'>We offers a variety of customized visiting care services tailored to provide our clients and their families with the right choices and more possibilities while ensuring they oversee their care</p></div>
       <div className='xl:w-[100%] h-auto xl:h-[1700px] lg-[1700px] bg-gray-300/20 mb-10  pb-10  shadow-xl'>
       <div className='w-full xl:h-[400px]  grid lg:grid-cols-3 md:grid-cols-2 mb-10 '>
         <div className='w-[80%] xl:h-[95%] bg-white rounded-3xl border-solid border-[0px] border-black  ml-10  mt-10'>

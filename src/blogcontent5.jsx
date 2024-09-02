@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import blog1 from './assets/blog1.jpeg';
 import blog2 from './assets/blog2.jpeg';
 import blog3 from './assets/blog3.jpeg';
@@ -18,7 +18,7 @@ import Blogpage5mainimage from './assets/blogpage5mainimage.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Emailsubscription from './components/Navbar/emailsubscription';
+import Emailsubscription from './components/Navbar/Emailsubscription';
 
 function Blogcontent5() {
 
@@ -254,7 +254,7 @@ o Keep hallways well-lit and free from obstacles.</p>
         {/* Blog Posts Section */}
         
         <section id="blog-section" className="container mx-auto px-6 md:px-12 py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
         
 
         <Link to=
@@ -276,6 +276,20 @@ o Keep hallways well-lit and free from obstacles.</p>
             </div>
 
             </Link>
+
+            {posts.map((post, index) => (
+      <Link key={index} to={`/hastle/blogcontent${index + 2}`}>
+        <div className="bg-white cursor-pointer rounded overflow-hidden lg:h-[570px] shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+          <img src={post.image} alt={post.title} className="w-full h-60 object-cover" />
+          <div className="p-6">
+            <span className="text-sm block text-gray-400 mb-2">{post.date} | BY {post.author.toUpperCase()}</span>
+            <h3 className="text-xl font-bold text-[#333] mb-2">{post.title}</h3>
+            <hr className="my-6" />
+            <p className="text-gray-400 text-sm">{post.excerpt}</p>
+          </div>
+        </div>
+      </Link>
+    ))}
         </div>
       </section>
 {/* Subscription Section */}

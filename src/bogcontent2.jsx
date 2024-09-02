@@ -1,21 +1,23 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import blog1 from './assets/blog1.jpeg';
 import blog2 from './assets/blog2.jpeg';
 import blog3 from './assets/blog3.jpeg';
 import blogcontentpage1 from './assets/blogcontentpage1.jpg';
 import GalleryGrid from './blogsections';
-import Emailsubscription from './components/Navbar/emailsubscription';
+import Emailsubscription from './components/Navbar/Emailsubscription';
+import readmoresectionimage1 from './assets/readmoresectionimage1.jpg'
+import readmoresectionimage2 from './assets/readmoresectionimage2.jpg'
+import readmoresectionimage3 from './assets/readmoresectionimage3.jpg'
 
 function Blogcontent2() {
   const posts = [
    
     {
-      title: "Creating a Safe Home Environment for Seniors",
-      excerpt: "Tips and tricks to make your home a safe haven for elderly family members.",
-      date: "June 15, 2024",
+      title: "Pets as Companions: The Therapeutic Benefits for Seniors",
+      excerpt: "Have you ever seen a senior smiling ear-to-ear while petting their furry friend? It’s a heartwarming sight that speaks volumes about the therapeutic benefits of pets for older adults. In this blog post, we’ll dive into the incredible ways that pets can enhance the quality of life for seniors. From offering companionship to reducing feelings of loneliness and anxiety, pets provide a sense of purpose and routine that can be immensely beneficial for mental health. ",
       author: "Emily Johnson",
       image: blog3,
     },
@@ -48,71 +50,61 @@ function Blogcontent2() {
 
       {/* Blog Posts Section */}
       <section id="blog-section" className="container mx-auto px-6 md:px-12 py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post, index) => (
-            <article
-              key={index}
-              className="relative group bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 transform hover:scale-105"
-            >
-              <Link to={`/hastle/blogcontent${index + 3}`}>
-                <div className="absolute inset-0 group-hover:opacity-70 transition duration-300"></div>
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="w-full h-64 object-cover transition duration-300 transform group-hover:scale-110"
-                />
-                <div className="absolute bottom-0 p-6">
-                  <h2 className="text-2xl font-bold text-black mb-2 transition duration-300 group-hover:text-yellow-400">
-                    {post.title}
-                  </h2>
-                  <p className="text-black text-sm">{post.excerpt}</p>
-                  <div className="mt-4 flex items-center justify-between text-sm text-gray-300">
-                    <p>By {post.author}</p>
-                    <p>{post.date}</p>
-                  </div>
-                </div>
-              </Link>
-            </article>
-          ))}
-          <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
-            <img
-              src="https://readymadeui.com/Imagination.webp"
-              alt="A Guide to Igniting Your Imagination"
-              className="w-full h-60 object-cover"
-            />
-            <div className="p-6">
-              <span className="text-sm block text-gray-400 mb-2">
-                10 FEB 2023 | BY JOHN DOE
-              </span>
-              <h3 className="text-xl font-bold text-[#333]">
-                A Guide to Igniting Your Imagination
-              </h3>
-              <hr className="my-6" />
-              <p className="text-gray-400 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.
-              </p>
-            </div>
+  <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+    {posts.map((post, index) => (
+      <Link key={index} to={`/hastle/blogcontent${index + 3}`} className="group">
+        <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+          <img
+            src={post.image}
+            alt={post.title}
+            className="w-full h-60 object-cover transition duration-300 transform group-hover:scale-110"
+          />
+          <div className="p-6">
+            <span className="text-sm block text-gray-400 mb-2">{post.date} | BY {post.author.toUpperCase()}</span>
+            <h3 className="text-xl font-bold text-[#333] mb-2 group-hover:text-yellow-400">{post.title}</h3>
+            <hr className="my-6" />
+            <p className="text-gray-400 text-sm">{post.excerpt}</p>
           </div>
-           
-           {/* The fith item of Read more Item */}
-
-          <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
-              <img src="https://readymadeui.com/hacks-watch.webp" alt="Blog Post 2" className="w-full h-60 object-cover" />
-              <div className="p-6">
-                <span className="text-sm block text-gray-400 mb-2">7 JUN 2023 | BY MARK ADAIR</span>
-                <h3 className="text-xl font-bold text-[#333]">Hacks to Supercharge Your Day</h3>
-                <hr className="my-6" />
-                <p className="text-gray-400 text-sm ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
-              </div>
-            </div>
         </div>
+      </Link>
+    ))}
 
-        {/* the fifth Readmore Item */}
+    {/* Fourth Blog Post Card */}
+    <Link to="/hastle/blogcontent4" className="group">
+      <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+        <img
+          src={readmoresectionimage1}
+          alt="A Guide to Igniting Your Imagination"
+          className="w-full h-60 object-cover transition duration-300 transform group-hover:scale-110"
+        />
+        <div className="p-6">
+          <span className="text-sm block text-gray-400 mb-2">10 FEB 2023 | BY JOHN DOE</span>
+          <h3 className="text-xl font-bold text-[#333] mb-2 group-hover:text-yellow-400">The Importance of Mental Health Support in Elderly Home Care</h3>
+          <hr className="my-6" />
+          <p className="text-gray-400 text-sm">As we age, maintaining mental health becomes just as important as physical health, especially for seniors receiving care at home. In the UK, there's a growing emphasis on supporting the emotional well-being of older adults to help them maintain their independence and stay connected with loved ones.</p>
+        </div>
+      </div>
+    </Link>
 
-        
+    {/* Fifth Blog Post Card */}
+    <Link to="/hastle/blogcontent5" className="group">
+      <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+        <img
+          src={readmoresectionimage2}
+          alt="Hacks to Supercharge Your Day"
+          className="w-full h-60 object-cover transition duration-300 transform group-hover:scale-110"
+        />
+        <div className="p-6">
+          <span className="text-sm block text-gray-400 mb-2">7 JUN 2023 | BY MARK ADAIR</span>
+          <h3 className="text-xl font-bold text-[#333] mb-2 group-hover:text-yellow-400">How to Prepare Your Home for Elderly Care: Safety Tips and Modifications</h3>
+          <hr className="my-6" />
+          <p className="text-gray-400 text-sm">As the population ages, more families in the UK are choosing to care for their elderly loved ones at home. While this option allows seniors to remain in familiar surroundings, it also requires careful planning and modifications to ensure their safety and comfort.</p>
+        </div>
+      </div>
+    </Link>
+  </div>
+</section>
 
-
-      </section>
 
       {/* Subscription Section */}
      <Emailsubscription/>

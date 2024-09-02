@@ -44,7 +44,7 @@ const Navbar = ({ onScrollToSubscription }) => {
                     </Link>
 
                     {/* Navigation Links */}
-                    <div className="hidden lg:flex ml-40 gap-4">
+                    <div className="hidden lg:flex xl:ml-40  gap-4">
                         <Link to='/hastle/' className='font-bold text-[#800080] text-[17px] group'>
                             HOME
                             <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[50px] transition-all duration-500"></div>
@@ -82,7 +82,7 @@ const Navbar = ({ onScrollToSubscription }) => {
                             CONTACT US
                             <div className="bg-amber-500 h-[1px] w-0 group-hover:w-[110px] transition-all duration-500"></div>
                         </Link>
-                        <div className='flex ml-20 p-2  border-solid border-[2px] border-white bg-[#800080] rounded-full'>     
+                        <div className='flex ml-20 p-2  md:hidden lg:hidden xl:flex border-solid border-[2px] border-white bg-[#800080] rounded-full'>     
                             <RiAdminLine className='w-[25px] text-white hover:cursor-pointer' onClick={handleAdminLogin} />
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import blog1 from './assets/blog1.jpeg';
 import blog2 from './assets/blog2.jpeg';
 import blog3 from './assets/blog3.jpeg';
@@ -21,7 +21,7 @@ import Blogpage5mainimage from './assets/blogpage5mainimage.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Emailsubscription from './components/Navbar/emailsubscription';
+import Emailsubscription from './components/Navbar/Emailsubscription';
 
 function Blogcontent6() {
 
@@ -51,25 +51,29 @@ function Blogcontent6() {
       
 
 
-
-  const posts = [
-  
-    {
-      title: "The Importance of Mental Health in Elderly Care",
-      excerpt: "Understanding and addressing mental health issues in older adults is crucial for their overall well-being.",
-      date: "July 25, 2024",
-      author: "Jane Smith",
-      image: blog2,
-    },
-    {
-      title: "Creating a Safe Home Environment for Seniors",
-      excerpt: "Tips and tricks to make your home a safe haven for elderly family members.",
-      date: "June 15, 2024",
-      author: "Emily Johnson",
-      image: blog3,
-    },
-  ];
-
+      const posts = [
+        {
+          title: "Caring for the Elderly: A Comprehensive Guide",
+          excerpt: "To ensure the comfort and well-being of elderly loved ones, prioritize their safety by making their living environment fall-proof and accessible. Regularly monitor their health and nutrition, and provide companionship to combat loneliness and support emotional well-being. Engage them in activities that stimulate their mind and body while respecting their independence and preferences.",
+          date: "August 18, 2024",
+          author: "John Doe",
+          image: blog1,
+        },
+        {
+          title: "The Importance of Mental Health in Elderly Care",
+          excerpt: "Understanding and addressing mental health issues in older adults is crucial for their overall well-being.",
+          date: "July 25, 2024",
+          author: "Jane Smith",
+          image: blog2,
+        },
+        {
+          title: "Creating a Safe Home Environment for Seniors",
+          excerpt: "Tips and tricks to make your home a safe haven for elderly family members.",
+          date: "June 15, 2024",
+          author: "Emily Johnson",
+          image: blog3,
+        },
+      ];
   return (
     <div>
       <Navbar />
@@ -273,9 +277,35 @@ hydrated are key components of chronic disease management</p>
       </header>
 
       {/* Latest Blogs Heading */}
-     
-          
+      <div className="text-center my-12">
+  <h2 className="text-3xl font-extrabold text-[#333] relative inline-block">
+    READ MORE
     
+  </h2>
+  <span className="block  w-[200px] ml-[660px] h-1 mt-4 bg-pink-400  rounded-full  bottom-0 "></span>
+</div>
+          
+      <section id="blog-section" className="container mx-auto px-6 md:px-12 py-16">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post, index) => (
+            <article key={index} className="relative group bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+              <Link to={`/hastle/blogcontent${index + 1}`}>
+                <div className=" bg-gradient-to-b from-transparent to-black opacity-50 group-hover:opacity-70 transition duration-300"></div>
+                <img src={post.image} alt={post.title} className="w-full h-64 object-cover transition duration-300 transform group-hover:scale-110" />
+                <div className=" bottom-0 p-6">
+                  <h2 className="text-2xl font-bold text-black mb-2 transition duration-300 group-hover:text-yellow-400">{post.title}</h2>
+                  <p className="text-gray-300 text-sm">{post.excerpt}</p>
+                  <div className="mt-4 flex items-center justify-between text-sm text-gray-300">
+                    <p>By {post.author}</p>
+                    <p>{post.date}</p>
+                  </div>
+                </div>
+              </Link> 
+            </article>
+          ))}
+        </div>
+      </section>
+      
 
 
 

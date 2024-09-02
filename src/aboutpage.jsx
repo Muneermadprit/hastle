@@ -12,13 +12,13 @@ import aboutussub2 from './assets/aboutussub2.jpeg'
 import aboutussub3 from './assets/absnew.jpeg'
 import newimage from './assets/new.png'
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import demo from './assets/aboutdemo.mp4';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Lottie from 'react-lottie';
 import animationData from './animaioplaybutton.json'; 
-import Emailsubscription from './components/Navbar/emailsubscription';
+import Emailsubscription from './components/Navbar/Emailsubscription';
 
 function About() {
 
@@ -127,7 +127,7 @@ function About() {
         <div className="sm:w-[70%]  md:w-[82%] lg:h-[300px] lg:mx-auto  md:mx-auto md:h-[450px]  bg-gray-200 sm:h-[300px] shadow-2xl sm:ml-[200px]  grid sm:grid-cols-2">
           <img src={aboutimg2} className="w-full h-[300px] object-cover" alt="Descriptive Alt Text" />
           <div className="p-6 sm:p-5">
-            <p className="font-thin text-[5vw] sm:text-[40px] text-[#800080]" data-aos="fade-up">Vision Statement</p>
+            <p className="font-light text-[5vw] sm:text-[40px] text-[#800080]" data-aos="fade-up">Vision Statement</p>
             <p className="font-sans text-[4vw] sm:text-[16px] text-balance">
             At Holistic Care Services, our incredible Care team doesn't just support; we take the burden off you and your loved ones. With open hearts and caring hands, we weave laughter, love, and unwavering support into your home, helping you live a rich and fulfilling life, just as you deserve
             </p>
@@ -202,8 +202,8 @@ function About() {
       
         {/* Additional Content */}
         <div className='sm:mt-[300px] xl:mt-10 mt-10'>
-          <h1 className='text-center text-sm sm:text-[40px] font-bold text-[#800080] sm:mb-10 mb-5'>
-            Why choose Holistics?
+          <h1 className='text-center text-sm sm:text-[40px] font-bold text-[#800080] sm:mb-10 mb-5 '>
+           <p className='text-[25px] lg:text-[40px]'> Why choose Holistics?</p>
           </h1>
           <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 sm:w-full sm:px-20 px-5'>
             <div className='flex flex-col items-center text-center sm:text-[25px] text-[15px] font-bold text-gray-500'>

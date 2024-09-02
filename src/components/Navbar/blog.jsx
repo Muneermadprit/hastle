@@ -52,16 +52,15 @@ function Blog() {
       </div>
       <div className="my-6">
         <h3 className="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:group-hover:text-[#800080]">
-        Understanding the Benefits of Home Care
+        The Importance of Mental Health in Elderly Care 
         </h3>
         <p className="mt-5 text-gray-600 dark:text-neutral-400">
-       
-        Discover how home care can improve quality of life
+          Understanding and addressing mental health issues in older adults is crucial for their overall well-being
         </p>
         <Link to='/hastle/blogcontent2' className='text-[#800080] '>Learn more</Link>
       </div>
       <div className="mt-auto flex items-center gap-x-3">
-      
+    
         <div>
           <h5 className="text-sm text-gray-800 dark:text-neutral-200">By Aaron Larsson</h5>
         </div>
@@ -74,10 +73,10 @@ function Blog() {
       </div>
       <div className="my-6">
         <h3 className="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:group-hover:text-[#800080]">
-          Care is The Derivery of God
+        Creating a Safe Home Environment for Seniors
         </h3>
         <p className="mt-5 text-gray-600 dark:text-neutral-400">
-          An assaignment of weekends
+        Tips and tricks to make your home a safe haven for elderly family members.
         </p>
         <Link to='/hastle/blogcontent3' className='text-[#800080] '>Learn more</Link>
       </div>

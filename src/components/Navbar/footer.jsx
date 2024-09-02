@@ -31,25 +31,25 @@ const Footer = () => {
             </h6>
             <p className="mb-4">
             <Link to='/hastle/service1' className="p-2 px-4 group" href="#">
-        Personal Care
+            Visiting Care Services
         <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
     </Link>
             </p>
             <p className="mb-4">
             < Link to='/hastle/service2' className="p-2 px-4 group" href="#">
-        Medical Care
+            Staying Active & Engaged
         <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
     </Link>
             </p>
             <p className="mb-4">
-            <Link to='/hastle/service1' className="p-2 px-4 group" href="#">
-        Companionship
+            <Link to='/hastle/service3' className="p-2 px-4 group" href="#">
+            Live in Care
         <div class="bg-amber-500 h-[1px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
     </Link>
             </p>
             <p>
-            <Link to='/hastle/service1' className="p-2 px-4 group" href="#">
-        Household Assistance
+            <Link to='/hastle/service4' className="p-2 px-4 group" href="#">
+            Specialised Care
         <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
     </Link>
             </p>
@@ -57,24 +57,32 @@ const Footer = () => {
 
           {/* Useful links section */}
           <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start lg:ml-20">
               Useful Links
             </h6>
-            <a className="p-2 px-4 group" href="#">
-        Privacy Policy
-        <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
-    </a>
-       <p className="mb-4">
-       <a className="p-2 px-4 group" href="#">
-        Leagal Notice
-        <div class="bg-amber-500 h-[2px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
-    </a>
-            </p>
+            <div className="flex flex-col items-center justify-center p-4 ">
+              <div className="lg:mr-20">
+              <Link to="/hastle/privacypolicy" className="p-2 px-4 group mb-4 relative z-10 ">
+    Privacy Policy
+    <div className="bg-amber-500 h-[2px] w-0 group-hover:w-[130px] transition-all duration-500"></div>
+  </Link>
+              </div>
+ 
+    <div>
+    <Link to="/hastle/leagalnotice" className="p-2 px-4 group relative z-10 mt-4 lg:mr-40">
+    Legal Notice
+    <div className="bg-amber-500 h-[2px] w-0 group-hover:w-[200px] transition-all duration-500"></div>
+  </Link>
+    </div>
+  
+</div>
+
           </div>
+          <div className="lg:hidden h-10"></div>
 
           {/* Contact section */}
           <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            <h6 className="mb-4 flex justify-center font-semibold uppercase  md:justify-start">
               Contact
             </h6>
             <p className="mb-4 flex items-center justify-center md:justify-start">
@@ -134,7 +142,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-zinc-100 p-6 text-center dark:bg-[#800080] dark:text-white/75">
-        <span>© 2023 Copyright:</span>
+        <span>© 2024 Copyright:</span>
         <a className="font-semibold text-neutral-600 dark:text-white/75" href="#!"> Holistic Care Services</a>
       </div>
     </footer>

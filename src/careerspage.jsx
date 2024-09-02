@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState,useRef } from 'react'
 import { Worker } from '@react-pdf-viewer/core';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import { Viewer } from '@react-pdf-viewer/core';
 import muneerpdf from './assets/muneer@gmail.com.pdf'
+import { Link } from 'react-router-dom';
 
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import careersimage from './assets/aboutimage1.jpeg'
@@ -30,6 +31,7 @@ function Careerspage() {
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
     const [errors, setErrors] = useState({}); 
 
+    const subscriptionRef = useRef(null);
 
     const handleValidation = () => {
       const newErrors = {};
@@ -106,6 +108,16 @@ function Careerspage() {
         alert("Submission failed, please try again later.");
       }
     };
+
+   
+  
+
+    const handleScrollToSubscription = () => {
+   
+      if (subscriptionRef.current) {
+        subscriptionRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
     
       
   
@@ -161,7 +173,8 @@ function Careerspage() {
         Embrace the chance to be part of a meaningful mission, where your efforts will directly impact the quality of life for our cherished residents, helping them to live with joy, respect, and the highest standard of care.
       </h6>
 
-      <button type="button" class="bg-[#4e0083] hover:bg-[#4f0083cc] text-white tracking-wide font-semibold text-sm py-3 px-6 rounded-xl mt-8">
+      <button type="button" class="bg-[#4e0083] hover:bg-[#4f0083cc] text-white tracking-wide font-semibold text-sm py-3 px-6 rounded-xl mt-8"
+      onClick={handleScrollToSubscription}>
         Get Started
       </button>
 
@@ -170,17 +183,18 @@ function Careerspage() {
           <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#4e0083' viewBox="0 0 482.6 482.6">
             <path d="..." />
           </svg>
-          <a href="javascript:void(0)" class="text-[#4e0083] text-sm ml-2">180-548-2588</a>
+          <a href="javascript:void(0)" class="text-[#4e0083] text-sm lg:ml-2 mr-[18px] lg:mr-0">  0151 665 0520</a>
         </li>
         <li class="flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#4e0083' viewBox="0 0 479.058 479.058">
             <path d="..." />
           </svg>
-          <a href="javascript:void(0)" class="text-[#4e0083] text-sm ml-2">info@example.com</a>
+          <a href="javascript:void(0)" class="text-[#4e0083] text-sm lg:ml-2 smr-[308px]  lg:mr-0"> office@holistic-careservices.co.uk</a>
         </li>
       </ul>
+     
     </div>
-
+    <div className='w-full h-[200px] xl:hidden sm:flex bg-[#800080] bottom-0  ml-[-50%] rounded-t-[100%] bg-gradient-to-b from-[#796089] via-[#800080] to-[#800080]"'></div>
     <div class="hidden xl:flex lg:flex justify-center sm:justify-end items-center p-2 bg-gradient-to-b from-[#800080] to-[#796089] rounded-bl-[150px] sm:rounded-bl-[230px] w-full h-full">
       <div class="h-52 w-52 sm:h-72 sm:w-72 rounded-full bg-gradient-to-tr from-[#800080] to-[#c19ed6] p-5">
         <img src={bannerimage} class="w-full h-full rounded-full object-cover border-8 border-white" alt="img" />
@@ -195,7 +209,7 @@ function Careerspage() {
      {/* Job submission form */}
     
 </div>
-    <div className='w-full h-auto'>
+    <div className='w-full h-auto' ref={subscriptionRef}>
     <div class="font-[sans-serif]">
       <div class="bg-gradient-to-r from-blue-700 to-blue-300 w-full h-60">
         <img src={formimage} alt="Banner Image" class="w-full h-full object-cover" />
@@ -326,7 +340,7 @@ function Careerspage() {
             <div class="flex items-center col-span-full">
               <input id="checkbox1" type="checkbox"
                 class="w-4 h-4 mr-3 shrink-0" />
-              <label for="checkbox1" class="text-sm text-gray-500">I agree to the <a href="javascript:void(0);" class="underline">Terms and Conditions</a> and <a href="javascript:void(0);" class="underline">Privacy Policy</a></label>
+              <label for="checkbox1" class="text-sm text-gray-500">I agree to the <a href="javascript:void(0);" class="underline"></a>  <Link to='/hastle/privacypolicy' class="underline">Privacy Policy</Link></label>
             </div>
 
             <button type='button'

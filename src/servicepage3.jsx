@@ -16,7 +16,7 @@ import overnightcare from './assets/overnightcare.jpeg'
 import overnights from './assets/overnights.jpeg'
 import welbeing from './assets/Wellbeing.jpg'
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import Testimonial from './components/Navbar/Testimonial';
 import pngimage from './assets/caring.png'
 import pngimage2 from './assets/supportive.png'
@@ -28,7 +28,7 @@ import aiimage5 from './assets/aiimage5.png'
 import aiimage6 from './assets/aiimage6.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Emailsubscription from './components/Navbar/emailsubscription';
+import Emailsubscription from './components/Navbar/Emailsubscription';
 
 
 function Servicespage3() {

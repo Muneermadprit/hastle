@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import blog1 from './assets/blog1.jpeg';
 import blog2 from './assets/blog2.jpeg';
 import blog3 from './assets/blog3.jpeg';
+import blog4 from './assets/readmoresectionimage1.jpg';
 import blogcontentpage1 from './assets/blogcontentpage1.jpg'
-import Emailsubscription from './components/Navbar/emailsubscription';
+import Emailsubscription from './components/Navbar/Emailsubscription';
 
 function Blogcontent1() {
 
@@ -40,16 +41,15 @@ function Blogcontent1() {
   const posts = [
   
     {
-      title: "The Importance of Mental Health in Elderly Care",
-      excerpt: "Understanding and addressing mental health issues in older adults is crucial for their overall well-being.",
+      title: "Holistic Elderly Care: Nurturing Health, Happiness, and Connection",
+      excerpt: "Caring for the elderly requires compassion, knowledge, and thoughtful planning. Our comprehensive guide provides essential tips and strategies to help you deliver the best care for your aging loved ones. Explore our insights and make a positive difference today!",
       date: "July 25, 2024",
       author: "Jane Smith",
       image: blog2,
     },
     {
-      title: "Creating a Safe Home Environment for Seniors",
-      excerpt: "Tips and tricks to make your home a safe haven for elderly family members.",
-      date: "June 15, 2024",
+      title: "Pets as Companions: The Therapeutic Benefits for Seniors",
+      excerpt: "Have you ever seen a senior smiling ear-to-ear while petting their furry friend? It’s a heartwarming sight that speaks volumes about the therapeutic benefits of pets for older adults. In this blog post, we’ll dive into the incredible ways that pets can enhance the quality of life for seniors. From offering companionship to reducing feelings of loneliness and anxiety, pets provide a sense of purpose and routine that can be immensely beneficial for mental health. ",
       author: "Emily Johnson",
       image: blog3,
     },
@@ -170,36 +170,38 @@ function Blogcontent1() {
 </div>
 
 
-
-        {/* Blog Posts Section */}
-        <section id="blog-section" className="container mx-auto px-6 md:px-12 py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post, index) => (
-            <article key={index} className="relative group bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
-             <Link to={`/hastle/blogcontent${index+2}`}>
-             <div className="absolute inset-0  group-hover:opacity-70 transition duration-300"></div>
-              <img src={post.image} alt={post.title} className="w-full h-64 object-cover transition duration-300 transform group-hover:scale-110" />
-              <div className="absolute bottom-0 p-6">
-                <h2 className="text-2xl font-bold text-black mb-2 transition duration-300 group-hover:text-yellow-400">{post.title}</h2>
-                <p className="text-black text-sm">{post.excerpt}</p>
-                <div className="mt-4 flex items-center justify-between text-sm text-gray-300">
-                  <p>By {post.author}</p>
-                  <p>{post.date}</p>
-                </div>
-              </div></Link> 
-            </article>
-          ))}
-          <div className="bg-white cursor-pointer rounded overflow-hidden shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
-              <img src="https://readymadeui.com/Imagination.webp" alt="Blog Post 1" className="w-full h-60 object-cover" />
-              <div className="p-6">
-                <span className="text-sm block text-gray-400 mb-2">10 FEB 2023 | BY JOHN DOE</span>
-                <h3 className="text-xl font-bold text-[#333]">A Guide to Igniting Your Imagination</h3>
-                <hr className="my-6" />
-                <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
-              </div>
-            </div>
+{/* Blog Posts Section */}
+<section id="blog-section" className="container mx-auto px-6 md:px-12 py-16">
+  <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+    {posts.map((post, index) => (
+      <Link key={index} to={`/hastle/blogcontent${index + 2}`}>
+        <div className="bg-white cursor-pointer rounded overflow-hidden lg:h-[570px] shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+          <img src={post.image} alt={post.title} className="w-full h-60 object-cover" />
+          <div className="p-6">
+            <span className="text-sm block text-gray-400 mb-2">{post.date} | BY {post.author.toUpperCase()}</span>
+            <h3 className="text-xl font-bold text-[#333] mb-2">{post.title}</h3>
+            <hr className="my-6" />
+            <p className="text-gray-400 text-sm">{post.excerpt}</p>
+          </div>
         </div>
-      </section>
+      </Link>
+    ))}
+    
+    {/* Static Third Blog Post Card */}
+    <Link to='/hastle/blogcontent4'>
+      <div className="bg-white cursor-pointer rounded overflow-hidden lg:h-[570px] shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+        <img src={blog4} alt="Blog Post 1" className="w-full h-60 object-cover" />
+        <div className="p-6">
+          <span className="text-sm block text-gray-400 mb-2">10 FEB 2023 | BY JOHN DOE</span>
+          <h3 className="text-xl font-bold text-[#333]">Pets as Companions: The Therapeutic Benefits for Seniors</h3>
+          <hr className="my-6" />
+          <p className="text-gray-400 text-sm">Pets provide seniors with companionship, reduce loneliness, and boost mental health by lowering anxiety and increasing happiness. Caring for a pet also promotes physical activity and adds a sense of purpose to daily life.</p>
+        </div>
+      </div>
+    </Link>
+  </div>
+</section>
+
 {/* Subscription Section */}
 <Emailsubscription/>
 

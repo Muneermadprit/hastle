@@ -17,6 +17,8 @@ import Blogcontent4 from './blogcontent4';
 import Blogcontent5 from './blogcontent5';
 import Blogcontent6 from './blogcontent6';
 import ScrollToTop from './ScrollToTop'; // Import ScrollToTop component
+import Privacypolicy from './privacypolicy';
+import Leagalnotice from './Leagalnotice';
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
         <Route path="/hastle/blogcontent4" element={<Blogcontent4 />} />
         <Route path="/hastle/blogcontent5" element={<Blogcontent5 />} />
         <Route path="/hastle/blogcontent6" element={<Blogcontent6 />} />
+        <Route path="/hastle/privacypolicy" element={<Privacypolicy />} />
+        <Route path="/hastle/leagalnotice" element={<Leagalnotice />} />
       </Routes>
     </Router>
   );

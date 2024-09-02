@@ -15,6 +15,7 @@ const testimonials = [
     text: `Holistic Care cared for our mum who lived at home with our dad for 3 and a half months before she passed away. After 4 years of dad looking after mum, we had to admit that we needed some help. This was such a hard decision to make, but Holistic Care made it easier to come to terms with. The care our mum received was second to none, even from the very first visit. Every member of staff was so professional, caring, reliable, and compassionate, and always went above and beyond for our mum and also for our dad, who loved to chat with the carers.
         We feel that we were so very lucky that we had Holistic Care look after our mum, and we will never be able to thank the whole team enough; they became part of the family in such a short time. Very, very special people! We would highly recommend this care provider, and we will be forever thankful for everything they did for Mum and Dad right until the end. Forever grateful and thankful.`,
     img: 'https://picsum.photos/102/102',
+    space: <div className='w-full h-[60px]'></div>
   },
   {
     id: 3,
@@ -29,13 +30,14 @@ const testimonials = [
     text: `Generally good continuity of assigned carers, which was important to me as my mum has Alzheimer’s and doesn’t like change. Managers listened to and acted upon any concerns/issues I raised. Care plans are regularly updated, with very good communication, timekeeping, and reporting. Carers always rang me if they had concerns over Mum's health or welfare, and each visit was clearly documented on the access mobile app. The carers were very gentle and had a good manner with Mum and worked hard to make her feel at ease during their visits.
         I would have no hesitation in recommending them. Thank you to two particular members of staff at this care provider.`,
     img: 'https://picsum.photos/104/104',
-    space: <div className='w-full h-[65px]'></div>,
+    space: <div className='w-full h-[75px]'></div>,
   },
   {
     id: 5,
     name: "F W (Son of Client)",
     text: `My father has dementia and was in hospital before Christmas. The care provider was the only company who had the capacity to offer care visits at his home and have looked after him since then. The care received has been nothing short of outstanding, generally from keeping his living areas tidy to his personal care and assisting him to eat and drink, encouraging and being patient with him. My father is prone to infections, and prior to this care provider, he was hospitalized over and over with UTIs whilst in the care of other companies. Since this care provider took over, he hasn’t had one infection or hospital admission, which is a testament to the consistent high-quality care received. Most carers my father has had from other companies go after 15 mins and have not provided the care to meet my father's needs, but this care provider always stays the full hour consistently every day. Special thanks to the Owner and Manager, who have been brilliant throughout, and their very effective team.`,
     img: 'https://picsum.photos/105/105',
+    space: <div className='w-full h-[60px]'></div>
   },
 ];
 
@@ -86,11 +88,14 @@ const Testimonial = () => {
                     className="w-16 h-16 rounded-full mx-auto mb-4"
                   />
                   <p className="text-[10px] lg:text-[12px] italic">{testimonial.text}</p>
+                  {testimonial.space}
                   <footer className="mt-4 text-right font-bold text-sm lg:text-base">
+                   
+                   
                     – {testimonial.name}
                   </footer>
                 </blockquote>
-                {testimonial.space}
+             
               </div>
             ))}
           </div>
@@ -104,7 +109,7 @@ const Testimonial = () => {
             &lt;
           </button>
           <button
-            className="text-white bg-gray-800 px-4  py-2 rounded-full transform transition-transform duration-300 hover:scale-110"
+            className="text-white bg-gray-800 px-4 sm:mb-[20px] lg:mb-[0px]  py-2 rounded-full transform transition-transform duration-300 hover:scale-110"
             onClick={nextSlide}
           >
             &gt;

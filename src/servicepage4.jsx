@@ -17,7 +17,7 @@ import nutritionimage from './assets/nutritionimage.jpeg'
 import overnightcare from './assets/overnightcare.jpeg'
 import overnights from './assets/overnights.jpeg'
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import Testimonial from './components/Navbar/Testimonial';
 import pngimage from './assets/caring.png'
 import pngimage2 from './assets/supportive.png'
@@ -34,7 +34,7 @@ import aiimage8 from './assets/aiimage8.png'
 import aiimage9 from './assets/aiimage9.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Emailsubscription from './components/Navbar/emailsubscription';
+import Emailsubscription from './components/Navbar/Emailsubscription';
 
 function Servicespage4() {
   const [activeService, setActiveService] = useState(0); // Set default to the first item

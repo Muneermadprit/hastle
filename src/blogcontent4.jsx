@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
-import Footer from './components/Navbar/footer';
+import Footer from './components/Navbar/Footer';
 import blog1 from './assets/blog1.jpeg';
 import blog2 from './assets/blog2.jpeg';
 import blog3 from './assets/blog3.jpeg';
@@ -17,9 +17,12 @@ import Blogpage4main from './assets/blog4pagemain.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Emailsubscription from './components/Navbar/emailsubscription';
+import Emailsubscription from './components/Navbar/Emailsubscription';
 
 function Blogcontent4() {
+
+
+
 
 
     const services = [
@@ -57,13 +60,7 @@ function Blogcontent4() {
       author: "Jane Smith",
       image: blog2,
     },
-    {
-      title: "Creating a Safe Home Environment for Seniors",
-      excerpt: "Tips and tricks to make your home a safe haven for elderly family members.",
-      date: "June 15, 2024",
-      author: "Emily Johnson",
-      image: blog3,
-    },
+    
   ];
 
   return (
@@ -337,9 +334,9 @@ cognitive function</p>
               <img src={readmoresectionimage2 } alt="Blog Post 1" className="w-full h-60 object-cover" />
               <div className="p-6">
                 <span className="text-sm block text-gray-400 mb-2">10 FEB 2023 | BY JOHN DOE</span>
-                <h3 className="text-xl font-bold text-[#333]">A Guide to Igniting Your Imagination</h3>
+                <h3 className="text-xl font-bold text-[#333]">How to Prepare Your Home for Elderly Care: Safety Tips and Modifications</h3>
                 <hr className="my-6" />
-                <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+                <p className="text-gray-400 text-sm">As the population ages, more families in the UK are choosing to care for their elderly loved ones at home. While this option allows seniors to remain in familiar surroundings, it also requires careful planning and modifications to ensure their safety and comfort.</p>
               </div>
 
               
@@ -352,9 +349,9 @@ cognitive function</p>
               <img src={readmoresectionimage3 } alt="Blog Post 1" className="w-full h-60 object-cover" />
               <div className="p-6">
                 <span className="text-sm block text-gray-400 mb-2">10 FEB 2023 | BY JOHN DOE</span>
-                <h3 className="text-xl font-bold text-[#333]">A Guide to Igniting Your Imagination</h3>
+                <h3 className="text-xl font-bold text-[#333]">Managing Chronic Conditions in Elderly Home Care: A Comprehensive Guide</h3>
                 <hr className="my-6" />
-                <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+                <p className="text-gray-400 text-sm">Caring for elderly loved ones at home is a rewarding experience, but it can also present unique challenges, especially when managing chronic conditions. In the UK, where elderly home care services are becoming increasingly prevalent, families and caregivers must be well-equipped to handle a range of health issues that commonly affect seniors. With the right approach, managing chronic conditions at home can improve the quality of life for seniors and help them maintain their independence.</p>
               </div>
 
               
@@ -362,6 +359,19 @@ cognitive function</p>
               
             </div>
             </Link>
+            {posts.map((post, index) => (
+      <Link key={index} to={`/hastle/blogcontent${index + 2}`}>
+        <div className="bg-white cursor-pointer rounded overflow-hidden lg:h-[570px] shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative top-0 hover:-top-2 transition-all duration-300">
+          <img src={post.image} alt={post.title} className="w-full h-60 object-cover" />
+          <div className="p-6">
+            <span className="text-sm block text-gray-400 mb-2">{post.date} | BY {post.author.toUpperCase()}</span>
+            <h3 className="text-xl font-bold text-[#333] mb-2">{post.title}</h3>
+            <hr className="my-6" />
+            <p className="text-gray-400 text-sm">{post.excerpt}</p>
+          </div>
+        </div>
+      </Link>
+    ))}
         </div>
       </section>
 {/* Subscription Section */}
