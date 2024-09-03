@@ -72,14 +72,14 @@ function Blogcontent1() {
          <div className='grid xl:grid-cols-2'>
          <img src={blogcontentpage1}className='mt-10' />
          <div className='xl:mt-[100px] xl:ml-[100px]'>
-         <h1 className="text-2xl md:text-3xl font-extrabold mb-6  text-left text-black">Involving Professional Help When Needed</h1>
+         <h1 className="text-2xl md:text-3xl font-extrabold mb-6  text-left text-black mt-10" >Involving Professional Help When Needed</h1>
          <p className="text-lg md:text-1xl text-left  text-black">Sometimes, despite our best efforts, providing care at home may not be enough to meet all the needs of an elderly loved one. In such cases, seeking professional help can be a wise decision. Whether it's hiring an in-home caregiver, exploring adult day care options, or considering assisted living facilities, professional caregivers can provide specialized care that addresses both medical and personal needs. It's important to research and choose services that align with your loved one's preferences and requirements, ensuring they receive the highest standard of care while maintaining their dignity and independence.</p> 
          </div>
          
          </div>
 
 
-         <h1 className="text-3xl md:text-2xl font-extrabold mb-6  xl:mt-10  text-left text-black">Essential Tips for Elderly Care</h1>
+         <h1 className="text-3xl md:text-2xl font-extrabold mb-6  xl:mt-10  text-left text-black mt-10">Essential Tips for Elderly Care</h1>
       
 <div class="flex items-left">
     <div>

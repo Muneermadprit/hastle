@@ -64,20 +64,20 @@ function Blogcontent3() {
   ];
 
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Navbar />
       
       {/* Hero Section */}
-      <header className="relative bg-white text-[#800080]  pt-40  ">
+      <header className="relative bg-white text-[#800080]  pt-40 overflow-hidden  ">
         <div className="absolute inset-0 -75"></div>
         <div className="relative container md:px-12 text-center">
         
            {/* sub head */}
          
            <div className='relative grid xl:grid-cols-1'>
-  <p className='  text-black xl:text-[50px] text-[30px] font-bold'>Pets as Companions: The Therapeutic Benefits for
+  <p className='  text-black xl:text-[50px] text-[30px] font-bold '>Pets as Companions: The Therapeutic Benefits for
   Seniors</p>
-  <p className="text-lg md:text-1xl text-left text-black  xl:px-10 px-4">Have you ever seen a senior smiling ear-to-ear while petting their furry friend? It’s a heartwarming sight that speaks volumes about the therapeutic benefits of pets for older adults. In this blog post, we’ll dive into the incredible ways that pets can enhance the quality of life for seniors. From offering companionship to reducing feelings of loneliness and anxiety, pets provide a sense of purpose and routine that can be immensely beneficial for mental health. Studies have shown that interacting with pets can lower blood pressure and increase levels of serotonin and dopamine, which promote relaxation and happiness. Moreover, the daily care of a pet encourages physical activity, whether it's a leisurely walk with a dog or playing with a cat at home. Let's explore how the bond between seniors and their pets can foster joy, comfort, and a more fulfilling life.</p> 
+  <p className="text-lg md:text-1xl text-left text-black  xl:px-10 px-4 mt-10">Have you ever seen a senior smiling ear-to-ear while petting their furry friend? It’s a heartwarming sight that speaks volumes about the therapeutic benefits of pets for older adults. In this blog post, we’ll dive into the incredible ways that pets can enhance the quality of life for seniors. From offering companionship to reducing feelings of loneliness and anxiety, pets provide a sense of purpose and routine that can be immensely beneficial for mental health. Studies have shown that interacting with pets can lower blood pressure and increase levels of serotonin and dopamine, which promote relaxation and happiness. Moreover, the daily care of a pet encourages physical activity, whether it's a leisurely walk with a dog or playing with a cat at home. Let's explore how the bond between seniors and their pets can foster joy, comfort, and a more fulfilling life.</p> 
   <img src={blog3pageimagemain} className='mt-10 '  />
   <div className='xl:mt-[100px] ml-[100px]'>
     
@@ -85,7 +85,7 @@ function Blogcontent3() {
   </div>
 </div>
 
-<div className=' relative xl:mt-[10px] xl:ml-[100px]'>
+<div className=' relative xl:mt-[10px] xl:ml-[100px] mt-10'>
     <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Involving Professional Help When Needed</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Sometimes, despite our best efforts, providing care at home may not be enough to meet all the needs of an elderly loved one. In such cases, seeking professional help can be a wise decision. Whether it's hiring an in-home caregiver, exploring adult day care options, or considering assisted living facilities, professional caregivers can provide specialized care that addresses both medical and personal needs. It's important to research and choose services that align with your loved one's preferences and requirements, ensuring they receive the highest standard of care while maintaining their dignity and independence.</p> 
   </div>
@@ -99,7 +99,7 @@ function Blogcontent3() {
       <img src={blog3pageimage1}/>
 
       <div className='xl:mt-[50px] xl:ml-[100px]'>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Physical Health Benefits</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-10">Physical Health Benefits</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Beyond emotional support, pets can also have a positive impact on seniors&#39; physical
    health. Studies have shown that pet owners are more likely to exercise
    regularly, maintain a healthy weight, and have lower blood pressure. Caring for a pet
@@ -110,17 +110,17 @@ function Blogcontent3() {
      </div>
      
 
-     <div className='grid xl:grid-cols-2 mt-10'>
+     <div className='grid xl:grid-cols-2 mt-10 '>
 
       {/* thefirstline */}
 
-      <div className='border-solid xl:border-[5px] xl:border-black h-[1200px] xl:border-l-0 xl:border-t-0 xl:border-b-0' > 
+      <div className='  border-solid xl:border-[5px] xl:border-black lg:h-[1200px] xl:border-l-0 xl:border-t-0 xl:border-b-0' > 
         
         {/* the first item */}
 
         <div className='' data-aos='fade-right'>
 
-        <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Cognitive Stimulation</h1>
+        <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black ">Cognitive Stimulation</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Pets can help to keep seniors&#39; minds sharp by providing cognitive stimulation. Playing
 with a pet, training a dog, or caring for a cat can help to improve
 memory, concentration, and problem-solving skills. Additionally, interacting with a pet
@@ -132,11 +132,8 @@ can provide a sense of accomplishment and boost self-esteem.</p>
 
         <div className='xl:mt-[400px]' data-aos='fade-right'>
 
-        <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Cognitive Stimulation</h1>
-    <p className="text-lg md:text-1xl text-left text-black ">Pets can help to keep seniors&#39; minds sharp by providing cognitive stimulation. Playing
- with a pet, training a dog, or caring for a cat can help to improve
- memory, concentration, and problem-solving skills. Additionally, interacting with a pet
- can provide a sense of accomplishment and boost self-esteem.</p> 
+        <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-10">Enhancing Elderly Care with Pets</h1>
+    <p className="text-lg md:text-1xl text-left text-black ">Integrating pets into elderly care can significantly improve quality of life. Animals provide not only companionship but also encourage physical activity and social interaction. Engaging with pets can help seniors maintain a sense of purpose and reduce stress, contributing to their overall emotional and physical health.</p> 
         </div>
         
         
@@ -145,10 +142,10 @@ can provide a sense of accomplishment and boost self-esteem.</p>
              {/* The second line */}
              
 
-         <div className=' h-[1200px] '  > 
+         <div className=' lg:h-[1200px]  '  > 
         
-         <div className='ml-10 xl:mt-[300px]' data-aos='fade-left'>
-        <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Social Interaction</h1>
+         <div className=' lg:ml-10 mt-10 lg:mt-[300px]' data-aos='fade-left'>
+        <h1 className="text-2xl md:text-3xl font-extrabold lg:mb-6 text-left text-black">Social Interaction</h1>
     <p className="text-lg md:text-1xl text-left text-black ">
     Pets can also be a great way for seniors to meet new people and socialize. Walking a
  dog in the park or attending a pet-friendly event can provide opportunities to connect
@@ -160,7 +157,7 @@ can provide a sense of accomplishment and boost self-esteem.</p>
 
         {/* the second item */}
 
-        <div className='ml-10 xl:mt-[300px]' data-aos='fade-left'>
+        <div className=' lg:ml-10 xl:mt-[300px] mt-10' data-aos='fade-left '>
         <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Stress Reduction</h1>
     <p className="text-lg md:text-1xl text-left text-black ">
     Pets have been shown to have a calming effect on humans, which can be especially

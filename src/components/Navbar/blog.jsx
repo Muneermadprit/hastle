@@ -52,10 +52,10 @@ function Blog() {
       </div>
       <div className="my-6">
         <h3 className="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:group-hover:text-[#800080]">
-        The Importance of Mental Health in Elderly Care 
+        Holistic Elderly Care: Nurturing Health, Happiness, and Connection
         </h3>
         <p className="mt-5 text-gray-600 dark:text-neutral-400">
-          Understanding and addressing mental health issues in older adults is crucial for their overall well-being
+        Caring for the elderly requires compassion, knowledge, and thoughtful planning. Our comprehensive guide provides essential tips and strategies to help you deliver the best care for your aging loved ones. Explore our insights and make a positive difference today!
         </p>
         <Link to='/hastle/blogcontent2' className='text-[#800080] '>Learn more</Link>
       </div>
@@ -73,10 +73,10 @@ function Blog() {
       </div>
       <div className="my-6">
         <h3 className="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:group-hover:text-[#800080]">
-        Creating a Safe Home Environment for Seniors
+        Pets as Companions: The Therapeutic Benefits for Seniors
         </h3>
         <p className="mt-5 text-gray-600 dark:text-neutral-400">
-        Tips and tricks to make your home a safe haven for elderly family members.
+        Have you ever seen a senior smiling ear-to-ear while petting their furry friend? It’s a heartwarming sight that speaks volumes about the therapeutic benefits of pets for older adults. In this blog post, we’ll dive into the incredible ways that pets can enhance the quality of life for seniors. From offering companionship to reducing feelings of loneliness and anxiety, pets provide a sense of purpose and routine that can be immensely beneficial for mental health. Studies have shown that interacting with pets can lower blood pressure and increase levels of serotonin and dopamine, which promote relaxation and happiness.
         </p>
         <Link to='/hastle/blogcontent3' className='text-[#800080] '>Learn more</Link>
       </div>
