@@ -104,8 +104,8 @@ of life for seniors and help them maintain their independence.</p>
   </div>
 </div>
 
-<div className=' relative xl:mt-[10px] xl:ml-[100px]'>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Understanding the Common Chronic Conditions in the Elderly</h1>
+<div className=' relative xl:mt-[10px] xl:ml-[100px] mt-4'>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black ">Understanding the Common Chronic Conditions in the Elderly</h1>
     <p className="text-lg md:text-1xl text-left text-black ">As we age, our bodies undergo changes that can lead to the development of chronic
 health conditions. In the UK, some of the most common chronic conditions among the
 elderly include:</p> 
@@ -120,14 +120,14 @@ elderly include:</p>
       <img src={blogimage2page4}/>
 
       <div className='xl:ml-[100px]'>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Diabetes</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Diabetes</h1>
     <p className="text-lg md:text-1xl text-left text-black "> A condition that affects the body’s ability to regulate blood sugar
     levels, leading to serious complications if not managed properly.</p> 
 
 
 {/* // the second */}
 <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Heart Disease </h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Heart Disease </h1>
     <p className="text-lg md:text-1xl text-left text-black ">This includes conditions like coronary artery disease and heart
     failure, which can significantly impact an elderly person’s quality of life.</p> 
   </div>
@@ -138,14 +138,14 @@ elderly include:</p>
 
 
   <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Arthritis </h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Arthritis </h1>
     <p className="text-lg md:text-1xl text-left text-black ">A common condition that causes pain, swelling, and stiffness in the
     joints, making movement difficult for seniors.</p> 
   </div>
 
 
   <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Chronic Obstructive Pulmonary Disease (COPD)</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Chronic Obstructive Pulmonary Disease (COPD)</h1>
     <p className="text-lg md:text-1xl text-left text-black ">A group of lung conditions
 that cause breathing difficulties and can severely limit a senior’s ability to engage
 in daily activities</p> 
@@ -153,7 +153,7 @@ in daily activities</p>
 
 
   <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Hypertension (High Blood Pressure)</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Hypertension (High Blood Pressure)</h1>
     <p className="text-lg md:text-1xl text-left text-black ">A condition that increases the risk of
     heart attacks, strokes, and other serious health issues.</p> 
   </div>
@@ -177,7 +177,7 @@ in daily activities</p>
 
 
     <div className=' relative xl:mt-[40px] xl:ml-[100px]'>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Creating a Personalized Care Plan</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black ">Creating a Personalized Care Plan</h1>
     <p className="text-lg md:text-1xl text-left text-black ">The first step in managing chronic conditions in elderly home care is to develop a
 personalized care plan tailored to the specific needs of the senior. This plan should be
 comprehensive, covering all aspects of care, from medication management to lifestyle
@@ -201,7 +201,7 @@ concerns.</p>
 
 {/* // the second */}
 <div className='xl:mt-[50px] xl:mr-10 '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Regular Health Monitoring</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Regular Health Monitoring</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Monitoring vital signs such as blood pressure, blood sugar levels, and respiratory
 function is essential in managing chronic conditions. Regular check-ups with
 healthcare providers, either in person or through telehealth services, can help
@@ -216,7 +216,7 @@ attention.</p>
 
 
   <div className='xl:mt-[50px] xl:mr-10 '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Diet and Nutrition</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Diet and Nutrition</h1>
     <p className="text-lg md:text-1xl text-left text-black ">A balanced diet plays a significant role in managing chronic conditions. For
 example, seniors with diabetes need to manage their carbohydrate intake, while
 those with heart disease should focus on a low-sodium diet. Caregivers can work
@@ -239,7 +239,7 @@ hydrated are key components of chronic disease management</p>
 
 
 
-  <img src={blogimage3page4 }/>
+  <img src={blogimage3page4 } className='mt-4'/>
 
   {/* // the second */}
 

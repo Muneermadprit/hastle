@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
-import Footer from './components/Navbar/Footer';
+import Footer from './components/Navbar/footer';
 import blog1 from './assets/blog1.jpeg';
 import blog2 from './assets/blog2.jpeg';
 import blog3 from './assets/blog3.jpeg';
@@ -17,7 +17,7 @@ import Blogpage4main from './assets/blog4pagemain.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Emailsubscription from './components/Navbar/Emailsubscription';
+import Emailsubscription from './components/Navbar/emailsubscription';
 
 function Blogcontent4() {
 
@@ -77,7 +77,7 @@ function Blogcontent4() {
            <div className='relative grid xl:grid-cols-1'>
   <p className='  text-black xl:text-[45px] text-[25px] font-bold'>The Importance of Mental Health Support in Elderly Home Care
   </p>
-  <p className="text-lg md:text-1xl text-left text-black  xl:px-10 px-2">As we age, mental health becomes just as crucial as physical health, especially for
+  <p className="text-lg md:text-1xl text-left text-black  xl:px-10 px-2 mt-10">As we age, mental health becomes just as crucial as physical health, especially for
 seniors who receive care at home. In the UK, where elderly home care services are on
 the rise, there is growing recognition of the need to address the emotional and
 psychological well-being of older adults. With the right support, seniors can enjoy a
@@ -91,7 +91,7 @@ ones.</p>
 </div>
 
 <div className=' relative xl:mt-[10px] xl:ml-[100px]'>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Understanding the Mental Health Challenges Faced by Seniors</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-10">Understanding the Mental Health Challenges Faced by Seniors</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Mental health issues among the elderly are often overlooked, yet they are common and
 can significantly impact a person s overall well-being. In the UK, s estimated that one
 in four older adults experience some form of mental health issue, with depression and
@@ -107,7 +107,7 @@ anxiety being the most prevalent.</p>
       <img src={Blogpage4}/>
 
       <div className=' xl:ml-[100px]'>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Depression</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-10">Depression</h1>
     <p className="text-lg md:text-1xl text-left text-black "> seniors can be triggered by various factors, including the loss of a
 spouse or close friends, chronic illness, or the transition from independent living to
 receiving care. It&#39;s important to recognize that depression in older adults may present
@@ -118,7 +118,7 @@ mistakenly attributed to aging rather than a mental health condition.</p>
 
 {/* // the second */}
 <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Anxiety </h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Anxiety </h1>
     <p className="text-lg md:text-1xl text-left text-black ">Anxiety is another common issue, often exacerbated by concerns about health,
 financial stability, or the future. Seniors may worry excessively about their ability to
 manage daily tasks, leading to increased stress and a decline in their quality of life.</p> 
@@ -130,7 +130,7 @@ manage daily tasks, leading to increased stress and a decline in their quality o
 
 
   <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Dementia </h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-10">Dementia </h1>
     <p className="text-lg md:text-1xl text-left text-black ">Dementia and other cognitive impairments also pose significant mental health
 challenges. As these conditions progress, they can lead to confusion, frustration, and
 even depression, making it essential for caregivers to provide the right support.</p> 
@@ -138,7 +138,7 @@ even depression, making it essential for caregivers to provide the right support
 
 
   <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black"> Social Isolation and Loneliness</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4"> Social Isolation and Loneliness</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Many seniors face social isolation and loneliness due to factors like retirement, loss of friends and family, reduced mobility, and lack of social networks. Loneliness can have a profound impact on mental health, leading to depression, anxiety, and even physical health problems such as heart disease. Addressing social isolation involves encouraging seniors to engage in social activities, join clubs or community groups, and maintain connections with family and friends. Technology can also play a role in helping seniors stay connected through virtual means.</p> 
   </div>
 
@@ -162,7 +162,7 @@ even depression, making it essential for caregivers to provide the right support
 
 
     <div className=' relative xl:mt-[40px] xl:ml-[100px]'>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">The Role of Home Care in Supporting Mental Health</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">The Role of Home Care in Supporting Mental Health</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Elderly home care in the UK has evolved to include comprehensive mental health
 support, recognizing that emotional well-being is integral to overall health. Here are
 some ways home care services can play a crucial role</p> 
@@ -174,7 +174,7 @@ some ways home care services can play a crucial role</p>
    
 
       <div className='xl:mt-[50px] xl:ml-[100px] xl:mr-10'>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Personalized Care Plans</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Personalized Care Plans</h1>
     <p className="text-lg md:text-1xl text-left text-black "> Creating a personalized care plan tailored to the individual&#39;s mental health needs
 is essential. This plan should include regular assessments by mental health
 professionals, ensuring that any emerging issues are addressed promptly</p> 
@@ -182,7 +182,7 @@ professionals, ensuring that any emerging issues are addressed promptly</p>
 
 {/* // the second */}
 <div className='xl:mt-[50px] xl:mr-10 '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Companionship and Social Interaction </h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Companionship and Social Interaction </h1>
     <p className="text-lg md:text-1xl text-left text-black ">Loneliness is a significant contributor to mental health problems in seniors. Home
 care services can provide companionship, helping seniors stay socially engaged.
 Caregivers can encourage participation in community activities, virtual events, or
@@ -195,7 +195,7 @@ even regular phone calls with family and friends</p>
 
 
   <div className='xl:mt-[50px] xl:mr-10 '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Support for Caregivers </h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Support for Caregivers </h1>
     <p className="text-lg md:text-1xl text-left text-black ">It s not just the elderly who need support; caregivers also play a vital role in
 maintaining the mental health of their loved ones. Home care services often offer
 respite care, giving family members a much-needed break, which can reduce
@@ -223,7 +223,7 @@ stress and prevent caregiver burnout.</p>
 
 
 
-  <img src={elderlymentalcareimage1 }/>
+  <img src={elderlymentalcareimage1 } className='mt-4'/>
 
   {/* // the second */}
 
@@ -236,7 +236,7 @@ stress and prevent caregiver burnout.</p>
           
         </div>
 
-        <div className=' relative xl:mt-[70px] xl:ml-[150px] px-4 '>
+        <div className=' relative xl:mt-[70px] xl:ml-[150px] px-4  mt-4'>
     <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Promoting Mental Well-being Through Lifestyle Choices</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Beyond professional support, there are several lifestyle choices that can help promote
     mental well-being in seniors</p> 
@@ -251,7 +251,7 @@ stress and prevent caregiver burnout.</p>
       <img src={Blogpage4}/>
 
       <div className='xl:mt-[50px] xl:ml-[100px] px-4'>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Physical Activity</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Physical Activity</h1>
     <p className="text-lg md:text-1xl text-left text-black "> Regular exercise has been shown to reduce symptoms of
 depression and anxiety. Even light activities such as walking or gardening can
 have a positive impact</p> 
@@ -259,7 +259,7 @@ have a positive impact</p>
 
 {/* // the second */}
 <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Healthy Diet</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Healthy Diet</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Nutrition plays a significant role in mental health. A diet rich in
 fruits, vegetables, and whole grains can help maintain a balanced mood and
 cognitive function</p> 
@@ -271,7 +271,7 @@ cognitive function</p>
 
 
   <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Hobbies and Interests </h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Hobbies and Interests </h1>
     <p className="text-lg md:text-1xl text-left text-black ">Encouraging seniors to engage in hobbies they enjoy
     can provide a sense of purpose and reduce feelings of isolation</p> 
   </div>
@@ -279,7 +279,7 @@ cognitive function</p>
 
 
   <div className='xl:mt-[50px] '>
-    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black">Regular Physical Activity</h1>
+    <h1 className="text-2xl md:text-3xl font-extrabold mb-6 text-left text-black mt-4">Regular Physical Activity</h1>
     <p className="text-lg md:text-1xl text-left text-black ">Engaging in regular physical activity is one of the most effective ways to enhance mental well-being. Exercise releases endorphins, which are natural mood lifters that reduce stress and anxiety. Activities like walking, jogging, yoga, or even dancing can help improve mood, boost self-esteem, and enhance cognitive function. Research shows that just 30 minutes of moderate exercise a few times a week can make a substantial difference in mental health. Additionally, exercise can help with better sleep, which is crucial for mental well-being. Incorporating a mix of cardio, strength training, and flexibility exercises ensures a holistic approach to physical fitness and mental health</p> 
   </div>
 

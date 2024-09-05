@@ -128,7 +128,7 @@ and home modifications.
       <img src={blog3pageimage1}/>
 
       <div className='xl:mt-[50px] xl:ml-[100px] px-4'>
-    <h1 className="text-2xl xl:text-2xl font-extrabold mb-6 text-left text-black">Key Areas to Focus On When Preparing Your Home</h1>
+    <h1 className="text-2xl xl:text-2xl font-extrabold mb-6 text-left text-black mt-4">Key Areas to Focus On When Preparing Your Home</h1>
     <p className="text-lg md:text-1xl text-left text-black xl:px-10 px-2  ">Beyond emotional support, pets can also have a positive impact on seniors&#39; physical
    health. Studies have shown that pet owners are more likely to exercise
    regularly, maintain a healthy weight, and have lower blood pressure. Caring for a pet
