@@ -82,7 +82,7 @@ const getContacts = async (req, res) => {
                     contact.email,
                     contact.street,
                     contact.city,
-                    contact.postcode,
+                    contact.postalcode,
                     contact.phonenumber,
                     contact.message
                 );

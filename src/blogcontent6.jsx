@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
-import Footer from './components/Navbar/Footer';
+import Footer from './components/Navbar/footer';
 import blog1 from './assets/blog1.jpeg';
 import blog2 from './assets/blog2.jpeg';
 import blog3 from './assets/blog3.jpeg';
@@ -21,7 +21,7 @@ import Blogpage5mainimage from './assets/blogpage5mainimage.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Emailsubscription from './components/Navbar/Emailsubscription';
+import Emailsubscription from './components/Navbar/emailsubscription';
 
 function Blogcontent6() {
 
@@ -275,15 +275,16 @@ hydrated are key components of chronic disease management</p>
    
 
       </header>
-
-      {/* Latest Blogs Heading */}
       <div className="text-center my-12">
   <h2 className="text-3xl font-extrabold text-[#333] relative inline-block">
     READ MORE
     
   </h2>
-  <span className="block  w-[200px] ml-[660px] h-1 mt-4 bg-pink-400  rounded-full  bottom-0 "></span>
+  <span className="block  w-[400px] ml-[660px] h-1 mt-4 bg-pink-400  rounded-full  bottom-0 "></span>
 </div>
+
+      {/* Latest Blogs Heading */}
+    
           
       <section id="blog-section" className="container mx-auto px-6 md:px-12 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">

@@ -93,9 +93,13 @@ function Dashbord() {
               <div className="space-y-4">
                 {queries.map((query, index) => (
                   <div key={index} className="bg-gray-200 border border-purple-700 rounded-lg p-4 shadow-md h-[200px]">
-                    <p className="font-semibold">{query.name}</p>
-                    <p>{query.message}</p>
-                    <p>{query.phonenumber}</p>
+                   <div className='flex'>
+                   <FaRegUser className="text-gray-400 text-2xl mr-4" />
+                   <p className="font-semibold ">{query.name}</p>
+                   </div>
+                    
+                    <p className='mt-2'>{query.message}</p>
+                    <p className='mt-2'>Phonenumber: {query.phonenumber}</p>
                   </div>
                 ))}
               </div>
@@ -109,8 +113,11 @@ function Dashbord() {
                 <h2 className="text-2xl font-semibold">Subscribers</h2>
               </div>
               <div className="space-y-4">
+
                 {subscribers.map((subscriber, index) => (
+                  
                   <div key={index} className="bg-gray-100 border border-purple-700 rounded-lg p-4 shadow-md">
+                    
                     <p className="font-semibold">{subscriber.name}</p>
                   </div>
                 ))}

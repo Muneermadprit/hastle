@@ -6,13 +6,13 @@ import contactimage from '../../assets/contactformlast.png'
 import axios from 'axios';
 
 const ContactSectionpage = forwardRef((props, ref) => {
-  const [fullname ,setFullname] = useState();
-  const [email ,setEmail] = useState();
-  const [street ,setStreet] = useState();
-  const [city ,setCity] = useState();  
-  const [postalcode ,setPostalcode] = useState();
-  const [phonenumber ,setPhonenumber] = useState();
-  const [message ,setMessages] = useState();
+  const [fullname ,setFullname] = useState("");
+  const [email ,setEmail] = useState("");
+  const [street ,setStreet] = useState("");
+  const [city ,setCity] = useState("");  
+  const [postalcode ,setPostalcode] = useState("");
+  const [phonenumber ,setPhonenumber] = useState("");
+  const [message ,setMessages] = useState("");
   const [errors, setErrors] = useState({});  
 
 

@@ -5,7 +5,7 @@ import { Viewer } from '@react-pdf-viewer/core';
 import muneerpdf from './assets/muneer@gmail.com.pdf'
 import { Link } from 'react-router-dom';
 
-import Footer from './components/Navbar/Footer';
+import Footer from './components/Navbar/footer';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import careersimage from './assets/aboutimage1.jpeg'
@@ -22,11 +22,11 @@ import Sidebar from './components/Navbar/sidebar';
 
 
 function Careerspage() {
-    const [name,setName]= useState()
-    const [email,setemail]= useState()
-    const [phonenumber,setphonenumber]= useState()
-    const [experience,setexperience]= useState()
-    const [message,setmessage]= useState()
+    const [name,setName]= useState(null)
+    const [email,setemail]= useState(null)
+    const [phonenumber,setphonenumber]= useState(null)
+    const [experience,setexperience]= useState(null)
+    const [message,setmessage]= useState(null)
     const [pdfFile, setPdfFile] = useState(null);
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
     const [errors, setErrors] = useState({}); 
@@ -58,7 +58,7 @@ function Careerspage() {
         alert('Please select a valid PDF file');
       }
     };
-
+    
     
 
 
@@ -92,15 +92,23 @@ function Careerspage() {
         if (pdfFile) {
           await axios.post("http://localhost:8082/careers/upload-file/", formData);
           console.log("Resume uploaded successfully");
+       
+       
+       
         }
-    
-        // Clear the form inputs
-        setName("");
-        setemail("");
-        setphonenumber("");
-        setexperience("");
-        setmessage("");
+
+
+          // Clear the form inputs
+
+        setName(null);
+        setemail(null);
+        setphonenumber(null);
+        setexperience(null);
+        setmessage(null);
         setPdfFile(null);
+    
+      
+       
     
         alert("Submitted successfully");
       } catch (error) {
@@ -342,14 +350,25 @@ function Careerspage() {
                 class="w-4 h-4 mr-3 shrink-0" />
               <label for="checkbox1" class="text-sm text-gray-500">I agree to the <a href="javascript:void(0);" class="underline"></a>  <Link to='/hastle/privacypolicy' class="underline">Privacy Policy</Link></label>
             </div>
-
-            <button type='button'
+              <div>
+              <button type='button'
             
               class="text-white w-max bg-[#800080] hover:bg-blue-600 tracking-wide rounded-md text-sm px-6 py-3 mt-4"
               onClick={careersubmit}>
              
               submit
             </button>
+            <a href='#' className='ml-2'>
+            <button type='button'
+            
+              class="text-white w-max bg-[#800080] hover:bg-blue-600 tracking-wide rounded-md text-sm px-6 py-3 mt-4"
+              onClick={() => window.location.reload()}>
+             
+              clear
+            </button></a>
+
+              </div>
+            
           </form>
         </div>
       </div>
