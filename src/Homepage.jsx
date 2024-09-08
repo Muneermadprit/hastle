@@ -6,7 +6,7 @@ import Topproducts from './components/Navbar/topproducts'
 import Banner from './components/Navbar/bannner';
 import Subscription from './components/Navbar/subscription';
 import Testimonial from './components/Navbar/testimonial';
-import Footer from './components/Navbar/Footer';
+import Footer from './components/Navbar/footer';
 import AnimatedContainer from './components/Navbar/HoverTest';
 import ScrollableContainer from './components/Navbar/HoverTestMobile';
 import Blog from './components/Navbar/blog';
