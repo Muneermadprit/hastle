@@ -7,7 +7,7 @@ import Banner from './components/Navbar/bannner';
 import Subscription from './components/Navbar/subscription';
 import Testimonial from './components/Navbar/testimonial';
 import Footer from './components/Navbar/footer';
-import AnimatedContainer from './components/Navbar/HoverTest';
+import AnimatedContainer from './components/Navbar/hovertest';
 import ScrollableContainer from './components/Navbar/hovertestmobile';
 import Blog from './components/Navbar/blog';
 import ContactSection from './components/Navbar/contact';
