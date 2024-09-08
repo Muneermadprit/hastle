@@ -4,7 +4,7 @@ import Hero from './components/Navbar/hero';
 import Product from './components/Navbar/about';
 import Topproducts from './components/Navbar/topproducts'
 import Banner from './components/Navbar/bannner';
-import Subscription from './components/Navbar/Subscription';
+import Subscription from './components/Navbar/subscription';
 import Testimonial from './components/Navbar/Testimonial';
 import Footer from './components/Navbar/Footer';
 import AnimatedContainer from './components/Navbar/HoverTest';
